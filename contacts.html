@@ -254,22 +254,30 @@ ul.menu li a { font-size: 13px; line-height: 16px; color: #1f1919; font-weight: 
             ul.menu { 
                 display: grid; 
                 grid-template-columns: 1fr 1fr; 
-                gap: 2px; 
-                padding: 4px; 
+                gap: 1px; 
+                padding: 3px; 
             }
             ul.menu li { 
-                padding: 5px 4px; 
+                padding: 4px 2px; 
                 text-align: center; 
+                margin: 0;
+                display: flex;
+                justify-content: center;
             }
             ul.menu li a { 
-                font-size: 12px; 
+                font-size: 11px; 
                 display: block;
+                white-space: nowrap;
+                text-align: center;
+                width: 100%;
             }
             .hero h1 { font-size: 24px; }
             #content h1 { font-size: 22px; }
             #content h2 { font-size: 18px; }
             .float-img { float: none; margin: 0 auto 15px; max-width: 100%; }
             .footer-grid { grid-template-columns: 1fr; }
+            #content p, #content div, .contact-card { text-align: center !important; }
+            .contact-grid { justify-content: center; }
         }
     </style>
     <meta name="theme-color" content="#1a1414">
