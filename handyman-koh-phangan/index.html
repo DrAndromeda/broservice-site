@@ -25,17 +25,17 @@
         body {
             font-family: 'Open Sans', Arial, sans-serif;
             color: #000;
-            background: var(--dark);
+            background: #1a1410;
             line-height: 1.65;
             font-size: 15px;
         }
         .container { max-width: 960px; margin: 0 auto; padding: 0 15px; }
-        a { text-decoration: none; color: var(--primary); }
+        a { text-decoration: none; color: #e88800; }
         a:hover { text-decoration: underline; }
 
         /* Header – compact */
         header {
-            background: linear-gradient(180deg, var(--dark2), var(--darker));
+            background: linear-gradient(180deg, var(--dark2), #1a1410);
             padding: 4px 0 0;
             position: sticky;
             top: 0;
@@ -51,7 +51,7 @@
             font-family: 'Inter', sans-serif;
             font-size: 22px;
             font-weight: 700;
-            color: var(--primary);
+            color: #e88800;
             text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
         }
         .logo span { color: #d3d3d3; font-weight: 300; }
@@ -61,7 +61,7 @@
             gap: 8px;
         }
         .header-phone { font-size: 13px; color: #d3d3d3; }
-        .header-phone a { color: var(--primary); }
+        .header-phone a { color: #e88800; }
         .social-icons { display: flex; gap: 3px; }
         .social-icons a { display: inline-block; }
         .social-icons a:hover { opacity: 0.8; }
@@ -94,7 +94,7 @@ ul.menu li a { font-size: 13px; line-height: 16px; color: #1f1919; font-weight: 
             font-size: 13px;
             color: #888;
         }
-        .breadcrumbs a { color: var(--primary); }
+        .breadcrumbs a { color: #e88800; }
 
         /* Hero */
         .hero {
@@ -125,7 +125,7 @@ ul.menu li a { font-size: 13px; line-height: 16px; color: #1f1919; font-weight: 
         .block {
             flex: 1 1 270px;
             max-width: 290px;
-            background: var(--white);
+            background: #fff;
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 2px 8px rgba(0,0,0,0.06);
@@ -134,12 +134,12 @@ ul.menu li a { font-size: 13px; line-height: 16px; color: #1f1919; font-weight: 
         .block:hover { transform: translateY(-2px); }
         .block img { width: 100%; display: block; }
         .block-content { padding: 14px; }
-        .block h3 { font-size: 18px; color: var(--primary); margin-bottom: 6px; }
+        .block h3 { font-size: 18px; color: #e88800; margin-bottom: 6px; }
         .block p { color: var(--text-light); font-size: 13px; line-height: 1.5; margin-bottom: 12px; }
         .block .btn {
             display: inline-block;
-            background: var(--primary);
-            color: var(--white);
+            background: #e88800;
+            color: #fff;
             padding: 8px 20px;
             border-radius: 5px;
             font-weight: 600;
@@ -165,14 +165,14 @@ ul.menu li a { font-size: 13px; line-height: 16px; color: #1f1919; font-weight: 
             font-weight: 600;
             color: #1f1919;
             margin: 18px 0 8px;
-            border-left: 4px solid var(--primary);
+            border-left: 4px solid #e88800;
             padding-left: 12px;
         }
         #content h3 {
             font-family: 'Inter', sans-serif;
             font-size: 18px;
             font-weight: 600;
-            color: var(--primary);
+            color: #e88800;
             margin: 16px 0 6px;
         }
         #content p { margin: 10px 0; color: #444; line-height: 1.65; }
@@ -183,7 +183,7 @@ ul.menu li a { font-size: 13px; line-height: 16px; color: #1f1919; font-weight: 
             content: '✓';
             position: absolute;
             left: 0;
-            color: var(--primary);
+            color: #e88800;
             font-weight: bold;
         }
         .float-img {
@@ -201,26 +201,21 @@ ul.menu li a { font-size: 13px; line-height: 16px; color: #1f1919; font-weight: 
 
         /* CTA */
         .cta-block {
-            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-            color: var(--white);
+            background: linear-gradient(135deg, #e88800, var(--primary-dark));
+            color: #fff;
             padding: 24px 20px;
             border-radius: 10px;
             text-align: center;
             margin: 20px 0;
         }
-        .cta-block h2 { color: var(--white) !important; font-size: 24px !important; border: none !important; padding: 0 !important; margin-bottom: 10px !important; }
+        .cta-block h2 { color: #fff !important; font-size: 24px !important; border: none !important; padding: 0 !important; margin-bottom: 10px !important; }
         .cta-block .phone { font-size: 28px; font-weight: 700; margin: 10px 0; }
-        .cta-block .phone a { color: var(--white); }
+        .cta-block .phone a { color: #fff; }
         .cta-block .phone a:hover { text-decoration: none; }
         .cta-block .hours { font-size: 14px; opacity: 0.9; }
 
         /* Footer */
-        footer {
-            background: #1a1410;
-            color: #ddd;
-            padding: 40px 20px;
-            width: 100%;
-        }
+        footer { background: #1a1410; color: #ddd; padding: 40px 20px; width: 100%; }
         footer .container {
             max-width: 1100px;
             margin: 0 auto;
@@ -235,26 +230,20 @@ ul.menu li a { font-size: 13px; line-height: 16px; color: #1f1919; font-weight: 
             font-family: 'Inter', sans-serif;
             font-size: 16px;
             font-weight: 600;
-            color: var(--white);
+            color: #fff;
             margin-bottom: 12px;
         }
         .footer-col p { font-size: 13px; line-height: 1.5; color: #aaa; }
         .footer-links { list-style: none; }
         .footer-links li { margin-bottom: 6px; }
         .footer-links a { font-size: 13px; color: #aaa; transition: color 0.2s; }
-        .footer-links a:hover { color: var(--primary); }
+        .footer-links a:hover { color: #e88800; }
         .footer-social { display: flex; gap: 6px; margin-top: 10px; }
         .footer-social a { display: inline-block; transition: opacity 0.2s; }
         .footer-social a:hover { opacity: 0.7; }
         .footer-social svg { width: 22px; height: 22px; border-radius: 50%; }
-        .footer-bottom {
-            border-top: 1px solid #333;
-            padding-top: 15px;
-            text-align: center;
-            font-size: 13px;
-            color: #888;
-        }
-        .footer-bottom a { color: var(--primary); }
+        .footer-bottom { border-top: 1px solid #444; padding-top: 15px; text-align: center; font-size: 13px; color: #aaa; }
+        .footer-bottom a { color: #e88800; }
 
         @media (max-width: 768px) {
             .header-inner { flex-direction: column; gap: 5px; text-align: center; }
@@ -401,7 +390,7 @@ ul.menu li a { font-size: 13px; line-height: 16px; color: #1f1919; font-weight: 
             <div style="overflow-x:auto;">
                 <table style="width:100%;border-collapse:collapse;margin:15px 0;background:#fff;border-radius:8px;overflow:hidden;">
                     <thead>
-                        <tr style="background:var(--primary);color:#fff;">
+                        <tr style="background:#e88800;color:#fff;">
                             <th style="padding:10px 12px;text-align:left;">Service</th>
                             <th style="padding:10px 12px;text-align:left;">Price</th>
                             <th style="padding:10px 12px;text-align:left;">Details</th>
@@ -410,27 +399,27 @@ ul.menu li a { font-size: 13px; line-height: 16px; color: #1f1919; font-weight: 
                     <tbody>
                             <tr>
                                 <td style="padding:8px 12px;border-bottom:1px solid #ddd;">Faucet Repair</td>
-                                <td style="padding:8px 12px;border-bottom:1px solid #ddd;font-weight:600;color:var(--primary);">฿300-500</td>
+                                <td style="padding:8px 12px;border-bottom:1px solid #ddd;font-weight:600;color:#e88800;">฿300-500</td>
                                 <td style="padding:8px 12px;border-bottom:1px solid #ddd;">30 min</td>
                             </tr>
                             <tr>
                                 <td style="padding:8px 12px;border-bottom:1px solid #ddd;">Drain Unclog</td>
-                                <td style="padding:8px 12px;border-bottom:1px solid #ddd;font-weight:600;color:var(--primary);">฿500-800</td>
+                                <td style="padding:8px 12px;border-bottom:1px solid #ddd;font-weight:600;color:#e88800;">฿500-800</td>
                                 <td style="padding:8px 12px;border-bottom:1px solid #ddd;">1 hour</td>
                             </tr>
                             <tr>
                                 <td style="padding:8px 12px;border-bottom:1px solid #ddd;">Pipe Repair</td>
-                                <td style="padding:8px 12px;border-bottom:1px solid #ddd;font-weight:600;color:var(--primary);">฿800-1,500</td>
+                                <td style="padding:8px 12px;border-bottom:1px solid #ddd;font-weight:600;color:#e88800;">฿800-1,500</td>
                                 <td style="padding:8px 12px;border-bottom:1px solid #ddd;">1-2 hours</td>
                             </tr>
                             <tr>
                                 <td style="padding:8px 12px;border-bottom:1px solid #ddd;">Water Heater</td>
-                                <td style="padding:8px 12px;border-bottom:1px solid #ddd;font-weight:600;color:var(--primary);">฿1,500</td>
+                                <td style="padding:8px 12px;border-bottom:1px solid #ddd;font-weight:600;color:#e88800;">฿1,500</td>
                                 <td style="padding:8px 12px;border-bottom:1px solid #ddd;">2 hours</td>
                             </tr>
                             <tr>
                                 <td style="padding:8px 12px;border-bottom:1px solid #ddd;">Bathroom Reno</td>
-                                <td style="padding:8px 12px;border-bottom:1px solid #ddd;font-weight:600;color:var(--primary);">From ฿15,000</td>
+                                <td style="padding:8px 12px;border-bottom:1px solid #ddd;font-weight:600;color:#e88800;">From ฿15,000</td>
                                 <td style="padding:8px 12px;border-bottom:1px solid #ddd;">Full day+</td>
                             </tr>
                     </tbody>
