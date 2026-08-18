@@ -17,32 +17,6 @@
             --text-light: #8f8b8c;
             --white: #fff;
         }
-header {
-.header-inner {
-.logo {
-.logo span { color: #d3d3d3; font-weight: 300; }
-.header-right {
-.header-phone { font-size: 12px; color: #d3d3d3; }
-.header-phone a { color: var(--primary); }
-.social-icons { display: flex; gap: 3px; }
-.social-icons a { display: inline-block; }
-.social-icons a:hover { opacity: 0.8; }
-.social-icons svg { width: 22px; height: 22px; border-radius: 50%; display: block; }
-nav {
-ul.menu {
-ul.menu li { display: inline-block; line-height: 14px; margin: 1px; padding: 3px 5px; border-radius: 5px; transition: background 0.2s; }
-ul.menu li:hover { background: rgba(0,0,0,0.08); }
-ul.menu li a { font-size: 12px; line-height: 14px; color: #1f1919; font-weight: 600; white-space: nowrap; }
-ul.menu li a:hover { color: #fff; }
-ul.menu li.active { background: rgba(0,0,0,0.1); }
-ul.menu li.active a { color: #e88800; font-weight: 700; }
-.header-inner { flex-direction: column; gap: 5px; text-align: center; }
-.header-right { flex-direction: column; gap: 5px; }
-ul.menu {
-ul.menu li {
-ul.menu li:nth-child(9) {
-ul.menu li:nth-child(9) a {
-ul.menu li a {
         html, body { width: 100%; height: 100%; padding: 0; margin: 0; }
         body { font: 13px/22px Arial, Helvetica, sans-serif; color: #000; min-width: 100%; background: #1a1414; }
         .main { max-width: 960px; margin: auto; }
@@ -60,10 +34,17 @@ ul.menu li a {
         ul { margin: 0; padding: 0; }
         ul li { list-style-position: inside; margin-left: 25px; padding: 3px 0; }
         header { width: 100%; background: linear-gradient(180deg, #2b2424, #1f1919); margin: 0 auto; z-index: 100; }
-        .nav-shadow { padding-top: 4px; margin: 10px 0 0; position: relative; z-index: 100; }
-        .nav-shadow > div { background: linear-gradient(180deg, #e57c00, #c47000); border-radius: 5px; box-shadow: 0 2px 1px #201a1a; }
-        nav { border-radius: 5px; }
-        ul.menu { overflow: hidden; text-align: center; padding: 4px 2px; display: flex; flex-wrap: nowrap; justify-content: center; list-style: none; }
+        .linkblock { float: left; margin: 15px 0 10px; font-size: 220%; color: #e98400; font-weight: bold; text-shadow: 1px 1px 2px #555; }
+        .linkblock a { color: #d3d3d3; }
+        .slogan { font-size: 14px; line-height: 18px; color: #d3d3d3; float: left; border-left: #2f2b2b 1px solid; margin: 6px 0 0 15px; padding: 8px 0 8px 15px; }
+        .tooltips { float: right; margin: 18px 35px 0 0; display: flex; gap: 6px; align-items: center; }
+.tooltips a { display: inline-block; }
+        .tooltips a:hover { opacity: 0.8; }
+        .tooltips a svg { width: 28px; height: 28px; border-radius: 50%; }
+        .nav-shadow { padding-top: 3px; margin: 8px 0 0; position: relative; z-index: 100; }
+        .nav-shadow > div { background: linear-gradient(180deg, #e57c00, #c47000); border-radius: 7px; box-shadow: 0 3px 2px #201a1a; }
+        nav { border-radius: 7px; }
+        ul.menu { overflow: hidden; text-align: center; padding: 8px 2px; display: flex; flex-wrap: nowrap; justify-content: center; list-style: none; }
         ul.menu li { display: inline-block; line-height: 18px; margin: 2px 1px; padding: 5px 7px; border-radius: 6px; transition: background 0.2s; }
         ul.menu li:hover { background: rgba(0,0,0,0.1); }
         ul.menu li a { font-size: 14px; line-height: 18px; color: #1f1919; font-weight: bold; white-space: nowrap; }
@@ -73,7 +54,7 @@ ul.menu li a {
         .content-subpages { padding-top: 18px !important; }
         .header-content { width: 100%; background: #edeef0; margin: 0 auto; position: relative; z-index: 99; margin-top: -25px; padding-bottom: 25px; }
         .img-radius { border-radius: 7px; }
-        .block-1 { color: #8f8b8c; padding-top: 30px; width: 30%; float: left; text-align: center; margin: 1%; }
+        .block-1 { color: #8f8b8c; padding-top: 20px; width: 30%; float: left; text-align: center; margin: 1%; }
         .block-1 > div { padding: 0 30px; margin-top: 14px; }
         #content > div { width: 76%; margin: 0 auto; }
         img { max-width: 100%; height: auto; border-radius: 7px; aspect-ratio: auto; }
@@ -96,6 +77,9 @@ ul.menu li a {
             .block-1 { width: 100%; padding-top: 16px; }
             .block-1 > div { padding: 0 8px; }
             .block-1 > div { padding: 0 15px; }
+            .linkblock { float: none; font-size: 180%; text-align: center; margin: 15px 0 5px; }
+            .slogan { float: none; border-left: none; margin: 10px 0; padding: 10px 15px; font-size: 14px; text-align: center; }
+            .tooltips { float: none; margin: 10px 0; display: flex; justify-content: center; gap: 6px; }
             footer p { text-align: center; width: 100%; }
             .main { max-width: 100%; padding: 0 10px; }
             ul.menu { 
@@ -155,40 +139,54 @@ ul.menu li a {
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="header-inner">
-                <div class="logo"><span>Bro</span>Service.in.th</div>
-                <div class="header-right"><span style="display:inline-flex;gap:2px;margin-left:6px;font-size:10px;vertical-align:middle;"><a href="/handyman-koh-phangan/" style="color:#e88800;text-decoration:none;padding:1px 3px;border:1px solid #e88800;border-radius:2px;font-weight:600;">EN</a><a href="/ru/handyman-koh-phangan/" style="color:#888;text-decoration:none;padding:1px 3px;">RU</a><a href="/th/handyman-koh-phangan/" style="color:#888;text-decoration:none;padding:1px 3px;">TH</a><a href="/he/handyman-koh-phangan/" style="color:#888;text-decoration:none;padding:1px 3px;">HE</a></span>
-                    <div class="header-phone"><a href="tel:+66808705704">📞 +66 80-870-5704</a></div>
-                                                            <div class="social-icons">
-                        <a href="https://wa.me/+66808705704" target="_blank" title="WhatsApp"><svg viewBox="0 0 32 32" width="22" height="22"><circle cx="16" cy="16" r="15" fill="#25D366"/><path fill="#FFF" d="M22.5 11.5c-3.6-3.6-9.4-3.6-13 0s-3.6 9.4 0 13c1.5 1.5 3.5 2.5 5.7 2.8l1.9.4.4-1.9c.3-1.5 1-2.9 2.1-4 1.4-1.4 3.3-2.3 5.3-2.5 2.1-.2 4.2.3 5.9 1.5 1.1.8 2 1.9 2.6 3.2.6 1.3.8 2.7.6 4.1-.2 1.4-.9 2.7-2 3.7-1.1 1-2.5 1.6-4 1.8-2.2.3-4.5-.1-6.4-1.1-.9-.5-1.7-1.1-2.4-1.8l-4.3 2.2c.9 1.3 2.1 2.4 3.4 3.2 2.6 1.7 5.7 2.4 8.8 1.8 3.1-.6 5.9-2.4 7.9-5 .6-.8 1.1-1.7 1.4-2.7.3-1 .4-2 .2-3-.2-1-.7-1.9-1.4-2.7-1.6-1.8-3.8-3-6.3-3.3-2.7-.3-5.4.4-7.6 2.1-1.1.8-2 1.8-2.7 3-.7 1.2-1.1 2.5-1.2 3.8-.1 1.4.2 2.8.8 4 .5 1.1 1.3 2 2.3 2.8l.1.1-1.9 1c-.9-.9-1.6-1.9-2.1-3.1-1.1-2.5-1.1-5.4 0-7.9s3.1-4.6 5.6-5.7c2.5-1.1 5.4-1.1 7.9 0s4.6 3.1 5.7 5.6c1.1 2.5 1.1 5.4 0 7.9-1.1 2.5-3.1 4.6-5.6 5.7-2.2 1-4.7 1.2-7 .6l-.1-.1c-.4-.1-.8-.3-1.2-.5l-4.3 2.2c.6.4 1.3.7 1.9.9 1.5.5 3 .7 4.6.6 1.9-.1 3.7-.7 5.3-1.7 1.5-1 2.8-2.3 3.7-3.9.9-1.6 1.4-3.3 1.5-5.1.1-1.8-.3-3.6-1.1-5.2-.8-1.6-2-2.9-3.5-3.9-1.5-1-3.3-1.6-5.1-1.7-1.8-.1-3.6.3-5.2 1.1-1.6.8-2.9 2-3.9 3.5-1 1.5-1.6 3.3-1.7 5.1 0 1.2.2 2.5.7 3.6.4.9 1 1.8 1.7 2.5l-2.3 1.2c-1-1.2-1.7-2.6-2.2-4.1-.9-2.7-.9-5.6 0-8.3.9-2.7 2.7-5 5.1-6.6 2.4-1.6 5.2-2.4 8.1-2.3s5.7 1 8 2.8z"/></svg></a>
-                        <a href="https://t.me/broservice_kohphangan" target="_blank" title="Telegram"><svg viewBox="0 0 32 32" width="22" height="22"><circle cx="16" cy="16" r="15" fill="#26A5E4"/><path fill="#FFF" d="M22.6 10.2l-2.8 13.3c-.2.9-.7 1.1-1.4.7l-3.9-2.9-1.9 1.8c-.2.2-.4.4-.7.4l.3-4 7.2-6.5c.3-.3-.1-.5-.5-.2L12 18.4l-4-1.3c-.9-.3-.9-.9.2-1.3l15.6-6c.8-.3 1.5.2 1.2 1.3z"/></svg></a>
-                        <a href="https://line.me/ti/p/@broservice" target="_blank" title="LINE"><svg viewBox="0 0 32 32" width="22" height="22"><circle cx="16" cy="16" r="15" fill="#00C300"/><path fill="#FFF" d="M23.4 12.5c-.3-1.7-1.7-3-3.4-3.3-2.6-.5-5.3-.5-7.9 0-1.7.3-3.1 1.6-3.4 3.3-.5 2.6-.5 5.3 0 7.9.3 1.7 1.7 3 3.4 3.3 2.6.5 5.3.5 7.9 0 1.7-.3 3.1-1.6 3.4-3.3.5-2.6.5-5.3 0-7.9zm-4.8 5.9l-2.6 2.6c-.2.2-.5.2-.7 0l-2.6-2.6c-.6-.6-1-1.3-1-2.2 0-1.6 1.3-2.9 2.9-2.9 1.6 0 2.9 1.3 2.9 2.9 0 .9-.4 1.7-1 2.2z"/></svg></a>
-                        <a href="https://facebook.com/broservice.kohphangan" target="_blank" title="Facebook"><svg viewBox="0 0 32 32" width="22" height="22"><circle cx="16" cy="16" r="15" fill="#1877F2"/><path fill="#FFF" d="M21.8 11.2h-2.5c-1.4 0-1.7.7-1.7 1.6v2.1h3.3l-.4 3.3h-2.9v8.5h-3.4v-8.5h-2.8v-3.3h2.8v-2.5c0-2.8 1.7-4.3 4.2-4.3 1.2 0 2.2.1 2.5.2v2.9z"/></svg></a>
-                        <a href="https://instagram.com/broservice_kohphangan" target="_blank" title="Instagram"><svg viewBox="0 0 32 32" width="22" height="22"><circle cx="16" cy="16" r="15" fill="#E4405F"/><path fill="#FFF" d="M20.5 11.5h-9c-2.5 0-4.5 2-4.5 4.5v9c0 2.5 2 4.5 4.5 4.5h9c2.5 0 4.5-2 4.5-4.5v-9c0-2.5-2-4.5-4.5-4.5zm-4.5 12c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6zm6-10.5c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5z"/></svg></a>
-                    </div>
+        <div class="main">
+            <div class="wrap">
+                <div class="linkblock" onclick="location.href='index.html';">
+                    <a><b style="color:#e0e0e0;">Bro</b><span style="color:#e88800;">Service.in.th</span></a>
+                </div>
+                <div class="slogan">Your Local Service Team on Koh Phangan!<br>
+                    <a id="tel" href="tel:+66808705704" style="color:#e88800;">📞 +66 80-870-5704</a>
+                </div>
+                                                <div class="tooltips">
+<span style="display:inline-flex;gap:2px;margin-left:6px;font-size:10px;vertical-align:middle;"><a href="/" style="color:#e88800;text-decoration:none;padding:1px 3px;border:1px solid #e88800;border-radius:2px;font-weight:600;">EN</a><a href="/ru/" style="color:#888;text-decoration:none;padding:1px 3px;">RU</a><a href="/th/" style="color:#888;text-decoration:none;padding:1px 3px;">TH</a><a href="/he/" style="color:#888;text-decoration:none;padding:1px 3px;">HE</a></span>
+                    <a href="https://wa.me/+66808705704" target="_blank" title="WhatsApp">
+                        <svg viewBox="0 0 32 32" width="32" height="32"><circle cx="16" cy="16" r="15" fill="#25D366"/><path fill="#FFF" d="M22.5 11.5c-3.6-3.6-9.4-3.6-13 0s-3.6 9.4 0 13c1.5 1.5 3.5 2.5 5.7 2.8l1.9.4.4-1.9c.3-1.5 1-2.9 2.1-4 1.4-1.4 3.3-2.3 5.3-2.5 2.1-.2 4.2.3 5.9 1.5 1.1.8 2 1.9 2.6 3.2.6 1.3.8 2.7.6 4.1-.2 1.4-.9 2.7-2 3.7-1.1 1-2.5 1.6-4 1.8-2.2.3-4.5-.1-6.4-1.1-.9-.5-1.7-1.1-2.4-1.8l-4.3 2.2c.9 1.3 2.1 2.4 3.4 3.2 2.6 1.7 5.7 2.4 8.8 1.8 3.1-.6 5.9-2.4 7.9-5 .6-.8 1.1-1.7 1.4-2.7.3-1 .4-2 .2-3-.2-1-.7-1.9-1.4-2.7-1.6-1.8-3.8-3-6.3-3.3-2.7-.3-5.4.4-7.6 2.1-1.1.8-2 1.8-2.7 3-.7 1.2-1.1 2.5-1.2 3.8-.1 1.4.2 2.8.8 4 .5 1.1 1.3 2 2.3 2.8l.1.1-1.9 1c-.9-.9-1.6-1.9-2.1-3.1-1.1-2.5-1.1-5.4 0-7.9s3.1-4.6 5.6-5.7c2.5-1.1 5.4-1.1 7.9 0s4.6 3.1 5.7 5.6c1.1 2.5 1.1 5.4 0 7.9-1.1 2.5-3.1 4.6-5.6 5.7-2.2 1-4.7 1.2-7 .6l-.1-.1c-.4-.1-.8-.3-1.2-.5l-4.3 2.2c.6.4 1.3.7 1.9.9 1.5.5 3 .7 4.6.6 1.9-.1 3.7-.7 5.3-1.7 1.5-1 2.8-2.3 3.7-3.9.9-1.6 1.4-3.3 1.5-5.1.1-1.8-.3-3.6-1.1-5.2-.8-1.6-2-2.9-3.5-3.9-1.5-1-3.3-1.6-5.1-1.7-1.8-.1-3.6.3-5.2 1.1-1.6.8-2.9 2-3.9 3.5-1 1.5-1.6 3.3-1.7 5.1 0 1.2.2 2.5.7 3.6.4.9 1 1.8 1.7 2.5l-2.3 1.2c-1-1.2-1.7-2.6-2.2-4.1-.9-2.7-.9-5.6 0-8.3.9-2.7 2.7-5 5.1-6.6 2.4-1.6 5.2-2.4 8.1-2.3s5.7 1 8 2.8z"/></svg>
+                    </a>
+                    <a href="https://t.me/broservice_kohphangan" target="_blank" title="Telegram">
+                        <svg viewBox="0 0 32 32" width="32" height="32"><circle cx="16" cy="16" r="15" fill="#26A5E4"/><path fill="#FFF" d="M22.6 10.2l-2.8 13.3c-.2.9-.7 1.1-1.4.7l-3.9-2.9-1.9 1.8c-.2.2-.4.4-.7.4l.3-4 7.2-6.5c.3-.3-.1-.5-.5-.2L12 18.4l-4-1.3c-.9-.3-.9-.9.2-1.3l15.6-6c.8-.3 1.5.2 1.2 1.3z"/></svg>
+                    </a>
+                    <a href="https://line.me/ti/p/@broservice" target="_blank" title="LINE">
+                        <svg viewBox="0 0 32 32" width="32" height="32"><circle cx="16" cy="16" r="15" fill="#00C300"/><path fill="#FFF" d="M23.4 12.5c-.3-1.7-1.7-3-3.4-3.3-2.6-.5-5.3-.5-7.9 0-1.7.3-3.1 1.6-3.4 3.3-.5 2.6-.5 5.3 0 7.9.3 1.7 1.7 3 3.4 3.3 2.6.5 5.3.5 7.9 0 1.7-.3 3.1-1.6 3.4-3.3.5-2.6.5-5.3 0-7.9zm-4.8 5.9l-2.6 2.6c-.2.2-.5.2-.7 0l-2.6-2.6c-.6-.6-1-1.3-1-2.2 0-1.6 1.3-2.9 2.9-2.9 1.6 0 2.9 1.3 2.9 2.9 0 .9-.4 1.7-1 2.2z"/></svg>
+                    </a>
+                    <a href="https://facebook.com/broservice.kohphangan" target="_blank" title="Facebook">
+                        <svg viewBox="0 0 32 32" width="32" height="32"><circle cx="16" cy="16" r="15" fill="#1877F2"/><path fill="#FFF" d="M21.8 11.2h-2.5c-1.4 0-1.7.7-1.7 1.6v2.1h3.3l-.4 3.3h-2.9v8.5h-3.4v-8.5h-2.8v-3.3h2.8v-2.5c0-2.8 1.7-4.3 4.2-4.3 1.2 0 2.2.1 2.5.2v2.9z"/></svg>
+                    </a>
+                    <a href="https://instagram.com/broservice_kohphangan" target="_blank" title="Instagram">
+                        <svg viewBox="0 0 32 32" width="32" height="32"><circle cx="16" cy="16" r="15" fill="#E4405F"/><path fill="#FFF" d="M20.5 11.5h-9c-2.5 0-4.5 2-4.5 4.5v9c0 2.5 2 4.5 4.5 4.5h9c2.5 0 4.5-2 4.5-4.5v-9c0-2.5-2-4.5-4.5-4.5zm-4.5 12c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6zm6-10.5c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5z"/></svg>
+                    </a>
                 </div>
             </div>
-            <nav>
-                                                        <ul class="menu">
-                            <li><a href="/" title="🏠 Services">🏠 Services</a></li>
+            <div class="nav-shadow">
+                <div>
+                    <nav>
+                                                <ul class="menu">
+                            <li class="active"><a href="/" title="🏠 Services">🏠 Services</a></li>
                             <li><a href="/water-delivery-koh-phangan/" title="🚰 Water">🚰 Water</a></li>
                             <li><a href="/bike-service-koh-phangan/" title="🛵 Bike">🛵 Bike</a></li>
                             <li><a href="/cleaning-koh-phangan/" title="🧹 Cleaning">🧹 Cleaning</a></li>
                             <li><a href="/ac-service-koh-phangan/" title="❄️ AC">❄️ AC</a></li>
                             <li><a href="/plumber-koh-phangan/" title="🔧 Plumber">🔧 Plumber</a></li>
                             <li><a href="/electrician-koh-phangan/" title="⚡ Electric">⚡ Electric</a></li>
-                            <li class="active"><a href="/handyman-koh-phangan/" title="🔨 Handyman">🔨 Handyman</a></li>
+                            <li><a href="/handyman-koh-phangan/" title="🔨 Handyman">🔨 Handyman</a></li>
                             <li><a href="/contacts/" title="✉️ Contacts">✉️ Contacts</a></li>
                         </ul>
-            </nav>
+                    </nav>
+                </div>
+            </div>
         </div>
     </header>
     <div class="header-content" id="justi" >
-            <div class="hero">
-            <div style="background:#f8f6f0;border-left:4px solid #e88800;padding:14px 18px;border-radius:0 8px 8px 0;font-size:15px;line-height:1.7;color:#333;margin:0 0 20px;">BroService provides home, property and everyday services across Koh Phangan.</div>
         <div class="wrap main">
-            </div>
             <div class="block-1">
                 <img title="Fast!" src="assets/images/water-delivery.jpg" alt="Fast!" class="img-radius"/>
                 <div class="border-1">
