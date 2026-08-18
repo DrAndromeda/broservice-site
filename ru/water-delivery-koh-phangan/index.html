@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Water Delivery Koh Phangan — 19L Bottled Water | BroService.in.th</title>
+    <meta name="description" content="Water delivery on Koh Phangan. 19L bottled water delivered to your villa or condo. ฿60/bottle. Same-day delivery, pumps and coolers. Order via WhatsApp.">
+    <link rel="icon" href="../assets/images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <style>
+        :root {
+            --primary: #e88800;
+            --primary-dark: #c47000;
+            --dark: #1a1414;
+            --dark2: #2b2424;
+            --darker: #1f1919;
+            --bg: #edeef0;
+            --text-light: #8f8b8c;
+            --white: #fff;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Open Sans', Arial, sans-serif;
+            color: #000;
+            background: #1a1410;
+            line-height: 1.65;
+            font-size: 15px;
+        }
+        .container { max-width: 960px; margin: 0 auto; padding: 0 15px; }
+        a { text-decoration: none; color: #e88800; }
+        a:hover { text-decoration: underline; }
+
+        /* Header – compact */
+        header {
+            background: linear-gradient(180deg, var(--dark2), #1a1410);
+            padding: 4px 0 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 0 2px;
+        }
+        .logo {
+            font-family: 'Inter', sans-serif;
+            font-size: 22px;
+            font-weight: 700;
+            color: #e88800;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+        .logo span { color: #d3d3d3; font-weight: 300; }
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .header-phone { font-size: 13px; color: #d3d3d3; }
+        .header-phone a { color: #e88800; }
+        .social-icons { display: flex; gap: 3px; }
+        .social-icons a { display: inline-block; }
+        .social-icons a:hover { opacity: 0.8; }
+        .social-icons svg { width: 22px; height: 22px; border-radius: 50%; display: block; }
+
+        /* Nav – compact */
+        nav {
+            background: linear-gradient(180deg, #e57c00, #c47000);
+            border-radius: 6px 6px 0 0;
+            margin-top: 4px;
+        }
+        ul.menu {
+            display: flex;
+            justify-content: center;
+            flex-wrap: nowrap;
+            list-style: none;
+            padding: 4px 4px;
+        }
+ul.menu li { display: inline-block; line-height: 16px; margin: 2px 1px; padding: 4px 6px; border-radius: 5px; transition: background 0.2s; }
+        ul.menu li:hover { background: rgba(0,0,0,0.08); }
+ul.menu li a { font-size: 13px; line-height: 16px; color: #1f1919; font-weight: 600; white-space: nowrap; }
+        ul.menu li a:hover { color: #fff; }
+        ul.menu li.active { background: rgba(0,0,0,0.1); }
+        ul.menu li.active a { color: #e88800; font-weight: 700; }
+
+        /* Breadcrumbs */
+        .breadcrumbs {
+            background: var(--bg);
+            padding: 6px 0;
+            font-size: 13px;
+            color: #888;
+        }
+        .breadcrumbs a { color: #e88800; }
+
+        /* Hero */
+        .hero {
+            background: var(--bg);
+            padding: 20px 0 15px;
+        }
+        .hero h1 {
+            font-family: 'Inter', sans-serif;
+            font-size: 30px;
+            font-weight: 700;
+            color: #1f1919;
+            text-align: center;
+            margin-bottom: 8px;
+        }
+        .hero-subtitle {
+            text-align: center;
+            color: var(--text-light);
+            font-size: 14px;
+            max-width: 650px;
+            margin: 0 auto 20px;
+        }
+        .blocks {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: nowrap;
+        }
+        .block {
+            flex: 1 1 270px;
+            max-width: 290px;
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            transition: transform 0.2s;
+        }
+        .block:hover { transform: translateY(-2px); }
+        .block img { width: 100%; display: block; }
+        .block-content { padding: 14px; }
+        .block h3 { font-size: 18px; color: #e88800; margin-bottom: 6px; }
+        .block p { color: var(--text-light); font-size: 13px; line-height: 1.5; margin-bottom: 12px; }
+        .block .btn {
+            display: inline-block;
+            background: #e88800;
+            color: #fff;
+            padding: 8px 20px;
+            border-radius: 5px;
+            font-weight: 600;
+            font-size: 13px;
+        }
+        .block .btn:hover { background: var(--primary-dark); text-decoration: none; }
+
+        /* Content */
+        #content {
+            background: var(--bg);
+            padding: 20px 0 25px;
+        }
+        #content h1 {
+            font-family: 'Inter', sans-serif;
+            font-size: 28px;
+            font-weight: 700;
+            color: #1f1919;
+            margin-bottom: 14px;
+        }
+        #content h2 {
+            font-family: 'Inter', sans-serif;
+            font-size: 22px;
+            font-weight: 600;
+            color: #1f1919;
+            margin: 18px 0 8px;
+            border-left: 4px solid #e88800;
+            padding-left: 12px;
+        }
+        #content h3 {
+            font-family: 'Inter', sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            color: #e88800;
+            margin: 16px 0 6px;
+        }
+        #content p { margin: 10px 0; color: #444; line-height: 1.65; }
+        #content .justifyfull { text-align: justify; }
+        #content ul { margin: 10px 0 16px; padding-left: 20px; list-style: none; }
+        #content ul li { margin: 5px 0; padding-left: 20px; position: relative; }
+        #content ul li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #e88800;
+            font-weight: bold;
+        }
+        .float-img {
+            float: right;
+            margin: 0 0 15px 20px;
+            border-radius: 8px;
+            max-width: 40%;
+            width: auto;
+            height: auto;
+        }
+        .big-banner { margin: 20px 0; text-align: center; }
+        .big-banner img { max-width: 100%; border-radius: 8px; }
+        .service-hero img { max-width: 100%; height: auto; display: block; margin: 0 auto; border-radius: 8px; }
+        img { max-width: 100%; height: auto; aspect-ratio: auto; }
+
+        /* CTA */
+        .cta-block {
+            background: linear-gradient(135deg, #e88800, var(--primary-dark));
+            color: #fff;
+            padding: 24px 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .cta-block h2 { color: #fff !important; font-size: 24px !important; border: none !important; padding: 0 !important; margin-bottom: 10px !important; }
+        .cta-block .phone { font-size: 28px; font-weight: 700; margin: 10px 0; }
+        .cta-block .phone a { color: #fff; }
+        .cta-block .phone a:hover { text-decoration: none; }
+        .cta-block .hours { font-size: 14px; opacity: 0.9; }
+
+        /* Footer */
+        footer { background: #1a1410; color: #ddd; padding: 40px 20px; width: 100%; }
+        footer .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 25px;
+            margin-bottom: 20px;
+        }
+        .footer-col h4 {
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 12px;
+        }
+        .footer-col p { font-size: 13px; line-height: 1.5; color: #aaa; }
+        .footer-links { list-style: none; }
+        .footer-links li { margin-bottom: 6px; }
+        .footer-links a { font-size: 13px; color: #aaa; transition: color 0.2s; }
+        .footer-links a:hover { color: #e88800; }
+        .footer-social { display: flex; gap: 6px; margin-top: 10px; }
+        .footer-social a { display: inline-block; transition: opacity 0.2s; }
+        .footer-social a:hover { opacity: 0.7; }
+        .footer-social svg { width: 22px; height: 22px; border-radius: 50%; }
+        .footer-bottom { border-top: 1px solid #444; padding-top: 15px; text-align: center; font-size: 13px; color: #aaa; }
+        .footer-bottom a { color: #e88800; }
+
+        @media (max-width: 768px) {
+            .header-inner { flex-direction: column; gap: 5px; text-align: center; }
+            .header-right { flex-direction: column; gap: 5px; }
+            ul.menu { 
+                display: grid; 
+                grid-template-columns: 1fr 1fr; 
+                gap: 1px; 
+                padding: 3px; 
+            }
+            ul.menu li { 
+                padding: 3px 1px; 
+                text-align: center; 
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            ul.menu li:nth-child(9) {
+                grid-column: 1 / 3;
+                justify-content: center;
+                width: 100%;
+            }
+            ul.menu li:nth-child(9) a {
+                width: 100%;
+                text-align: center;
+            }
+            ul.menu li a { 
+                font-size: 11px; 
+                display: inline-block;
+                white-space: nowrap;
+                text-align: center;
+            }
+            .hero h1 { font-size: 24px; }
+            #content h1 { font-size: 22px; }
+            #content h2 { font-size: 18px; }
+            .float-img { float: none; margin: 0 auto 15px; max-width: 100%; height: auto; }
+            .footer-grid { grid-template-columns: 1fr; }
+            #content .section { padding: 12px 10px; }
+            #content h2 { margin-top: 10px; margin-bottom: 6px; }
+            #content p { margin-bottom: 6px; }
+            .pricing-table { margin: 8px 0; }
+            .pricing-table td { padding: 5px; font-size: 12px; }
+            .hero { padding: 12px 0 8px; }
+            .hero-subtitle { margin-bottom: 10px; font-size: 13px; }
+            .blocks { gap: 8px; flex-wrap: wrap; }
+            .block { flex: 1 1 100%; max-width: 100%; margin-bottom: 6px; }
+        }
+    
+        .content-section {
+            background: #edeef0;
+            padding: 15px 20px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+        }
+        .content-section h2 {
+            font-size: 22px;
+            color: #1f1919;
+            margin-bottom: 10px;
+        }
+        .content-section ul {
+            padding-left: 20px;
+        }
+        .content-section li {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #333;
+        }
+        .content-section p {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #333;
+        }
+        .faq-section {
+            background: #edeef0;
+            padding: 15px 20px;
+            border-radius: 6px;
+            margin-bottom: 10px;
+        }
+        .faq-section h2 {
+            font-size: 22px;
+            color: #1f1919;
+            margin-bottom: 10px;
+        }
+        .faq-accordion {
+            cursor: pointer;
+            padding: 14px 18px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+            margin-bottom: 10px;
+            position: relative;
+        }
+        .faq-accordion h3 {
+            margin: 0;
+            font-size: 15px;
+            color: #1f1919;
+            font-weight: 600;
+            padding-right: 40px;
+            word-break: break-word;
+        }
+        .faq-accordion .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .faq-accordion.active .faq-answer {
+            max-height: 300px;
+        }
+        .faq-accordion .faq-toggle {
+            position: absolute;
+            right: 18px;
+            top: 14px;
+            color: #e88800;
+            font-size: 18px;
+            font-weight: bold;
+            transition: transform 0.3s;
+        }
+        .faq-accordion.active .faq-toggle {
+            transform: rotate(45deg);
+        }
+        .faq-accordion .faq-answer p {
+            font-size: 13px;
+            color: #555;
+            line-height: 1.6;
+            margin: 8px 0 0;
+        }
+        .cta-block {
+            background: #e88800;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 15px 0;
+            text-align: center;
+        }
+        .cta-block h2 {
+            color: #fff;
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+        .cta-block p, .cta-block div {
+            color: #fff;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .cta-block .phone a, .cta-block a {
+            color: #fff;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .cta-block h2 {
+            color: #fff;
+            margin-bottom: 8px;
+            font-size: 18px;
+        }
+        .cta-block p {
+            color: #ccc;
+            margin-bottom: 12px;
+        }
+        .cta-block a {
+            display: inline-block;
+            background: #e88800;
+            color: #fff;
+            padding: 10px 24px;
+            border-radius: 6px;
+            font-weight: 600;
+            margin: 4px;
+            text-decoration: none;
+        }
+        .cta-block a:hover {
+            background: #d07a00;
+        }
+
+    .lang-switch a:hover { background: #333; color: #fff !important; }
+    </style>
+    <meta name="theme-color" content="#1a1414">
+    <link rel="preload" as="image" href="../assets/images/water-delivery.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+        {"@type":"Question","name":"How much does water delivery cost in Koh Phangan?","acceptedAnswer":{"@type":"Answer","text":"19L bottled water starts at ฿25 per bottle. Delivery is free for orders of 4+ bottles."}},        {"@type":"Question","name":"Do you deliver to all areas of Koh Phangan?","acceptedAnswer":{"@type":"Answer","text":"Yes, we deliver to Thong Sala, Baan Tai, Haad Rin, Sri Thanu, Haad Yao, Chaloklum and all other areas."}},        {"@type":"Question","name":"How fast can you deliver?","acceptedAnswer":{"@type":"Answer","text":"Same-day delivery is available. Regular customers can set a weekly schedule."}}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "BroService",
+  "url": "https://broservice.in.th",
+  "telephone": "+66808705704",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Koh Phangan",
+    "addressRegion": "Surat Thani",
+    "addressCountry": "TH"
+  }
+}
+</script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo"><span>Bro</span>Service.in.th<div class="lang-switch" style="display:inline-flex;gap:2px;margin-left:8px;font-size:11px;"><a href="/water-delivery-koh-phangan/" style="color:#e88800;text-decoration:none;padding:1px 4px;border-radius:3px;border:1px solid #e88800;font-weight:600;">EN</a><a href="/ru/water-delivery-koh-phangan/" style="color:#888;text-decoration:none;padding:1px 4px;">RU</a><a href="/th/water-delivery-koh-phangan/" style="color:#888;text-decoration:none;padding:1px 4px;">TH</a><a href="/he/water-delivery-koh-phangan/" style="color:#888;text-decoration:none;padding:1px 4px;">HE</a></div></div>
+                <div class="header-right">
+                    <div class="header-phone"><a href="tel:+66808705704">📞 +66 80-870-5704</a></div>
+                                                            <div class="social-icons">
+                        <a href="https://wa.me/+66808705704" target="_blank" title="WhatsApp"><svg viewBox="0 0 32 32" width="22" height="22"><circle cx="16" cy="16" r="15" fill="#25D366"/><path fill="#FFF" d="M22.5 11.5c-3.6-3.6-9.4-3.6-13 0s-3.6 9.4 0 13c1.5 1.5 3.5 2.5 5.7 2.8l1.9.4.4-1.9c.3-1.5 1-2.9 2.1-4 1.4-1.4 3.3-2.3 5.3-2.5 2.1-.2 4.2.3 5.9 1.5 1.1.8 2 1.9 2.6 3.2.6 1.3.8 2.7.6 4.1-.2 1.4-.9 2.7-2 3.7-1.1 1-2.5 1.6-4 1.8-2.2.3-4.5-.1-6.4-1.1-.9-.5-1.7-1.1-2.4-1.8l-4.3 2.2c.9 1.3 2.1 2.4 3.4 3.2 2.6 1.7 5.7 2.4 8.8 1.8 3.1-.6 5.9-2.4 7.9-5 .6-.8 1.1-1.7 1.4-2.7.3-1 .4-2 .2-3-.2-1-.7-1.9-1.4-2.7-1.6-1.8-3.8-3-6.3-3.3-2.7-.3-5.4.4-7.6 2.1-1.1.8-2 1.8-2.7 3-.7 1.2-1.1 2.5-1.2 3.8-.1 1.4.2 2.8.8 4 .5 1.1 1.3 2 2.3 2.8l.1.1-1.9 1c-.9-.9-1.6-1.9-2.1-3.1-1.1-2.5-1.1-5.4 0-7.9s3.1-4.6 5.6-5.7c2.5-1.1 5.4-1.1 7.9 0s4.6 3.1 5.7 5.6c1.1 2.5 1.1 5.4 0 7.9-1.1 2.5-3.1 4.6-5.6 5.7-2.2 1-4.7 1.2-7 .6l-.1-.1c-.4-.1-.8-.3-1.2-.5l-4.3 2.2c.6.4 1.3.7 1.9.9 1.5.5 3 .7 4.6.6 1.9-.1 3.7-.7 5.3-1.7 1.5-1 2.8-2.3 3.7-3.9.9-1.6 1.4-3.3 1.5-5.1.1-1.8-.3-3.6-1.1-5.2-.8-1.6-2-2.9-3.5-3.9-1.5-1-3.3-1.6-5.1-1.7-1.8-.1-3.6.3-5.2 1.1-1.6.8-2.9 2-3.9 3.5-1 1.5-1.6 3.3-1.7 5.1 0 1.2.2 2.5.7 3.6.4.9 1 1.8 1.7 2.5l-2.3 1.2c-1-1.2-1.7-2.6-2.2-4.1-.9-2.7-.9-5.6 0-8.3.9-2.7 2.7-5 5.1-6.6 2.4-1.6 5.2-2.4 8.1-2.3s5.7 1 8 2.8z"/></svg></a>
+                        <a href="https://t.me/broservice_kohphangan" target="_blank" title="Telegram"><svg viewBox="0 0 32 32" width="22" height="22"><circle cx="16" cy="16" r="15" fill="#26A5E4"/><path fill="#FFF" d="M22.6 10.2l-2.8 13.3c-.2.9-.7 1.1-1.4.7l-3.9-2.9-1.9 1.8c-.2.2-.4.4-.7.4l.3-4 7.2-6.5c.3-.3-.1-.5-.5-.2L12 18.4l-4-1.3c-.9-.3-.9-.9.2-1.3l15.6-6c.8-.3 1.5.2 1.2 1.3z"/></svg></a>
+                        <a href="https://line.me/ti/p/@broservice" target="_blank" title="LINE"><svg viewBox="0 0 32 32" width="22" height="22"><circle cx="16" cy="16" r="15" fill="#00C300"/><path fill="#FFF" d="M23.4 12.5c-.3-1.7-1.7-3-3.4-3.3-2.6-.5-5.3-.5-7.9 0-1.7.3-3.1 1.6-3.4 3.3-.5 2.6-.5 5.3 0 7.9.3 1.7 1.7 3 3.4 3.3 2.6.5 5.3.5 7.9 0 1.7-.3 3.1-1.6 3.4-3.3.5-2.6.5-5.3 0-7.9zm-4.8 5.9l-2.6 2.6c-.2.2-.5.2-.7 0l-2.6-2.6c-.6-.6-1-1.3-1-2.2 0-1.6 1.3-2.9 2.9-2.9 1.6 0 2.9 1.3 2.9 2.9 0 .9-.4 1.7-1 2.2z"/></svg></a>
+                        <a href="https://facebook.com/broservice.kohphangan" target="_blank" title="Facebook"><svg viewBox="0 0 32 32" width="22" height="22"><circle cx="16" cy="16" r="15" fill="#1877F2"/><path fill="#FFF" d="M21.8 11.2h-2.5c-1.4 0-1.7.7-1.7 1.6v2.1h3.3l-.4 3.3h-2.9v8.5h-3.4v-8.5h-2.8v-3.3h2.8v-2.5c0-2.8 1.7-4.3 4.2-4.3 1.2 0 2.2.1 2.5.2v2.9z"/></svg></a>
+                        <a href="https://instagram.com/broservice_kohphangan" target="_blank" title="Instagram"><svg viewBox="0 0 32 32" width="22" height="22"><circle cx="16" cy="16" r="15" fill="#E4405F"/><path fill="#FFF" d="M20.5 11.5h-9c-2.5 0-4.5 2-4.5 4.5v9c0 2.5 2 4.5 4.5 4.5h9c2.5 0 4.5-2 4.5-4.5v-9c0-2.5-2-4.5-4.5-4.5zm-4.5 12c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6zm6-10.5c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5z"/></svg></a>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                                                        <ul class="menu">
+                            <li><a href="/" title="🏠 Services">🏠 Services</a></li>
+                            <li class="active"><a href="/water-delivery-koh-phangan/" title="🚰 Water">🚰 Water</a></li>
+                            <li><a href="/bike-service-koh-phangan/" title="🛵 Bike">🛵 Bike</a></li>
+                            <li><a href="/cleaning-koh-phangan/" title="🧹 Cleaning">🧹 Cleaning</a></li>
+                            <li><a href="/ac-service-koh-phangan/" title="❄️ AC">❄️ AC</a></li>
+                            <li><a href="/plumber-koh-phangan/" title="🔧 Plumber">🔧 Plumber</a></li>
+                            <li><a href="/electrician-koh-phangan/" title="⚡ Electric">⚡ Electric</a></li>
+                            <li><a href="/handyman-koh-phangan/" title="🔨 Handyman">🔨 Handyman</a></li>
+                            <li><a href="/contacts/" title="✉️ Contacts">✉️ Contacts</a></li>
+                        </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="breadcrumbs">
+        <div class="container"><a href="/">Services</a> <span>›</span> <span>Water Delivery Koh Phangan</span></div>
+    </div>
+    
+        </div>
+    </div>
+        <section id="content">
+        <div class="container">
+            <h1>Water Delivery on Koh Phangan</h1>
+            <div class="answer-snippet" style="background:#f8f6f0;border-left:4px solid #e88800;padding:14px 18px;border-radius:0 8px 8px 0;font-size:15px;line-height:1.7;color:#333;margin:0 0 20px;">Water delivery in Koh Phangan provides 19L bottled drinking water to homes, villas, apartments, hotels, restaurants and businesses. BroService delivers fresh water across the island with pump and cooler rental options. Order by phone or WhatsApp for same-day delivery.</div>
+            <p class="justifyfull">Water delivery on Koh Phangan is essential for every villa, condo, and business. At <strong>BroService.in.th</strong>, we deliver clean 19L bottled water directly to your door — fast, reliable, and affordable.</p>
+            <p class="justifyfull">Living on a tropical island means staying hydrated is essential. With temperatures averaging 30°C year-round, having clean drinking water delivered to your door is not just a convenience — it's a necessity. Whether you're in a beachfront villa or a mountain view condo, we ensure you never run out of fresh water.</p>
+            <p class="justifyfull">Why choose our water delivery on Koh Phangan? We offer the best prices on the island — just ฿60 per 19L bottle with discounts on bulk orders. Same-day delivery means you never run out. Mechanical pumps and coolers available for rent. Regular weekly and bi-weekly subscription plans save you even more.</p>
+            
+            
+            <img loading="lazy" width="800" height="533" src="../assets/images/water-delivery.jpg" alt="Water Delivery" class="float-img" style="max-width:35%;width:auto;height:auto;">
+            <h2>🚰 Water Delivery Services</h2>
+            <ul>
+                <li><strong>19L Bottled Water</strong> — ฿60 per bottle, delivered to your door</li>
+                <li><strong>Pump & Cooler Rental</strong> — mechanical pumps and coolers available</li>
+                <li><strong>Scheduled Delivery</strong> — regular weekly or bi-weekly plans with discounts</li>
+                <li><strong>Same-Day Service</strong> — order in the morning, delivered by afternoon</li>
+                <li><strong>Free Bottle Exchange</strong> — swap empty for full on every delivery</li>
+                <li><strong>Bulk Orders</strong> — 5+ bottles with discounted pricing</li>
+            </ul>
+            
+            <h2>📋 Ordering Water is Easy</h2>
+            <ol>
+                <li><strong>Order</strong> — Call, WhatsApp, or Telegram us</li>
+                <li><strong>Confirm</strong> — We confirm your address and quantity</li>
+                <li><strong>Deliver</strong> — We bring the water to your door</li>
+                <li><strong>Enjoy</strong> — Fresh, clean drinking water</li>
+                <li><strong>Repeat</strong> — Schedule regular deliveries automatically</li>
+            </ol>
+            
+            <h2>💰 Water Delivery Prices</h2>
+            <div style="overflow-x:auto;">
+                <table style="width:100%;border-collapse:collapse;margin:15px 0;background:#fff;border-radius:8px;overflow:hidden;">
+                    <thead>
+                        <tr style="background:#e88800;color:#fff;">
+                            <th style="padding:10px 12px;text-align:left;">Service</th>
+                            <th style="padding:10px 12px;text-align:left;">Price</th>
+                            <th style="padding:10px 12px;text-align:left;">Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                            <tr>
+                                <td style="padding:8px 12px;border-bottom:1px solid #ddd;">19L Bottle</td>
+                                <td style="padding:8px 12px;border-bottom:1px solid #ddd;font-weight:600;color:#e88800;">฿60</td>
+                                <td style="padding:8px 12px;border-bottom:1px solid #ddd;">One-time</td>
+                            </tr>
+                            <tr>
+                                <td style="padding:8px 12px;border-bottom:1px solid #ddd;">5+ Bottles</td>
+                                <td style="padding:8px 12px;border-bottom:1px solid #ddd;font-weight:600;color:#e88800;">฿55 each</td>
+                                <td style="padding:8px 12px;border-bottom:1px solid #ddd;">Bulk discount</td>
+                            </tr>
+                            <tr>
+                                <td style="padding:8px 12px;border-bottom:1px solid #ddd;">Pump Deposit</td>
+                                <td style="padding:8px 12px;border-bottom:1px solid #ddd;font-weight:600;color:#e88800;">฿200</td>
+                                <td style="padding:8px 12px;border-bottom:1px solid #ddd;">Refundable</td>
+                            </tr>
+                            <tr>
+                                <td style="padding:8px 12px;border-bottom:1px solid #ddd;">Weekly Plan</td>
+                                <td style="padding:8px 12px;border-bottom:1px solid #ddd;font-weight:600;color:#e88800;">฿350/week</td>
+                                <td style="padding:8px 12px;border-bottom:1px solid #ddd;">2 bottles + pump</td>
+                            </tr>
+                            <tr>
+                                <td style="padding:8px 12px;border-bottom:1px solid #ddd;">Monthly Plan</td>
+                                <td style="padding:8px 12px;border-bottom:1px solid #ddd;font-weight:600;color:#e88800;">฿1,200/month</td>
+                                <td style="padding:8px 12px;border-bottom:1px solid #ddd;">8 bottles + pump</td>
+                            </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <h2>✅ Why Choose BroService for Water?</h2>
+                        <ul>
+                <li>✅ <strong>Always in Stock</strong> — we never run out, deliveries every day</li>
+                <li>✅ <strong>Best Prices</strong> — ฿60 per bottle, discounts on bulk orders</li>
+                <li>✅ <strong>Free Pump</strong> — mechanical pump included with first order</li>
+                <li>✅ <strong>Flexible Schedule</strong> — order anytime, deliver when you want</li>
+                <li>✅ <strong>Trilingual Support</strong> — order in English, Russian or Thai</li>
+            </ul>
+            
+            <h3>📍 Areas We Cover</h3>
+                        <p class="justifyfull">We deliver <strong>bottled water</strong> across all Koh Phangan: <strong>Thong Sala</strong> (main port area — fastest delivery), <strong>Haad Rin</strong> (Full Moon Party area), <strong>Ban Tai</strong>, <strong>Sri Thanu</strong> (zen zone), <strong>Mae Haad</strong> (sunset beach), <strong>Chaloklum</strong> (north coast), and <strong>Baan Khai</strong> (east coast). Free delivery within 5km, small fee for remote areas.</p>
+            
+
+            
+            <p style="text-align: center;">
+            <div style="margin:25px 0;text-align:center;">
+                <img loading="lazy" width="800" height="533" src="../assets/images/water-delivery.jpg" style="max-width:100%;height:auto;border-radius:8px;" alt="Water Delivery Koh Phangan">
+            </div>
+            <span style="font-weight: 700; color: #000; font-size: 22px;">BroService.in.th — Water Delivery on Koh Phangan</span></p>
+            
+            <div class="cta-block">
+                <h2>📞 Book Now!</h2>
+                <div class="phone"><a href="tel:+66808705704">+66 80-870-5704</a></div>
+                <div>Available 8:00 AM — 8:00 PM, 7 days a week</div>
+                <div style="margin-top:10px;"><a href="https://wa.me/+66808705704" style="color:#fff;background:#25D366;padding:10px 24px;border-radius:6px;display:inline-block;font-weight:600;text-decoration:none;">💬 WhatsApp</a></div>
+            </div>
+        </div>
+    </section>
+    <div class="content-wrap" style="max-width:1100px; margin:0 auto; padding:20px; background:#edeef0;">
+<section class="content-section"><h2>Water Delivery Services in Koh Phangan</h2><ul><li>19L bottles</li><li>Pump rental</li><li>Cooler rental</li><li>Regular delivery</li><li>Bulk orders</li></ul></section><section class="content-section"><h2>When Do You Need a Water Delivery?</h2><ul><li>Need water delivery repair</li><li>Emergency</li><li>Regular maintenance</li></ul></section><section class="content-section"><h2>Water Delivery Service Areas</h2><p>We provide water delivery throughout Koh Phangan.</p></section><section class="content-section"><h2>How to Book</h2><p>Contact BroService by phone or WhatsApp.</p><div class="cta-block"><h2>Need Water Delivery?</h2><p>8AM-8PM</p><a href="tel:+66808705704">Call +66 80-870-5704</a><a href="https://wa.me/+66808705704">WhatsApp</a></div></section><section class="faq-section"><h2>FAQs</h2><div class="faq-list"><div class="faq-accordion"><span class="faq-toggle">+</span><h3>Cost?</h3><div class="faq-answer"><p>From 200 baht.</p></div></div><div class="faq-accordion"><span class="faq-toggle">+</span><h3>Areas?</h3><div class="faq-answer"><p>All Koh Phangan.</p></div></div></div></section>
+        </div>
+        <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>BroService.in.th</h4>
+                    <p>Your Local Service Team on Koh Phangan.</p>
+                    <div class="footer-social">
+                        <a href="https://wa.me/+66808705704" target="_blank"><svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="15" fill="#25D366"/><path fill="#FFF" d="M10 16c0 3.3 2.7 6 6 6c1.3 0 2.6-.4 3.7-1.1l2.1 1.1l-.8-2.1c.6-1 .9-2.1.9-3.2c0-3.3-2.7-6-6-6s-6 2.7-6 6zm9.1 3.3l-.5-.3c-1-.5-1.8-.4-2.5.2l-.4.3c-.5.4-.9.8-1.6.8c-.7 0-1.5-.5-2.2-1.2c-1.1-1-1.8-2.4-1.9-3.7c-.1-1.4.6-2.7 1.7-3.5l.4-.3c.7-.5.8-1.3.2-2.2l-.4-.7c-.5-.8-1.3-1.3-2.2-1.3c-1 0-1.8.6-2.3 1.3c-.8 1.1-1.2 2.5-1.2 3.9c0 3 1.6 5.7 4.1 7.2c2 1.2 4.4 1.8 6.8 1.5c1.3-.2 2.5-.7 3.6-1.5c.8-.6 1.5-1.4 2-2.3c.5-.9.6-1.9.3-2.9c-.3-.9-1-1.6-1.9-1.9c-.8-.3-1.6 0-2.3.5z"/></svg></a>
+                        <a href="https://t.me/broservice_kohphangan" target="_blank"><svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="15" fill="#26A5E4"/><path fill="#FFF" d="M22.6 10.2l-2.8 13.3c-.2.9-.7 1.1-1.4.7l-3.9-2.9l-1.9 1.8c-.2.2-.4.4-.7.4l.3-4 7.2-6.5c.3-.3-.1-.5-.5-.2L12 18.4l-4-1.3c-.9-.3-.9-.9.2-1.3l15.6-6c.8-.3 1.5.2 1.2 1.3z"/></svg></a>
+                        <a href="https://line.me/ti/p/@broservice" target="_blank"><svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="15" fill="#00C300"/><path fill="#FFF" d="M23.4 12.5c-.3-1.7-1.7-3-3.4-3.3c-2.6-.5-5.3-.5-7.9 0c-1.7.3-3.1 1.6-3.4 3.3c-.5 2.6-.5 5.3 0 7.9c.3 1.7 1.7 3 3.4 3.3c2.6.5 5.3.5 7.9 0c1.7-.3 3.1-1.6 3.4-3.3c.5-2.6.5-5.3 0-7.9zm-4.8 5.9l-2.6 2.6c-.2.2-.5.2-.7 0l-2.6-2.6c-.6-.6-1-1.3-1-2.2c0-1.6 1.3-2.9 2.9-2.9c1.6 0 2.9 1.3 2.9 2.9c0 .9-.4 1.7-1 2.2z"/></svg></a>
+                        <a href="https://facebook.com/broservice.kohphangan" target="_blank"><svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="15" fill="#1877F2"/><path fill="#FFF" d="M21.8 11.2h-2.5c-1.4 0-1.7.7-1.7 1.6v2.1h3.3l-.4 3.3h-2.9v8.5h-3.4v-8.5h-2.8v-3.3h2.8v-2.5c0-2.8 1.7-4.3 4.2-4.3c1.2 0 2.2.1 2.5.2v2.9z"/></svg></a>
+                        <a href="https://instagram.com/broservice_kohphangan" target="_blank"><svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="15" fill="#E4405F"/><path fill="#FFF" d="M20.5 11.5h-9c-2.5 0-4.5 2-4.5 4.5v9c0 2.5 2 4.5 4.5 4.5h9c2.5 0 4.5-2 4.5-4.5v-9c0-2.5-2-4.5-4.5-4.5zm-4.5 12c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6zm6-10.5c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5z"/></svg></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="/water-delivery-koh-phangan/">🚰 Water Delivery</a></li>
+                        <li><a href="/cleaning-koh-phangan/">🧹 Cleaning</a></li>
+                        <li><a href="/plumber-koh-phangan/">🔧 Plumber</a></li>
+                        <li><a href="/ac-service-koh-phangan/">❄️ AC Service</a></li>
+                        <li><a href="/bike-service-koh-phangan/">🛵 Bike Service</a></li>
+                        <li><a href="property-rental.html">🏠 Property Rental</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li><a href="tel:+66808705704">📞 +66 80-870-5704</a></li>
+                        <li><a href="mailto:info@broservice.in.th">✉️ info@broservice.in.th</a></li>
+                        <li><a href="https://wa.me/+66808705704">💬 WhatsApp</a></li>
+                        <li><a href="https://t.me/broservice_kohphangan">✈️ Telegram</a></li>
+                        <li><a href="/contacts/">📋 Contact page</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Info</h4>
+                    <ul class="footer-links">
+                        <li><a href="/">🏠 Services</a></li>
+                        <li><a href="/contacts/">✉️ Contacts</a></li>
+                        <li><a href="/sitemap.xml" target="_blank">🗺️ Sitemap</a></li>
+                        <li><span style="color: #888;">⚡ Available 8AM-8PM</span></li>
+                        <li><span style="color: #888;">🌴 Koh Phangan, Thailand</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 <a href="/"><b style="color:#d3d3d3;">Bro</b>Service.in.th</a> · All rights reserved · Website by <a href="https://adfoto.com.ua" target="_blank">adfoto.com.ua</a></p>
+            </div>
+        </div>
+    </footer>
+<script>document.addEventListener("DOMContentLoaded",function(){document.querySelectorAll(".faq-accordion").forEach(function(i){i.addEventListener("click",function(){this.classList.toggle("active")})})})</script>
+</body>
+</html>
