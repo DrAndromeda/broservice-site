@@ -485,7 +485,7 @@ ul.menu li a { font-size: 13px; line-height: 16px; color: #1f1919; font-weight: 
                     <a href="https://wa.me/+66808705704">💬 WhatsApp</a>
                 </div>
             </section>
-                        <footer>
+    <footer>
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
@@ -536,6 +536,14 @@ ul.menu li a { font-size: 13px; line-height: 16px; color: #1f1919; font-weight: 
             </div>
         </div>
     </footer>
-
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.faq-accordion').forEach(function(item) {
+                item.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                });
+            });
+        });
+        </script>
 </body>
 </html>

@@ -482,22 +482,7 @@ ul.menu li a { font-size: 13px; line-height: 16px; color: #1f1919; font-weight: 
                     <a href="https://wa.me/+66808705704">💬 WhatsApp</a>
                 </div>
             </section>
-                        <img loading="lazy" width="800" height="533" src="../assets/images/water-delivery.jpg" alt="Water Delivery" class="float-img" style="max-width:35%;width:auto;height:auto;">
-            
-            <ul>
-                <li><strong>19L Bottled Water</strong> — ฿60 per bottle, delivered to your door</li>
-                <li><strong>Pump & Cooler Rental</strong> — mechanical pumps and coolers available</li>
-                <li><strong>Scheduled Delivery</strong> — regular weekly or bi-weekly plans with discounts</li>
-                <li><strong>Same-Day Service</strong> — order in the morning, delivered by afternoon</li>
-                <li><strong>Free Bottle Exchange</strong> — swap empty for full on every delivery</li>
-                <li><strong>Bulk Orders</strong> — 5+ bottles with discounted pricing</li>
-            </ul>
-            
-            
-            
-            
-                </div>
-                <footer>
+    <footer>
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
@@ -548,6 +533,14 @@ ul.menu li a { font-size: 13px; line-height: 16px; color: #1f1919; font-weight: 
             </div>
         </div>
     </footer>
-
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.faq-accordion').forEach(function(item) {
+                item.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                });
+            });
+        });
+        </script>
 </body>
 </html>

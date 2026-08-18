@@ -497,13 +497,7 @@ ul.menu li a { font-size: 13px; line-height: 16px; color: #1f1919; font-weight: 
                     <a href="https://wa.me/+66808705704">💬 WhatsApp</a>
                 </div>
             </section>
-            <p class="justifyfull">Beat the tropical heat with <strong>BroService.in.th</strong>. We offer professional AC cleaning, gas refill, repair, and installation on Koh Phangan. Regular maintenance extends your AC life and cuts electricity bills by 20-30%.</p>
-            <p class="justifyfull">The tropical heat of Koh Phangan makes air conditioning essential. But a dirty or poorly maintained AC unit costs more to run and breaks down more often. Our professional AC service keeps your unit running efficiently, saving you up to 30% on electricity bills.</p>
-            <p class="justifyfull">We service all AC brands — Daikin, Carrier, Mitsubishi, Samsung, and more. Regular cleaning and maintenance extend the life of your air conditioner and prevent costly breakdowns. Our technicians are experienced and use professional-grade equipment. Same-day service available in most areas.</p>
-            <p class="justifyfull">The tropical heat of Koh Phangan makes air conditioning not a luxury but a necessity. Regular AC maintenance is essential to keep your unit running efficiently in the humid climate. A neglected AC unit can consume 30% more electricity and break down when you need it most.</p>
-            
-            
-            <footer>
+    <footer>
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
@@ -554,6 +548,14 @@ ul.menu li a { font-size: 13px; line-height: 16px; color: #1f1919; font-weight: 
             </div>
         </div>
     </footer>
-
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.faq-accordion').forEach(function(item) {
+                item.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                });
+            });
+        });
+        </script>
 </body>
 </html>
