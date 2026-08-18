@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-    <title>Contact Us | BroService Koh Phangan</title>
-    <meta name="description" content="Contact BroService on Koh Phangan. Phone, WhatsApp, Telegram, email. Available 8AM-8PM.">
+    <title>Contact Us — BroService.in.th</title>
+    <meta name="description" content="Get in touch with BroService on Koh Phangan. Phone, WhatsApp, Telegram, Line, Facebook, Instagram.">
     <link rel="icon" href="../assets/images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -154,9 +154,7 @@ ul.menu li a { font-size: 13px; line-height: 16px; color: #1f1919; font-weight: 
         }
         #content h1 {
             font-family: 'Inter', sans-serif;
-            color: #e88800;
             font-size: 28px;
-            text-shadow: 0 1px 2px rgba(0,0,0,0.1);
             font-weight: 700;
             color: #1f1919;
             margin-bottom: 14px;
@@ -218,24 +216,10 @@ ul.menu li a { font-size: 13px; line-height: 16px; color: #1f1919; font-weight: 
             background: var(--dark);
             color: #aaa;
             padding: 30px 0 20px;
-            width: 100%;
-        }
-        footer .container {
-            max-width: none;
-            width: 100%;
-            padding: 0 30px;
-        }
-        footer .footer-grid {
-            max-width: 1100px;
-            margin: 0 auto;
-        }
-        footer .footer-bottom {
-            max-width: 1100px;
-            margin: 0 auto;
         }
         .footer-grid {
             display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1fr;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
             gap: 25px;
             margin-bottom: 20px;
         }
@@ -261,40 +245,6 @@ ul.menu li a { font-size: 13px; line-height: 16px; color: #1f1919; font-weight: 
             text-align: center;
             font-size: 13px;
             color: #888;
-            width: 100%;
-        }
-        .footer-bottom a { color: var(--primary); }
-
-        
-        .footer-grid {
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1fr;
-            gap: 25px;
-            margin-bottom: 20px;
-        }
-        .footer-col h4 {
-            font-family: 'Inter', sans-serif;
-            font-size: 16px;
-            font-weight: 600;
-            color: var(--white);
-            margin-bottom: 12px;
-        }
-        .footer-col p { font-size: 13px; line-height: 1.5; color: #aaa; }
-        .footer-links { list-style: none; }
-        .footer-links li { margin-bottom: 6px; }
-        .footer-links a { font-size: 13px; color: #aaa; transition: color 0.2s; }
-        .footer-links a:hover { color: var(--primary); }
-        .footer-social { display: flex; gap: 6px; margin-top: 10px; }
-        .footer-social a { display: inline-block; transition: opacity 0.2s; }
-        .footer-social a:hover { opacity: 0.7; }
-        .footer-social svg { width: 22px; height: 22px; border-radius: 50%; }
-        .footer-bottom {
-            border-top: 1px solid #333;
-            padding-top: 15px;
-            text-align: center;
-            font-size: 13px;
-            color: #888;
-            width: 100%;
         }
         .footer-bottom a { color: var(--primary); }
 
@@ -347,30 +297,11 @@ ul.menu li a { font-size: 13px; line-height: 16px; color: #1f1919; font-weight: 
             #content p, #content div, .contact-card { text-align: center !important; }
             .contact-grid { justify-content: center; }
         }
-    
-        /* Design System */
-        .service-hero { text-align: center; padding: 20px 0; }
-        .service-hero h1 { color: #e88800; font-size: 28px; font-weight: 700; margin: 18px 0 0; }
-        .service-hero img { border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.08); max-width: 100%; height: auto; }
-        .service-hero h1 { font-size: 26px; color: #1f1919; margin: 15px 0 0; font-weight: 700; }
-        .answer-snippet { background: #f8f6f0; border-left: 4px solid #e88800; padding: 14px 18px; border-radius: 0 8px 8px 0; font-size: 15px; line-height: 1.7; color: #333; margin: 0 0 20px; }
-        .faq-item { margin-bottom: 12px; padding: 14px 18px; background: #fff; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
-        .faq-item h3 { font-size: 15px; margin-bottom: 6px; color: #1f1919; font-weight: 600; }
-        .faq-item p { font-size: 13px; color: #555; margin: 0; line-height: 1.6; }
-        .service-info-box { background: #f5f5f5; padding: 12px 18px; border-radius: 8px; margin: 0 0 18px; font-size: 13px; line-height: 1.7; }
-    
-        /* FAQ Accordion */
-        .faq-accordion { cursor: pointer; padding: 14px 18px; background: #fff; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.06); margin-bottom: 10px; position: relative; }
-        .faq-accordion h3 { margin: 0; font-size: 15px; color: #1f1919; font-weight: 600; padding-right: 30px; }
-        .faq-accordion .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
-        .faq-accordion.active .faq-answer { max-height: 300px; }
-        .faq-accordion .faq-toggle { position: absolute; right: 18px; top: 14px; color: #e88800; font-size: 18px; font-weight: bold; transition: transform 0.3s; }
-        .faq-accordion.active .faq-toggle { transform: rotate(45deg); }
-        .faq-accordion .faq-answer p { font-size: 13px; color: #555; line-height: 1.6; margin: 8px 0 0; }
     </style>
     <meta name="theme-color" content="#1a1414">
 <!-- mobile center -->
-</head><body>
+</head>
+<body>
     <header>
         <div class="container">
             <div class="header-inner">
@@ -404,37 +335,52 @@ ul.menu li a { font-size: 13px; line-height: 16px; color: #1f1919; font-weight: 
     <div class="breadcrumbs">
         <div class="container"><a href="/">Services</a> <span>›</span> <span>Contact Us</span></div>
     </div>
-        <section id="content">
+    <section id="content">
         <div class="container">
             <h1>Contact Us</h1>
-            <div class="answer-snippet" style="background:#f8f6f0;border-left:4px solid #e88800;padding:14px 18px;border-radius:0 8px 8px 0;font-size:15px;line-height:1.7;color:#333;margin:0 0 20px;">Contact BroService on Koh Phangan for plumbing, electrical, AC service, cleaning, water delivery, bike repair and handyman services. Reach us by phone, WhatsApp, Telegram or email. We are available 8AM-8PM, Monday to Saturday.</div>
-            <section class="content-section">
-                <h2>How to Reach Us</h2>
-                <ul>
-                    <li><strong>Phone:</strong> <a href="tel:+66808705704">+66 93-XXX-XXXX</a></li>
-                    <li><strong>WhatsApp:</strong> <a href="https://wa.me/+66808705704">+66 93-XXX-XXXX</a></li>
-                    <li><strong>Telegram:</strong> @broservice_kohphangan</li>
-                    <li><strong>Email:</strong> info@broservice.in.th</li>
-                </ul>
-            </section>
-            <section class="content-section">
-                <h2>Service Areas</h2>
-                <p>We provide services throughout Koh Phangan, including Thong Sala, Baan Tai, Haad Rin, Sri Thanu, Haad Yao, Chaloklum and other areas of the island.</p>
-            </section>
-            <section class="content-section">
-                <h2>Business Hours</h2>
-                <p>Monday — Saturday: 8:00 AM — 8:00 PM<br>Sunday: Closed (emergency only)</p>
-            </section>
+            <p style="color:#666; margin-bottom:30px;">We're here to help! Reach out anytime — we respond fast.</p>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h3>📞 Phone / WhatsApp</h3>
+                    <a href="tel:+66808705704" class="big-link">+66 93‑XXX‑XXXX</a>
+                    <p>Available on WhatsApp, Telegram & regular calls</p>
+                </div>
+                <div class="contact-card">
+                    <h3>✉️ Email</h3>
+                    <a href="mailto:info@broservice.in.th" class="big-link" style="font-size:20px;">info@broservice.in.th</a>
+                    <p>We reply within 24 hours</p>
+                </div>
+                <div class="contact-card">
+                    <h3>💬 Social</h3>
+                    <p>Telegram: @broservice_kohphangan</p>
+                    <p>Line: @broservice</p>
+                    <p>Facebook: broservice.kohphangan</p>
+                    <p>Instagram: @broservice_kohphangan</p>
+                </div>
+                <div class="contact-card">
+                    <h3>🕐 Hours</h3>
+                    <p>Monday — Saturday: 8:00 AM — 8:00 PM</p>
+                    <p>Sunday: 10:00 AM — 6:00 PM</p>
+                    <p>Emergency: 24/7</p>
+                </div>
+                <div class="contact-card">
+                    <h3>📍 Location</h3>
+                    <p>Koh Phangan, Surat Thani, Thailand</p>
+                    <p>We come to you island-wide!</p>
+                </div>
+                <div class="contact-card">
+                    <h3>🌐 Languages</h3>
+                    <p>English 🇬🇧 · Русский 🇷🇺 · ไทย 🇹🇭</p>
+                </div>
+            </div>
             <div class="cta-block">
-                <h2>Need help? Contact us now</h2>
-                <p>Available 8AM-8PM, 7 days a week</p>
-                <a href="tel:+66808705704">📞 Call +66 93-XXX-XXXX</a>
-                <a href="https://wa.me/+66808705704">💬 WhatsApp</a>
+                <h2>📞 Call or WhatsApp Now!</h2>
+                <div class="phone"><a href="tel:+66808705704">+66 93‑XXX‑XXXX</a></div>
+                <div>Available 8:00 AM — 8:00 PM, 7 days a week</div>
             </div>
         </div>
     </section>
-
-<footer>
+    <footer>
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
@@ -453,7 +399,7 @@ ul.menu li a { font-size: 13px; line-height: 16px; color: #1f1919; font-weight: 
                     <ul class="footer-links">
                         <li><a href="/water-delivery-koh-phangan/">🚰 Water Delivery</a></li>
                         <li><a href="/cleaning-koh-phangan/">🧹 Cleaning</a></li>
-                        <li><a href="/handyman-koh-phangan/" class="active">🔨 Handyman</a></li>
+                        <li><a href="/plumber-koh-phangan/">🔧 Plumber</a></li>
                         <li><a href="/ac-service-koh-phangan/">❄️ AC Service</a></li>
                         <li><a href="/bike-service-koh-phangan/">🛵 Bike Service</a></li>
                         <li><a href="property-rental.html">🏠 Property Rental</a></li>
@@ -485,51 +431,5 @@ ul.menu li a { font-size: 13px; line-height: 16px; color: #1f1919; font-weight: 
             </div>
         </div>
     </footer>
-
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('.faq-accordion').forEach(function(item) {
-        item.addEventListener('click', function() {
-            this.classList.toggle('active');
-        });
-    });
-});
-</script>
-</body>
-</html>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('.faq-accordion').forEach(function(item) {
-        item.addEventListener('click', function() {
-            this.classList.toggle('active');
-        });
-    });
-});
-</script>
-</body>
-</html>
-
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('.faq-accordion').forEach(function(item) {
-        item.addEventListener('click', function() {
-            this.classList.toggle('active');
-        });
-    });
-});
-</script>
-</body>
-</html>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('.faq-accordion').forEach(function(item) {
-        item.addEventListener('click', function() {
-            this.classList.toggle('active');
-        });
-    });
-});
-</script>
 </body>
 </html>
