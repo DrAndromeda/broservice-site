@@ -236,7 +236,7 @@ ul.menu li a { font-size: 13px; line-height: 16px; color: #1f1919; font-weight: 
         .footer-col p { font-size: 13px; line-height: 1.5; color: #aaa; }
         .footer-links { list-style: none; }
         .footer-links li { margin-bottom: 6px; }
-        .footer-links a { font-size: 13px; color: #aaa; transition: color 0.2s; }
+        .footer-links a { font-size: 13px; color: #fff; transition: color 0.2s; }
         .footer-links a:hover { color: var(--primary); }
         .footer-social { display: flex; gap: 6px; margin-top: 10px; }
         .footer-social a { display: inline-block; transition: opacity 0.2s; }
@@ -249,7 +249,7 @@ ul.menu li a { font-size: 13px; line-height: 16px; color: #1f1919; font-weight: 
             font-size: 13px;
             color: #888;
         }
-        .footer-bottom a { color: var(--primary); }
+        .footer-bottom a { color: #fff; text-decoration: underline; }
 
         @media (max-width: 768px) {
             .header-inner { flex-direction: column; gap: 5px; text-align: center; }
@@ -324,6 +324,15 @@ ul.menu li a { font-size: 13px; line-height: 16px; color: #1f1919; font-weight: 
         .cta-block { background: linear-gradient(135deg, #e88800, #c47000); border-radius: 8px; padding: 20px; text-align: center; margin: 20px 0; }
         .cta-block h2 { color: #fff !important; margin: 0 0 10px !important; }
         .cta-block a { display: inline-block; background: #fff; color: #e88800; padding: 10px 24px; border-radius: 6px; text-decoration: none; font-weight: 600; margin: 0 5px; }
+    
+        /* FAQ Accordion */
+        .faq-accordion { cursor: pointer; padding: 14px 18px; background: #fff; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.06); margin-bottom: 10px; position: relative; }
+        .faq-accordion h3 { margin: 0; font-size: 15px; color: #1f1919; font-weight: 600; padding-right: 30px; }
+        .faq-accordion .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+        .faq-accordion.active .faq-answer { max-height: 300px; }
+        .faq-accordion .faq-toggle { position: absolute; right: 18px; top: 14px; color: #e88800; font-size: 18px; font-weight: bold; transition: transform 0.3s; }
+        .faq-accordion.active .faq-toggle { transform: rotate(45deg); }
+        .faq-accordion .faq-answer p { font-size: 13px; color: #555; line-height: 1.6; margin: 8px 0 0; }
     </style>
     <meta name="theme-color" content="#1a1414">
     <link rel="preload" as="image" href="../assets/images/electrician.jpg">
@@ -534,25 +543,30 @@ ul.menu li a { font-size: 13px; line-height: 16px; color: #1f1919; font-weight: 
                 <section class="faq-section">
                 <h2>Frequently Asked Questions</h2>
                 <div class="faq-list">
-                                    <div class="faq-item">
+                                    <div class="faq-accordion">
+                    <span class="faq-toggle">+</span>
                     <h3>How much does an electrician cost in Koh Phangan?</h3>
-                    <p>Simple repairs start at ฿200, while wiring and installations range from ฿500 to ฿3,000. Contact BroService for a clear quote.</p>
+                    <div class="faq-answer"><p>Simple repairs start at ฿200, while wiring and installations range from ฿500 to ฿3,000. Contact BroService for a clear quote.</p></div>
                 </div>
-                <div class="faq-item">
+                <div class="faq-accordion">
+                    <span class="faq-toggle">+</span>
                     <h3>Do you handle emergency electrical issues?</h3>
-                    <p>Yes, BroService provides emergency electrical services. For power outages or sparking outlets, call or WhatsApp us.</p>
+                    <div class="faq-answer"><p>Yes, BroService provides emergency electrical services. For power outages or sparking outlets, call or WhatsApp us.</p></div>
                 </div>
-                <div class="faq-item">
+                <div class="faq-accordion">
+                    <span class="faq-toggle">+</span>
                     <h3>Can you install lighting and ceiling fans?</h3>
-                    <p>Yes, we install all types of lighting and ceiling fans across Koh Phangan.</p>
+                    <div class="faq-answer"><p>Yes, we install all types of lighting and ceiling fans across Koh Phangan.</p></div>
                 </div>
-                <div class="faq-item">
+                <div class="faq-accordion">
+                    <span class="faq-toggle">+</span>
                     <h3>Do you work on properties throughout Koh Phangan?</h3>
-                    <p>Yes, we cover the entire island.</p>
+                    <div class="faq-answer"><p>Yes, we cover the entire island.</p></div>
                 </div>
-                <div class="faq-item">
+                <div class="faq-accordion">
+                    <span class="faq-toggle">+</span>
                     <h3>Is electrical rewiring available?</h3>
-                    <p>Yes, we handle full and partial rewiring for homes, villas and commercial properties.</p>
+                    <div class="faq-answer"><p>Yes, we handle full and partial rewiring for homes, villas and commercial properties.</p></div>
                 </div>
                 </div>
             </section>
@@ -607,5 +621,14 @@ ul.menu li a { font-size: 13px; line-height: 16px; color: #1f1919; font-weight: 
             </div>
         </div>
     </footer>
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.faq-accordion').forEach(function(item) {
+                item.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                });
+            });
+        });
+        </script>
 </body>
 </html>
