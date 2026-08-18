@@ -111,7 +111,13 @@
             .block-1 { width: 50%; }
             .block-1:nth-child(3) { clear: both; }
         }
-    .faq-accordion { cursor: pointer; padding: 14px 18px; background: #fff; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.06); margin-bottom: 10px; position: relative; } .faq-accordion h3 { margin: 0; font-size: 15px; color: #1f1919; font-weight: 600; padding-right: 40px; word-break: break-word; } .faq-accordion .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; } .faq-accordion.active .faq-answer { max-height: 300px; } .faq-accordion .faq-toggle { position: absolute; right: 18px; top: 14px; color: #e88800; font-size: 18px; font-weight: bold; transition: transform 0.3s; } .faq-accordion.active .faq-toggle { transform: rotate(45deg); } .faq-accordion .faq-answer p { font-size: 13px; color: #555; line-height: 1.6; margin: 8px 0 0; }.content-section { background: #edeef0; padding: 15px 20px; margin-bottom: 10px; border-radius: 6px; } .content-section h2 { font-size: 22px; color: #1f1919; margin-bottom: 10px; } .content-section ul { padding-left: 20px; } .content-section li { font-size: 14px; line-height: 1.7; color: #333; } .content-section p { font-size: 14px; line-height: 1.7; color: #333; } .faq-section { background: #edeef0; padding: 15px 20px; border-radius: 6px; margin-bottom: 10px; } .faq-section h2 { font-size: 22px; color: #1f1919; margin-bottom: 10px; } .cta-block { background: #e88800; padding: 20px; border-radius: 8px; margin: 15px 0; text-align: center; } .cta-block h2 { color: #fff; font-size: 20px; margin-bottom: 8px; } .cta-block p { color: #fff; font-size: 14px; margin-bottom: 10px; } .cta-block a { display: inline-block; background: #fff; color: #e88800; padding: 10px 24px; border-radius: 6px; font-weight: 600; margin: 4px; text-decoration: none; }
+    .faq-accordion { cursor: pointer; padding: 14px 18px; background: #fff; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.06); margin-bottom: 10px; position: relative; } .faq-accordion h3 { margin: 0; font-size: 16px; color: #1f1919; font-weight: 600; padding-right: 40px; word-break: break-word; } .faq-accordion .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; } .faq-accordion.active .faq-answer { max-height: 300px; } .faq-accordion .faq-toggle { position: absolute; right: 18px; top: 14px; color: #e88800; font-size: 18px; font-weight: bold; transition: transform 0.3s; } .faq-accordion.active .faq-toggle { transform: rotate(45deg); } .faq-accordion .faq-answer p { font-size: 14px; color: #555; line-height: 1.6; margin: 8px 0 0; }.content-section { background: #edeef0; padding: 15px 20px; margin-bottom: 10px; border-radius: 6px; } .content-section h2 { font-size: 22px; color: #1f1919; margin-bottom: 10px; } .content-section ul { padding-left: 20px; } .content-section li { font-size: 15px; line-height: 1.7; color: #333; } .content-section p { font-size: 15px; line-height: 1.7; color: #333; } .faq-section { background: #edeef0; padding: 15px 20px; border-radius: 6px; margin-bottom: 10px; } .faq-section h2 { font-size: 22px; color: #1f1919; margin-bottom: 10px; } .cta-block { background: #e88800; padding: 20px; border-radius: 8px; margin: 15px 0; text-align: center; } .cta-block h2 { color: #fff; font-size: 20px; margin-bottom: 8px; } .cta-block p { color: #fff; font-size: 14px; margin-bottom: 10px; } .cta-block a { display: inline-block; background: #fff; color: #e88800; padding: 10px 24px; border-radius: 6px; font-weight: 600; margin: 4px; text-decoration: none; }
+    
+        .content-section, .faq-section, .cta-block {
+            max-width: 960px;
+            margin-left: auto;
+            margin-right: auto;
+        }
     </style>
 <script type="application/ld+json">
 {
@@ -255,6 +261,7 @@
     
     <section class="content-section"><h2>Our Services</h2><ul><li>Plumbing — leak repair, drains, taps, pumps</li><li>Electrical — wiring, lighting, sockets, breakers</li><li>AC Service — cleaning, gas refill, repair</li><li>Cleaning — regular, deep, move-in/out</li><li>Water Delivery — 19L bottles, pump rental</li><li>Bike Service — oil change, brakes, tires</li><li>Handyman — furniture, TV mounting, repairs</li></ul></section><section class="content-section"><h2>Service Areas</h2><p>We serve all Koh Phangan: Thong Sala, Baan Tai, Haad Rin, Sri Thanu, Haad Yao, Chaloklum.</p></section><section class="content-section"><h2>How to Book</h2><p>Call or WhatsApp us.</p><div class="cta-block"><h2>Contact BroService</h2><p>Available 8AM-8PM</p><a href="tel:+66808705704">Call +66 80-870-5704</a><a href="https://wa.me/+66808705704">WhatsApp</a></div></section><section class="faq-section"><h2>FAQs</h2><div class="faq-list"><div class="faq-accordion"><span class="faq-toggle">+</span><h3>What areas do you cover?</h3><div class="faq-answer"><p>All Koh Phangan.</p></div></div><div class="faq-accordion"><span class="faq-toggle">+</span><h3>How do I book?</h3><div class="faq-answer"><p>By phone or WhatsApp.</p></div></div></div></section>
         <footer>
+        <div class="container" style="max-width:960px;margin:0 auto;padding:0 20px;">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
@@ -304,7 +311,8 @@
                 <p>© 2026 <a href="/"><b style="color:#d3d3d3;">Bro</b>Service.in.th</a> · All rights reserved · Website by <a href="https://adfoto.com.ua" target="_blank">adfoto.com.ua</a></p>
             </div>
         </div>
-    </footer>
+    </div>
+        </footer>
 <script>document.addEventListener("DOMContentLoaded",function(){document.querySelectorAll(".faq-accordion").forEach(function(i){i.addEventListener("click",function(){this.classList.toggle("active")})})});</script>
 </body>
 </html>
