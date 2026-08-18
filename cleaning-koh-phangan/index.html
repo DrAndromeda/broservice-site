@@ -292,6 +292,115 @@ ul.menu li a { font-size: 13px; line-height: 16px; color: #1f1919; font-weight: 
             .blocks { gap: 8px; flex-wrap: wrap; }
             .block { flex: 1 1 100%; max-width: 100%; margin-bottom: 6px; }
         }
+    
+        .content-section {
+            background: #edeef0;
+            padding: 15px 20px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+        }
+        .content-section h2 {
+            font-size: 22px;
+            color: #1f1919;
+            margin-bottom: 10px;
+        }
+        .content-section ul {
+            padding-left: 20px;
+        }
+        .content-section li {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #333;
+        }
+        .content-section p {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #333;
+        }
+        .faq-section {
+            background: #edeef0;
+            padding: 15px 20px;
+            border-radius: 6px;
+            margin-bottom: 10px;
+        }
+        .faq-section h2 {
+            font-size: 22px;
+            color: #1f1919;
+            margin-bottom: 10px;
+        }
+        .faq-accordion {
+            cursor: pointer;
+            padding: 14px 18px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+            margin-bottom: 10px;
+            position: relative;
+        }
+        .faq-accordion h3 {
+            margin: 0;
+            font-size: 15px;
+            color: #1f1919;
+            font-weight: 600;
+            padding-right: 40px;
+            word-break: break-word;
+        }
+        .faq-accordion .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .faq-accordion.active .faq-answer {
+            max-height: 300px;
+        }
+        .faq-accordion .faq-toggle {
+            position: absolute;
+            right: 18px;
+            top: 14px;
+            color: #e88800;
+            font-size: 18px;
+            font-weight: bold;
+            transition: transform 0.3s;
+        }
+        .faq-accordion.active .faq-toggle {
+            transform: rotate(45deg);
+        }
+        .faq-accordion .faq-answer p {
+            font-size: 13px;
+            color: #555;
+            line-height: 1.6;
+            margin: 8px 0 0;
+        }
+        .cta-block {
+            background: #1f1919;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 15px 0;
+            text-align: center;
+        }
+        .cta-block h2 {
+            color: #fff;
+            margin-bottom: 8px;
+            font-size: 18px;
+        }
+        .cta-block p {
+            color: #ccc;
+            margin-bottom: 12px;
+        }
+        .cta-block a {
+            display: inline-block;
+            background: #e88800;
+            color: #fff;
+            padding: 10px 24px;
+            border-radius: 6px;
+            font-weight: 600;
+            margin: 4px;
+            text-decoration: none;
+        }
+        .cta-block a:hover {
+            background: #d07a00;
+        }
+
     </style>
     <meta name="theme-color" content="#1a1414">
     <link rel="preload" as="image" href="../assets/images/cleaning.jpg">
