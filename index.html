@@ -17,8 +17,8 @@
             --text-light: #8f8b8c;
             --white: #fff;
         }
-        html, body { font: 13px/22px Arial, Helvetica, sans-serif; color: #000; background: #edeef0; }
-        body { font: 13px/22px Arial, Helvetica, sans-serif; color: #000; background: #edeef0; #1a1414; }
+        html, body { width: 100%; height: 100%; padding: 0; margin: 0; }
+        body { font: 13px/22px Arial, Helvetica, sans-serif; color: #000; min-width: 100%; background: #1a1414; }
         .main { max-width: 960px; margin: auto; }
         .wrap { overflow: hidden; position: relative; max-width: 961px; margin: auto; }
         a { text-decoration: none; cursor: pointer; }
@@ -33,7 +33,7 @@
         h3 { font-size: 22px; line-height: 30px; color: #e88800; font-weight: normal; }
         ul { margin: 0; padding: 0; }
         ul li { list-style-position: inside; margin-left: 25px; padding: 3px 0; }
-        header { width: 100%; background: linear-gradient(180deg, #2b2424, #1f1919); }
+        header { width: 100%; background: linear-gradient(180deg, #2b2424, #1f1919); margin: 0 auto; z-index: 100; }
         .linkblock { float: left; margin: 46px 0 22px; font-size: 269%; color: #e98400; font-weight: bold; text-shadow: 1px 1px 2px #555; }
         .linkblock a { color: #d3d3d3; }
         .slogan { font-size: 18px; line-height: 22px; color: #d3d3d3; float: left; border-left: #2f2b2b 1px solid; margin: 13px 0 0 28px; padding: 18px 0 15px 29px; }
@@ -52,14 +52,14 @@
         ul.menu li.active a { color: #e88800; font-weight: 700; }
         #content { background: #edeef0; width: 100%; padding: 0; }
         .content-subpages { padding-top: 18px !important; }
-        .header-content { background: #edeef0; position: relative; z-index: 99;  padding-bottom: 25px; }
+        .header-content { width: 100%; background: #edeef0; margin: 0 auto; position: relative; z-index: 99; margin-top: -25px; padding-bottom: 25px; }
         .img-radius { border-radius: 7px; }
         .block-1 { color: #8f8b8c; padding-top: 60px; width: 320px; float: left; text-align: center; }
         .block-1 > div { padding: 0 30px; margin-top: 14px; }
         #content > div { width: 76%; margin: 0 auto; }
         img { max-width: 100%; height: auto; border-radius: 7px; aspect-ratio: auto; }
         .justifyfull { text-align: justify; }
-        footer { width: 100%; background: #1a1410; color: #ddd; padding: 40px 0; }
+        footer { background: var(--darker); color: #e88800; text-align: center; padding: 20px 0; }
         footer a { color: #e88800; }
         footer a:hover { text-decoration: underline; }
         .footer-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; text-align: left; margin-bottom: 20px; }
@@ -67,10 +67,10 @@
         .footer-col p, .footer-col li { color: #ccc; font-size: 13px; line-height: 1.8; list-style: none; }
         .footer-col ul { list-style: none; padding: 0; }
         .footer-col ul li a { color: #ccc; font-size: 13px; }
-        .footer-col ul li a { color: #ccc; font-size: 13px; }
+        .footer-col ul li a:hover { color: #e88800; }
         .footer-social { display: flex; gap: 6px; margin-top: 8px; }
         .footer-social a svg { width: 22px; height: 22px; border-radius: 50%; display: block; }
-        .footer-bottom { border-top: 1px solid #444; padding-top: 15px; text-align: center; font-size: 13px; color: #aaa; }
+        .footer-bottom { border-top: 1px solid #333; padding-top: 15px; margin-top: 15px; font-size: 12px; color: #888; }
         @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; } }
         @media only screen and (max-width: 768px) {
             h1 { font-size: 170%; letter-spacing: -1px; display: block; }
@@ -111,132 +111,7 @@
             .block-1 { width: 50%; }
             .block-1:nth-child(3) { clear: both; }
         }
-    
-        .content-section {
-            background: #edeef0;
-            padding: 15px 20px;
-            margin-bottom: 10px;
-            border-radius: 6px;
-        }
-        .content-section h2 {
-            font-size: 22px;
-            color: #1f1919;
-            margin-bottom: 10px;
-        }
-        .content-section ul {
-            padding-left: 20px;
-        }
-        .content-section li {
-            font-size: 14px;
-            line-height: 1.7;
-            color: #333;
-        }
-        .content-section p {
-            font-size: 14px;
-            line-height: 1.7;
-            color: #333;
-        }
-        .faq-section {
-            background: #edeef0;
-            padding: 15px 20px;
-            border-radius: 6px;
-            margin-bottom: 10px;
-        }
-        .faq-section h2 {
-            font-size: 22px;
-            color: #1f1919;
-            margin-bottom: 10px;
-        }
-        .faq-accordion {
-            cursor: pointer;
-            padding: 14px 18px;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.06);
-            margin-bottom: 10px;
-            position: relative;
-        }
-        .faq-accordion h3 {
-            margin: 0;
-            font-size: 15px;
-            color: #1f1919;
-            font-weight: 600;
-            padding-right: 40px;
-            word-break: break-word;
-        }
-        .faq-accordion .faq-answer {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease;
-        }
-        .faq-accordion.active .faq-answer {
-            max-height: 300px;
-        }
-        .faq-accordion .faq-toggle {
-            position: absolute;
-            right: 18px;
-            top: 14px;
-            color: #e88800;
-            font-size: 18px;
-            font-weight: bold;
-            transition: transform 0.3s;
-        }
-        .faq-accordion.active .faq-toggle {
-            transform: rotate(45deg);
-        }
-        .faq-accordion .faq-answer p {
-            font-size: 13px;
-            color: #555;
-            line-height: 1.6;
-            margin: 8px 0 0;
-        }
-        .cta-block {
-            background: #e88800;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 15px 0;
-            text-align: center;
-        }
-        .cta-block h2 {
-            color: #fff;
-            font-size: 20px;
-            margin-bottom: 8px;
-        }
-        .cta-block p, .cta-block div {
-            color: #fff;
-            font-size: 14px;
-            margin-bottom: 10px;
-        }
-        .cta-block .phone a, .cta-block a {
-            color: #fff;
-            font-weight: 700;
-            text-decoration: none;
-            font-size: 16px;
-        }
-        .cta-block h2 {
-            color: #fff;
-            margin-bottom: 8px;
-            font-size: 18px;
-        }
-        .cta-block p {
-            color: #ccc;
-            margin-bottom: 12px;
-        }
-        .cta-block a {
-            display: inline-block;
-            background: #e88800;
-            color: #fff;
-            padding: 10px 24px;
-            border-radius: 6px;
-            font-weight: 600;
-            margin: 4px;
-            text-decoration: none;
-        }
-        .cta-block a:hover {
-            background: #d07a00;
-        }
-
-    .lang-switch a:hover { background: #333; color: #fff !important; }
+    .faq-accordion { cursor: pointer; padding: 14px 18px; background: #fff; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.06); margin-bottom: 10px; position: relative; } .faq-accordion h3 { margin: 0; font-size: 15px; color: #1f1919; font-weight: 600; padding-right: 40px; word-break: break-word; } .faq-accordion .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; } .faq-accordion.active .faq-answer { max-height: 300px; } .faq-accordion .faq-toggle { position: absolute; right: 18px; top: 14px; color: #e88800; font-size: 18px; font-weight: bold; transition: transform 0.3s; } .faq-accordion.active .faq-toggle { transform: rotate(45deg); } .faq-accordion .faq-answer p { font-size: 13px; color: #555; line-height: 1.6; margin: 8px 0 0; }.content-section { background: #edeef0; padding: 15px 20px; margin-bottom: 10px; border-radius: 6px; } .content-section h2 { font-size: 22px; color: #1f1919; margin-bottom: 10px; } .content-section ul { padding-left: 20px; } .content-section li { font-size: 14px; line-height: 1.7; color: #333; } .content-section p { font-size: 14px; line-height: 1.7; color: #333; } .faq-section { background: #edeef0; padding: 15px 20px; border-radius: 6px; margin-bottom: 10px; } .faq-section h2 { font-size: 22px; color: #1f1919; margin-bottom: 10px; } .cta-block { background: #e88800; padding: 20px; border-radius: 8px; margin: 15px 0; text-align: center; } .cta-block h2 { color: #fff; font-size: 20px; margin-bottom: 8px; } .cta-block p { color: #fff; font-size: 14px; margin-bottom: 10px; } .cta-block a { display: inline-block; background: #fff; color: #e88800; padding: 10px 24px; border-radius: 6px; font-weight: 600; margin: 4px; text-decoration: none; }
     </style>
 <script type="application/ld+json">
 {
@@ -269,11 +144,12 @@
             <div class="wrap">
                 <div class="linkblock" onclick="location.href='index.html';">
                     <a><b style="color:#e0e0e0;">Bro</b><span style="color:#e88800;">Service.in.th</span></a>
-                <div class="lang-switch" style="display:inline-flex;gap:2px;margin-left:8px;font-size:11px;"><a href="/" style="color:#e88800;text-decoration:none;padding:1px 4px;border-radius:3px;border:1px solid #e88800;font-weight:600;">EN</a><a href="/ru/" style="color:#888;text-decoration:none;padding:1px 4px;">RU</a><a href="/th/" style="color:#888;text-decoration:none;padding:1px 4px;">TH</a><a href="/he/" style="color:#888;text-decoration:none;padding:1px 4px;">HE</a></div></div>
+                </div>
                 <div class="slogan">Your Local Service Team on Koh Phangan!<br>
                     <a id="tel" href="tel:+66808705704" style="color:#e88800;">📞 +66 80-870-5704</a>
                 </div>
                                                 <div class="tooltips">
+                    <div class="lang-switch" style="display:inline-flex;gap:2px;margin-left:8px;font-size:11px;"><a href="/" style="color:#e88800;text-decoration:none;padding:1px 4px;border-radius:3px;border:1px solid #e88800;font-weight:600;">EN</a><a href="/ru/" style="color:#888;text-decoration:none;padding:1px 4px;">RU</a><a href="/th/" style="color:#888;text-decoration:none;padding:1px 4px;">TH</a><a href="/he/" style="color:#888;text-decoration:none;padding:1px 4px;">HE</a></div>
                     <a href="https://wa.me/+66808705704" target="_blank" title="WhatsApp">
                         <svg viewBox="0 0 32 32" width="32" height="32"><circle cx="16" cy="16" r="15" fill="#25D366"/><path fill="#FFF" d="M22.5 11.5c-3.6-3.6-9.4-3.6-13 0s-3.6 9.4 0 13c1.5 1.5 3.5 2.5 5.7 2.8l1.9.4.4-1.9c.3-1.5 1-2.9 2.1-4 1.4-1.4 3.3-2.3 5.3-2.5 2.1-.2 4.2.3 5.9 1.5 1.1.8 2 1.9 2.6 3.2.6 1.3.8 2.7.6 4.1-.2 1.4-.9 2.7-2 3.7-1.1 1-2.5 1.6-4 1.8-2.2.3-4.5-.1-6.4-1.1-.9-.5-1.7-1.1-2.4-1.8l-4.3 2.2c.9 1.3 2.1 2.4 3.4 3.2 2.6 1.7 5.7 2.4 8.8 1.8 3.1-.6 5.9-2.4 7.9-5 .6-.8 1.1-1.7 1.4-2.7.3-1 .4-2 .2-3-.2-1-.7-1.9-1.4-2.7-1.6-1.8-3.8-3-6.3-3.3-2.7-.3-5.4.4-7.6 2.1-1.1.8-2 1.8-2.7 3-.7 1.2-1.1 2.5-1.2 3.8-.1 1.4.2 2.8.8 4 .5 1.1 1.3 2 2.3 2.8l.1.1-1.9 1c-.9-.9-1.6-1.9-2.1-3.1-1.1-2.5-1.1-5.4 0-7.9s3.1-4.6 5.6-5.7c2.5-1.1 5.4-1.1 7.9 0s4.6 3.1 5.7 5.6c1.1 2.5 1.1 5.4 0 7.9-1.1 2.5-3.1 4.6-5.6 5.7-2.2 1-4.7 1.2-7 .6l-.1-.1c-.4-.1-.8-.3-1.2-.5l-4.3 2.2c.6.4 1.3.7 1.9.9 1.5.5 3 .7 4.6.6 1.9-.1 3.7-.7 5.3-1.7 1.5-1 2.8-2.3 3.7-3.9.9-1.6 1.4-3.3 1.5-5.1.1-1.8-.3-3.6-1.1-5.2-.8-1.6-2-2.9-3.5-3.9-1.5-1-3.3-1.6-5.1-1.7-1.8-.1-3.6.3-5.2 1.1-1.6.8-2.9 2-3.9 3.5-1 1.5-1.6 3.3-1.7 5.1 0 1.2.2 2.5.7 3.6.4.9 1 1.8 1.7 2.5l-2.3 1.2c-1-1.2-1.7-2.6-2.2-4.1-.9-2.7-.9-5.6 0-8.3.9-2.7 2.7-5 5.1-6.6 2.4-1.6 5.2-2.4 8.1-2.3s5.7 1 8 2.8z"/></svg>
                     </a>
@@ -311,7 +187,6 @@
         </div>
     </header>
     <div class="header-content" id="justi" >
-            <div class="answer-snippet" style="background:#f8f6f0;border-left:4px solid #e88800;padding:14px 18px;border-radius:0 8px 8px 0;font-size:15px;line-height:1.7;color:#333;margin:0 0 20px;">BroService provides home, property and everyday services across Koh Phangan — including plumbing, electrical work, AC service, cleaning, water delivery, bike repair and handyman services. We help residents, property owners, businesses and visitors arrange reliable local services.</div>
         <div class="wrap main">
             <div class="block-1">
                 <img title="Fast!" src="assets/images/water-delivery.jpg" alt="Fast!" class="img-radius"/>
@@ -378,10 +253,7 @@
         <p style="margin-top:10px;color:#888;font-size:13px;">Fast reply — we're here to help!</p>
     </div>
     
-    <div class="content-wrap" style="max-width:1100px; margin:0 auto; padding:20px; background:#edeef0;">
-<section class="content-section"><h2>Our Services</h2><ul><li>Plumbing — leak repair, drains, taps, pumps</li><li>Electrical — wiring, lighting, sockets, breakers</li><li>AC Service — cleaning, gas refill, repair</li><li>Cleaning — regular, deep, move-in/out</li><li>Water Delivery — 19L bottles, pump rental</li><li>Bike Service — oil change, brakes, tires</li><li>Handyman — furniture, TV mounting, repairs</li></ul></section><section class="content-section"><h2>When Do You Need BroService?</h2><ul><li>Emergency repair — burst pipe, electrical fault, AC breakdown</li><li>Regular maintenance — cleaning, AC service, bike service</li><li>Move-in / move-out — cleaning, handyman, plumbing check</li><li>New installation — AC, water pump, light fixtures, TV mounting</li><li>Daily needs — water delivery, weekly cleaning</li></ul></section>
-            <section class="content-section"><h2>Service Areas</h2><p>We serve all Koh Phangan: Thong Sala, Baan Tai, Haad Rin, Sri Thanu, Haad Yao, Chaloklum.</p></section><section class="content-section"><h2>How to Book</h2><p>Call or WhatsApp us.</p><div class="cta-block"><h2>Contact BroService</h2><p>Available 8AM-8PM</p><a href="tel:+66808705704">Call +66 80-870-5704</a><a href="https://wa.me/+66808705704">WhatsApp</a></div></section><section class="faq-section"><h2>FAQs</h2><div class="faq-list"><div class="faq-accordion"><span class="faq-toggle">+</span><h3>What areas do you cover?</h3><div class="faq-answer"><p>All Koh Phangan.</p></div></div><div class="faq-accordion"><span class="faq-toggle">+</span><h3>How do I book?</h3><div class="faq-answer"><p>By phone or WhatsApp.</p></div></div></div></section>
-        </div>
+    <section class="content-section"><h2>Our Services</h2><ul><li>Plumbing — leak repair, drains, taps, pumps</li><li>Electrical — wiring, lighting, sockets, breakers</li><li>AC Service — cleaning, gas refill, repair</li><li>Cleaning — regular, deep, move-in/out</li><li>Water Delivery — 19L bottles, pump rental</li><li>Bike Service — oil change, brakes, tires</li><li>Handyman — furniture, TV mounting, repairs</li></ul></section><section class="content-section"><h2>Service Areas</h2><p>We serve all Koh Phangan: Thong Sala, Baan Tai, Haad Rin, Sri Thanu, Haad Yao, Chaloklum.</p></section><section class="content-section"><h2>How to Book</h2><p>Call or WhatsApp us.</p><div class="cta-block"><h2>Contact BroService</h2><p>Available 8AM-8PM</p><a href="tel:+66808705704">Call +66 80-870-5704</a><a href="https://wa.me/+66808705704">WhatsApp</a></div></section><section class="faq-section"><h2>FAQs</h2><div class="faq-list"><div class="faq-accordion"><span class="faq-toggle">+</span><h3>What areas do you cover?</h3><div class="faq-answer"><p>All Koh Phangan.</p></div></div><div class="faq-accordion"><span class="faq-toggle">+</span><h3>How do I book?</h3><div class="faq-answer"><p>By phone or WhatsApp.</p></div></div></div></section>
         <footer>
         <div class="container">
             <div class="footer-grid">
