@@ -34,17 +34,17 @@
         ul { margin: 0; padding: 0; }
         ul li { list-style-position: inside; margin-left: 25px; padding: 3px 0; }
         header { width: 100%; background: linear-gradient(180deg, #2b2424, #1f1919); margin: 0 auto; z-index: 100; }
-        .linkblock { float: left; margin: 25px 0 15px; font-size: 240%; color: #e98400; font-weight: bold; text-shadow: 1px 1px 2px #555; }
+        .linkblock { float: left; margin: 46px 0 22px; font-size: 269%; color: #e98400; font-weight: bold; text-shadow: 1px 1px 2px #555; }
         .linkblock a { color: #d3d3d3; }
         .slogan { font-size: 18px; line-height: 22px; color: #d3d3d3; float: left; border-left: #2f2b2b 1px solid; margin: 13px 0 0 28px; padding: 18px 0 15px 29px; }
-        .tooltips { float: right; margin: 30px 40px 0 0; display: flex; gap: 6px; align-items: center; }
+        .tooltips { float: right; margin: 54px 50px 0 0; display: flex; gap: 6px; align-items: center; }
 .tooltips a { display: inline-block; }
         .tooltips a:hover { opacity: 0.8; }
         .tooltips a svg { width: 28px; height: 28px; border-radius: 50%; }
-        .nav-shadow { padding-top: 5px; margin: 12px 0 0; position: relative; z-index: 100; }
+        .nav-shadow { padding-top: 10px; margin: 24px 0 0; position: relative; z-index: 100; }
         .nav-shadow > div { background: linear-gradient(180deg, #e57c00, #c47000); border-radius: 7px; box-shadow: 0 3px 2px #201a1a; }
         nav { border-radius: 7px; }
-        ul.menu { overflow: hidden; text-align: center; padding: 8px 2px; display: flex; flex-wrap: wrap; justify-content: center; list-style: none; }
+        ul.menu { overflow: hidden; text-align: center; padding: 8px 2px; display: flex; flex-wrap: nowrap; justify-content: center; list-style: none; }
         ul.menu li { display: inline-block; line-height: 18px; margin: 2px 1px; padding: 5px 7px; border-radius: 6px; transition: background 0.2s; }
         ul.menu li:hover { background: rgba(0,0,0,0.1); }
         ul.menu li a { font-size: 14px; line-height: 18px; color: #1f1919; font-weight: bold; white-space: nowrap; }
@@ -54,11 +54,24 @@
         .content-subpages { padding-top: 18px !important; }
         .header-content { width: 100%; background: #edeef0; margin: 0 auto; position: relative; z-index: 99; margin-top: -25px; padding-bottom: 25px; }
         .img-radius { border-radius: 7px; }
-        .block-1 { color: #8f8b8c; padding-top: 20px; width: 31%; float: left; text-align: center; margin: 1%; }
+        .block-1 { color: #8f8b8c; padding-top: 60px; width: 320px; float: left; text-align: center; }
         .block-1 > div { padding: 0 30px; margin-top: 14px; }
         #content > div { width: 76%; margin: 0 auto; }
         img { max-width: 100%; height: auto; border-radius: 7px; aspect-ratio: auto; }
         .justifyfull { text-align: justify; }
+        footer { background: var(--darker); color: #e88800; text-align: center; padding: 20px 0; }
+        footer a { color: #e88800; }
+        footer a:hover { text-decoration: underline; }
+        .footer-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; text-align: left; margin-bottom: 20px; }
+        .footer-col h4 { color: #e88800; margin-bottom: 10px; font-size: 15px; }
+        .footer-col p, .footer-col li { color: #ccc; font-size: 13px; line-height: 1.8; list-style: none; }
+        .footer-col ul { list-style: none; padding: 0; }
+        .footer-col ul li a { color: #ccc; font-size: 13px; }
+        .footer-col ul li a:hover { color: #e88800; }
+        .footer-social { display: flex; gap: 6px; margin-top: 8px; }
+        .footer-social a svg { width: 22px; height: 22px; border-radius: 50%; display: block; }
+        .footer-bottom { border-top: 1px solid #333; padding-top: 15px; margin-top: 15px; font-size: 12px; color: #888; }
+        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; } }
         @media only screen and (max-width: 768px) {
             h1 { font-size: 170%; letter-spacing: -1px; display: block; }
             .block-1 { width: 100%; padding-top: 16px; }
@@ -67,6 +80,7 @@
             .linkblock { float: none; font-size: 180%; text-align: center; margin: 15px 0 5px; }
             .slogan { float: none; border-left: none; margin: 10px 0; padding: 10px 15px; font-size: 14px; text-align: center; }
             .tooltips { float: none; margin: 10px 0; display: flex; justify-content: center; gap: 6px; }
+            footer p { text-align: center; width: 100%; }
             .main { max-width: 100%; padding: 0 10px; }
             ul.menu { 
                 display: grid; 
@@ -98,29 +112,27 @@
             .block-1:nth-child(3) { clear: both; }
         }
     
-        footer { background: #0d0d0d; color: #e88800; text-align: center; padding: 20px 0; }
-        footer a { color: #e88800; }
-        footer a:hover { text-decoration: underline; }
-        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 25px; margin-bottom: 20px; }
-        .footer-col h4 { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600; color: #fff; margin-bottom: 12px; }
-        .footer-col p { font-size: 13px; line-height: 1.5; color: #aaa; }
-        .footer-links { list-style: none; }
-        .footer-links li { margin-bottom: 6px; }
-        .footer-links a { font-size: 13px; color: #aaa; transition: color 0.2s; }
-        .footer-links a:hover { color: #e88800; }
-        .footer-social { display: flex; gap: 6px; margin-top: 8px; }
-        .footer-social a { display: inline-block; }
-        .footer-social svg { width: 24px; height: 24px; border-radius: 50%; }
-        .footer-bottom { text-align: center; padding-top: 20px; border-top: 1px solid #333; font-size: 13px; color: #888; }
-        .footer-bottom a { color: #888; }
-
 .container { max-width: 960px; margin: 0 auto; padding: 0 15px; }
+footer { background: #0d0d0d; color: #e88800; text-align: center; padding: 20px 0; }
+footer a { color: #e88800; }
+footer a:hover { text-decoration: underline; }
+.footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 25px; margin-bottom: 20px; }
+.footer-col h4 { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600; color: #fff; margin-bottom: 12px; }
+.footer-col p { font-size: 13px; line-height: 1.5; color: #aaa; }
+.footer-links { list-style: none; }
+.footer-links li { margin-bottom: 6px; }
+.footer-links a { font-size: 13px; color: #aaa; transition: color 0.2s; }
+.footer-links a:hover { color: #e88800; }
+.footer-social { display: flex; gap: 6px; margin-top: 8px; }
+.footer-social a { display: inline-block; }
+.footer-social svg { width: 24px; height: 24px; border-radius: 50%; }
+.footer-bottom { text-align: center; padding-top: 20px; border-top: 1px solid #333; font-size: 13px; color: #888; }
+.footer-bottom a { color: #888; }
 </style>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  <h2>FAQ - BroService.in.th — All services on Koh Phangan in one place</h2>
-"@type": "FAQPage",
+  "@type": "FAQPage",
   "mainEntity": [
         {"@type":"Question","name":"What services does BroService offer on Koh Phangan?","acceptedAnswer":{"@type":"Answer","text":"BroService offers plumbing, electrical, AC service, cleaning, water delivery, bike repair, handyman and property services across Koh Phangan."}},        {"@type":"Question","name":"How do I contact BroService?","acceptedAnswer":{"@type":"Answer","text":"Contact BroService by phone, WhatsApp, Telegram or email. Available 8AM-8PM, 7 days a week."}}
   ]
@@ -283,6 +295,15 @@
                         <li><a href="/bike-service-koh-phangan/">🛵 Bike Service</a></li>
                         <li><a href="property-rental.html">🏠 Property Rental</a></li>
                     </ul>
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+</div></div>
+</div>
                 </div>
                 <div class="footer-col">
                     <h4>Contact</h4>
