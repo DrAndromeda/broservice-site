@@ -52,31 +52,36 @@
         ul.menu li.active a { color: #e88800; font-weight: 700; }
         #content { background: #edeef0; width: 100%; padding: 0; }
         .content-subpages { padding-top: 18px !important; }
-        .header-content { width: 100%; background: #edeef0; margin: 0 auto; position: relative; z-index: 99; padding-bottom: 15px; }
+        .header-content { width: 100%; background: #edeef0; margin: 0 auto; position: relative; z-index: 99; margin-top: -25px; padding-bottom: 25px; }
         .img-radius { border-radius: 7px; }
         .block-1 { color: #8f8b8c; padding-top: 15px; width: 30%; float: left; text-align: center; margin: 1%; }
         .block-1 > div { padding: 0 30px; margin-top: 14px; }
         #content > div { width: 76%; margin: 0 auto; }
-.footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; text-align: left; margin-bottom: 20px; }
-.footer-col h4 { color: #e88800; margin-bottom: 10px; font-size: 15px; }
-.footer-col p, .footer-col li { color: #ccc; font-size: 13px; line-height: 1.8; list-style: none; }
-.footer-col ul { list-style: none; padding: 0; }
-.footer-col ul li a { color: #ccc; font-size: 13px; }
-.footer-col ul li a:hover { color: #e88800; }
-.footer-social { display: flex; gap: 6px; margin-top: 8px; }
-.footer-social a { display: inline-block; }
-.footer-social svg { width: 24px; height: 24px; }
-.footer-bottom { text-align: center; padding-top: 20px; border-top: 1px solid #333; font-size: 13px; color: #888; }
-.footer-bottom a { color: #888; }
-
         img { max-width: 100%; height: auto; border-radius: 7px; aspect-ratio: auto; }
         .justifyfull { text-align: justify; }
+        footer { background: var(--darker); color: #e88800; text-align: center; padding: 20px 0; }
+        footer a { color: #e88800; }
+        footer a:hover { text-decoration: underline; }
+        .footer-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; text-align: left; margin-bottom: 20px; }
+        .footer-col h4 { color: #e88800; margin-bottom: 10px; font-size: 15px; }
+        .footer-col p, .footer-col li { color: #ccc; font-size: 13px; line-height: 1.8; list-style: none; }
+        .footer-col ul { list-style: none; padding: 0; }
+        .footer-col ul li a { color: #ccc; font-size: 13px; }
+        .footer-col ul li a:hover { color: #e88800; }
+        .footer-social { display: flex; gap: 6px; margin-top: 8px; }
+        .footer-social a svg { width: 22px; height: 22px; border-radius: 50%; display: block; }
+        .footer-bottom { border-top: 1px solid #333; padding-top: 15px; margin-top: 15px; font-size: 12px; color: #888; }
+        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; } }
+        @media only screen and (max-width: 768px) {
+            h1 { font-size: 170%; letter-spacing: -1px; display: block; }
             
             .block-1 > div { padding: 0 8px; }
             .block-1 > div { padding: 0 15px; }
             .linkblock { float: none; font-size: 180%; text-align: center; margin: 15px 0 5px; }
             .slogan { float: none; border-left: none; margin: 10px 0; padding: 10px 15px; font-size: 14px; text-align: center; }
             .tooltips { float: none; margin: 10px 0; display: flex; justify-content: center; gap: 6px; }
+            footer p { text-align: center; width: 100%; }
+            .main { max-width: 100%; padding: 0 10px; }
             ul.menu { 
                 display: grid; 
                 grid-template-columns: 1fr 1fr; 
@@ -164,9 +169,7 @@
             <div class="nav-shadow">
                 <div>
                     <nav>
-                                                <div style="margin:10px 0;">
-  <button onclick="var d=this.parentElement;d.querySelector('.faq-content').style.display=d.querySelector('.faq-content').style.display==='none'?'block':'none';this.textContent=this.textContent==='вЂ– FAQ'?'вЂ– FAQ':'вЂ– FAQ'" style="background:#555;color:#fff;border:none;padding:5px 12px;border-radius:4px;cursor:pointer;font-size:12px;">вЂ– FAQ</button>
-  <div class="faq-content" style="display:none;"><ul class="menu">
+                                                <ul class="menu">
                             <li class="active"><a href="/" title="🏠 Services">🏠 Services</a></li>
                             <li><a href="/water-delivery-koh-phangan/" title="🚰 Water">🚰 Water</a></li>
                             <li><a href="/bike-service-koh-phangan/" title="🛵 Bike">🛵 Bike</a></li>
@@ -176,8 +179,7 @@
                             <li><a href="/electrician-koh-phangan/" title="⚡ Electric">⚡ Electric</a></li>
                             <li><a href="/handyman-koh-phangan/" title="🔨 Handyman">🔨 Handyman</a></li>
                             <li><a href="/contacts/" title="✉️ Contacts">✉️ Contacts</a></li>
-                        </ul></div>
-</div>
+                        </ul>
                     </nav>
                 </div>
             </div>
@@ -185,11 +187,6 @@
     </header>
     <div class="header-content" id="justi" >
         <div class="wrap main">
-<div style="margin:5px 0;">
-  <div style="margin:10px 0;">
-  <button onclick="var d=this.parentElement;d.querySelector('.ans-content').style.display=d.querySelector('.ans-content').style.display==='none'?'block':'none';this.textContent=this.textContent==='вЂ– Details'?'вЂ– Details':'вЂ– Details'" style="background:#e88800;color:#fff;border:none;padding:5px 12px;border-radius:4px;cursor:pointer;font-size:12px;">вЂ– Details</button>
-  <div class="ans-content" style="display:none;background:#f8f6f0;border-left:4px solid #e88800;padding:14px 18px;border-radius:0 8px 8px 0;font-size:15px;line-height:1.7;color:#333;">BroService provides home and property services across Koh Phangan, Thailand — plumbing, electrical, AC service, cleaning, water delivery, bike repair and handyman. Simple repairs from ฿200. Available 8AM-8PM, 7 days. Call +66 80-870-5704 or WhatsApp to book any service. We cover the entire island including Thong Sala, Haad Rin, Baan Tai, Sri Thanu, Haad Yao and Chaloklum.</div>
-</div>
             <div class="block-1">
                 <img title="Fast!" src="assets/images/water-delivery.jpg" alt="Fast!" class="img-radius"/>
                 <div class="border-1">
@@ -223,27 +220,7 @@
                 <p><br><br></p>
                 <p class="justifyfull">BroService is a full‑cycle service center on the island. We have gathered the most in‑demand island services: from water delivery to bike repair. Skilled professionals, work on professional equipment, and 100% guarantee on all jobs.</p>
                 <p class="justifyfull"><strong>Service center Koh Phangan</strong> BroService provides fast repair, plumbing, cleaning, water delivery, and property rental assistance. No need to go anywhere else — everything on your island!</p>
-                <h2>Services on Koh Phangan</h2>
-<p>BroService provides plumbing, electrical, AC, cleaning, water delivery, bike and handyman services across Koh Phangan. One call handles it all. Call +66 80-870-5704 or WhatsApp.</p>
-
-<h2>When Do You Need Services on Koh Phangan?</h2>
-<p>Moving into a new villa, a pipe burst, AC stopped working, scooter broke down, or just need regular cleaning and water delivery. We cover everyday needs across the island.</p>
-
-<h2>Service Areas on Koh Phangan</h2>
-<p>We serve Thong Sala, Haad Rin, Baan Tai, Sri Thanu, Haad Yao, Chaloklum, Koh Ma, Wok Tum, Hin Kong, Haad Salad, Thong Nai Pan and all areas of Koh Phangan.</p>
-
-<h2>How to Book</h2>
-<p>Call or WhatsApp +66 80-870-5704. Available 8AM-8PM, 7 days a week.</p>
-
-<h2>Services on Koh Phangan</h2>
-<p>BroService provides plumbing, electrical, AC, cleaning, water delivery, bike and handyman services across Koh Phangan. One call handles it all. Call +66 80-870-5704 or WhatsApp.</p>
-<h2>When Do You Need Services on Koh Phangan?</h2>
-<p>Moving into a new villa, a pipe burst, AC stopped working, scooter broke down, or just need regular cleaning and water delivery. We cover everyday needs across the island.</p>
-<h2>Service Areas on Koh Phangan</h2>
-<p>We serve Thong Sala, Haad Rin, Baan Tai, Sri Thanu, Haad Yao, Chaloklum, Koh Ma, Wok Tum, Hin Kong, Haad Salad, Thong Nai Pan and all areas of Koh Phangan.</p>
-<h2>How to Book</h2>
-<p>Call or WhatsApp +66 80-870-5704. Available 8AM-8PM, 7 days a week.</p>
-<h2>BroService — popular services on Koh Phangan</h2>
+                <h2>BroService — popular services on Koh Phangan</h2>
                 <p><img id="rob" src="assets/images/property-rental.jpg" width="484" height="300" alt="Koh Phangan services" title="Koh Phangan services" style="margin: 5px; float: right; max-width: 100%; height: auto; border-radius: 7px;"></p>
                 <p>No need to go anywhere else — everything on your island! BroService offers the full range of popular services:</p>
                 <ul class="justifyfull">
@@ -294,7 +271,7 @@
                     <ul class="footer-links">
                         <li><a href="/water-delivery-koh-phangan/">🚰 Water Delivery</a></li>
                         <li><a href="/cleaning-koh-phangan/">🧹 Cleaning</a></li>
-                        <li><a href="/handyman-koh-phangan/" class="active">🔨 Handyman</a></li>
+                        <li><a href="/plumber-koh-phangan/">🔧 Plumber</a></li>
                         <li><a href="/ac-service-koh-phangan/">❄️ AC Service</a></li>
                         <li><a href="/bike-service-koh-phangan/">🛵 Bike Service</a></li>
                         <li><a href="property-rental.html">🏠 Property Rental</a></li>
