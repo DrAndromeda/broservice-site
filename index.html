@@ -59,35 +59,6 @@
         #content > div { width: 76%; margin: 0 auto; }
         img { max-width: 100%; height: auto; border-radius: 7px; aspect-ratio: auto; }
         .justifyfull { text-align: justify; }
-        footer { background: var(--darker); color: #e88800; text-align: center; padding: 20px 0; }
-        footer a { color: #e88800; }
-        footer a:hover { text-decoration: underline; }
-        .footer-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; text-align: left; margin-bottom: 20px; }
-        .footer-col h4 { color: #e88800; margin-bottom: 10px; font-size: 15px; }
-        .footer-col p, .footer-col li { color: #ccc; font-size: 13px; line-height: 1.8; list-style: none; }
-        .footer-col ul { list-style: none; padding: 0; }
-        .footer-col ul li a { color: #ccc; font-size: 13px; }
-        .footer-col ul li a:hover { color: #e88800; }
-        .footer-social { display: flex; gap: 6px; margin-top: 8px; }
-        .footer-social a svg { width: 22px; height: 22px; border-radius: 50%; display: block; }
-        .footer-bottom { border-top: 1px solid #333; padding-top: 15px; margin-top: 15px; font-size: 12px; color: #888; }
-        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; } }
-        @media only screen and (max-width: 768px) {
-            h1 { font-size: 170%; letter-spacing: -1px; display: block; }
-            .block-1 { width: 100%; padding-top: 16px; }
-            .block-1 > div { padding: 0 8px; }
-            .block-1 > div { padding: 0 15px; }
-            .linkblock { float: none; font-size: 180%; text-align: center; margin: 15px 0 5px; }
-            .slogan { float: none; border-left: none; margin: 10px 0; padding: 10px 15px; font-size: 14px; text-align: center; }
-            .tooltips { float: none; margin: 10px 0; display: flex; justify-content: center; gap: 6px; }
-            footer p { text-align: center; width: 100%; }
-            .main { max-width: 100%; padding: 0 10px; }
-            ul.menu { 
-                display: grid; 
-                grid-template-columns: 1fr 1fr; 
-                gap: 1px; 
-                padding: 3px; 
-            }
             ul.menu li { 
                 padding: 4px 2px; 
                 text-align: center; 
@@ -112,22 +83,74 @@
             .block-1:nth-child(3) { clear: both; }
         }
     
-.container { max-width: 960px; margin: 0 auto; padding: 0 15px; }
-footer { background: #0d0d0d; color: #e88800; text-align: center; padding: 20px 0; }
-footer a { color: #e88800; }
-footer a:hover { text-decoration: underline; }
-.footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 25px; margin-bottom: 20px; }
-.footer-col h4 { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600; color: #fff; margin-bottom: 12px; }
-.footer-col p { font-size: 13px; line-height: 1.5; color: #aaa; }
-.footer-links { list-style: none; }
-.footer-links li { margin-bottom: 6px; }
-.footer-links a { font-size: 13px; color: #aaa; transition: color 0.2s; }
-.footer-links a:hover { color: #e88800; }
-.footer-social { display: flex; gap: 6px; margin-top: 8px; }
-.footer-social a { display: inline-block; }
-.footer-social svg { width: 24px; height: 24px; border-radius: 50%; }
-.footer-bottom { text-align: center; padding-top: 20px; border-top: 1px solid #333; font-size: 13px; color: #888; }
-.footer-bottom a { color: #888; }
+        .container { max-width: 960px; margin: 0 auto; padding: 0 15px; }
+        a { text-decoration: none; color: var(--primary); }
+        a:hover { text-decoration: underline; }
+
+        /* Header – compact */
+        header {
+            background: linear-gradient(180deg, var(--dark2), var(--darker));
+            padding: 4px 0 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        footer {
+            background: var(--dark);
+            color: #aaa;
+            padding: 30px 0 20px;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 25px;
+            margin-bottom: 20px;
+        }
+        .footer-col h4 {
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--white);
+            margin-bottom: 12px;
+        }
+        .footer-col p { font-size: 13px; line-height: 1.5; color: #aaa; }
+        .footer-links { list-style: none; }
+        .footer-links li { margin-bottom: 6px; }
+        .footer-links a { font-size: 13px; color: #aaa; transition: color 0.2s; }
+        .footer-links a:hover { color: var(--primary); }
+        .footer-social { display: flex; gap: 6px; margin-top: 10px; }
+        .footer-social a { display: inline-block; transition: opacity 0.2s; }
+        .footer-social a:hover { opacity: 0.7; }
+        .footer-social svg { width: 22px; height: 22px; border-radius: 50%; }
+        .footer-bottom {
+            border-top: 1px solid #333;
+            padding-top: 15px;
+            text-align: center;
+            font-size: 13px;
+            color: #888;
+        }
+        .footer-bottom a { color: var(--primary); }
+
+        @media (max-width: 768px) {
+            .header-inner { flex-direction: column; gap: 5px; text-align: center; }
+            .header-right { flex-direction: column; gap: 5px; }
+            ul.menu { 
+                display: grid; 
+                grid-template-columns: 1fr 1fr; 
+                gap: 1px; 
+                padding: 3px; 
+            }
+            .footer-grid { grid-template-columns: 1fr; }
+            #content .section { padding: 12px 10px; }
+            #content h2 { margin-top: 10px; margin-bottom: 6px; }
+            #content p { margin-bottom: 6px; }
+            .pricing-table { margin: 8px 0; }
+            .pricing-table td { padding: 5px; font-size: 12px; }
+            .hero { padding: 12px 0 8px; }
+            .hero-subtitle { margin-bottom: 10px; font-size: 13px; }
+            .blocks { gap: 8px; flex-wrap: wrap; }
+            .block { flex: 1 1 100%; max-width: 100%; margin-bottom: 6px; }
+        }
 </style>
 <script type="application/ld+json">
 {
