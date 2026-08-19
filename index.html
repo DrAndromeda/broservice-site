@@ -142,6 +142,26 @@ footer a { color: #e88800; }
     .main, .wrap { max-width: 100% !important; width: 100% !important; }
     #content > div { width: 95% !important; }
     .header-content { width: 100% !important; }
+    ul.menu { 
+        display: grid !important; 
+        grid-template-columns: 1fr 1fr 1fr; 
+        gap: 2px; 
+        padding: 4px; 
+        flex-wrap: nowrap !important;
+    }
+    ul.menu li { 
+        padding: 3px 1px !important; 
+        text-align: center; 
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+    ul.menu li:nth-child(9) { grid-column: 1 / 4; }
+    ul.menu li a { 
+        font-size: 10px !important; 
+        white-space: nowrap;
+        text-align: center;
+    }
 }
 
 </style>
