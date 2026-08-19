@@ -252,7 +252,6 @@ ul.menu li a { font-size: 13px; line-height: 16px; color: #1f1919; font-weight: 
         }
         .footer-bottom a { color: var(--primary); }
 
-        @media (max-width: 768px) {
             .header-inner { flex-direction: column; gap: 5px; text-align: center; }
             .header-right { flex-direction: column; gap: 5px; }
             ul.menu { 
@@ -299,7 +298,16 @@ ul.menu li a { font-size: 13px; line-height: 16px; color: #1f1919; font-weight: 
             .blocks { gap: 8px; flex-wrap: wrap; }
             .block { flex: 1 1 100%; max-width: 100%; margin-bottom: 6px; }
         }
-    </style>
+    
+        @media (max-width: 768px) {
+            .header-inner { flex-direction: column; gap: 5px; text-align: center; }
+            .header-right { flex-direction: column; gap: 5px; }
+            ul.menu { 
+                display: grid; 
+                grid-template-columns: 1fr 1fr; 
+                gap: 1px; 
+                padding: 3px; 
+            }</style>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
