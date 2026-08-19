@@ -75,7 +75,23 @@ footer { background: var(--darker); color: #e88800; text-align: center; padding:
         .footer-social { display: flex; gap: 6px; margin-top: 8px; }
         .footer-social a svg { width: 22px; height: 22px; border-radius: 50%; display: block; }
         .footer-bottom { border-top: 1px solid #333; padding-top: 15px; margin-top: 15px; font-size: 12px; color: #888; }
-        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; } }
+        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr;
+            .container {
+                padding-left: 15px;
+                padding-right: 15px;
+                max-width: 100%;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            .footer-col {
+                text-align: center;
+            }
+            .footer-social {
+                justify-content: center;
+            }
+             } }
         @media only screen and (max-width: 768px) {
             h1 { font-size: 170%; letter-spacing: -1px; display: block; }
             .block-1 { width: 100%; padding-top: 16px; }

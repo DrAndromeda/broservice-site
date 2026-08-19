@@ -252,7 +252,23 @@ ul.menu li a { font-size: 13px; line-height: 16px; color: #1f1919; font-weight: 
         .footer-bottom a { color: var(--primary); }
 
         @media (max-width: 768px) {
-            .header-inner { flex-direction: column; gap: 5px; text-align: center; }
+            .header-inner { flex-direction: column; gap: 5px; text-align: center;
+            .container {
+                padding-left: 15px;
+                padding-right: 15px;
+                max-width: 100%;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            .footer-col {
+                text-align: center;
+            }
+            .footer-social {
+                justify-content: center;
+            }
+             }
             .header-right { flex-direction: column; gap: 5px; }
             ul.menu { 
                 display: grid; 
