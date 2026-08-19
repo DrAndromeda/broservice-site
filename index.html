@@ -34,17 +34,17 @@
         ul { margin: 0; padding: 0; }
         ul li { list-style-position: inside; margin-left: 25px; padding: 3px 0; }
         header { width: 100%; background: linear-gradient(180deg, #2b2424, #1f1919); margin: 0 auto; z-index: 100; }
-        .linkblock { float: left; margin: 15px 0 10px; font-size: 220%; color: #e98400; font-weight: bold; text-shadow: 1px 1px 2px #555; }
+        .linkblock { float: left; margin: 25px 0 15px; font-size: 240%; color: #e98400; font-weight: bold; text-shadow: 1px 1px 2px #555; }
         .linkblock a { color: #d3d3d3; }
-        .slogan { font-size: 14px; line-height: 18px; color: #d3d3d3; float: left; border-left: #2f2b2b 1px solid; margin: 6px 0 0 15px; padding: 8px 0 8px 15px; }
-        .tooltips { float: right; margin: 18px 35px 0 0; display: flex; gap: 6px; align-items: center; }
+        .slogan { font-size: 18px; line-height: 22px; color: #d3d3d3; float: left; border-left: #2f2b2b 1px solid; margin: 13px 0 0 28px; padding: 18px 0 15px 29px; }
+        .tooltips { float: right; margin: 30px 40px 0 0; display: flex; gap: 6px; align-items: center; }
 .tooltips a { display: inline-block; }
         .tooltips a:hover { opacity: 0.8; }
         .tooltips a svg { width: 28px; height: 28px; border-radius: 50%; }
-        .nav-shadow { padding-top: 3px; margin: 8px 0 0; position: relative; z-index: 100; }
+        .nav-shadow { padding-top: 5px; margin: 12px 0 0; position: relative; z-index: 100; }
         .nav-shadow > div { background: linear-gradient(180deg, #e57c00, #c47000); border-radius: 7px; box-shadow: 0 3px 2px #201a1a; }
         nav { border-radius: 7px; }
-        ul.menu { overflow: hidden; text-align: center; padding: 8px 2px; overflow: hidden; text-align: center; padding: 8px 2px; }
+        ul.menu { overflow: hidden; text-align: center; padding: 8px 2px; display: flex; flex-wrap: nowrap; justify-content: center; list-style: none; }
         ul.menu li { display: inline-block; line-height: 18px; margin: 2px 1px; padding: 5px 7px; border-radius: 6px; transition: background 0.2s; }
         ul.menu li:hover { background: rgba(0,0,0,0.1); }
         ul.menu li a { font-size: 14px; line-height: 18px; color: #1f1919; font-weight: bold; white-space: nowrap; }
@@ -54,7 +54,7 @@
         .content-subpages { padding-top: 18px !important; }
         .header-content { width: 100%; background: #edeef0; margin: 0 auto; position: relative; z-index: 99; margin-top: -25px; padding-bottom: 25px; }
         .img-radius { border-radius: 7px; }
-        .block-1 { color: #8f8b8c; padding-top: 15px; width: 30%; float: left; text-align: center; margin: 1%; }
+        .block-1 { color: #8f8b8c; padding-top: 20px; width: 31%; float: left; text-align: center; margin: 1%; }
         .block-1 > div { padding: 0 30px; margin-top: 14px; }
         #content > div { width: 76%; margin: 0 auto; }
         img { max-width: 100%; height: auto; border-radius: 7px; aspect-ratio: auto; }
@@ -74,7 +74,7 @@
         @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; } }
         @media only screen and (max-width: 768px) {
             h1 { font-size: 170%; letter-spacing: -1px; display: block; }
-            
+            .block-1 { width: 100%; padding-top: 16px; }
             .block-1 > div { padding: 0 8px; }
             .block-1 > div { padding: 0 15px; }
             .linkblock { float: none; font-size: 180%; text-align: center; margin: 15px 0 5px; }
@@ -108,8 +108,8 @@
             #content > div { width: 95%; }
         }
         @media only screen and (min-width: 481px) and (max-width: 768px) {
-            
-            
+            .block-1 { width: 50%; }
+            .block-1:nth-child(3) { clear: both; }
         }
     </style>
 <script type="application/ld+json">
