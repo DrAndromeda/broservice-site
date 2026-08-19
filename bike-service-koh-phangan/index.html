@@ -298,7 +298,15 @@ ul.menu li a { font-size: 13px; line-height: 16px; color: #1f1919; font-weight: 
             .blocks { gap: 8px; flex-wrap: wrap; }
             .block { flex: 1 1 100%; max-width: 100%; margin-bottom: 6px; }
         }
-    </style>
+    
+
+@media (max-width: 767px) {
+    .main, .wrap { max-width: 100% !important; width: 100% !important; }
+    #content > div { width: 95% !important; }
+    .header-content { width: 100% !important; }
+}
+
+</style>
     <meta name="theme-color" content="#1a1414">
     <link rel="preload" as="image" href="../assets/images/bike-service.jpg">
 <script type="application/ld+json">
