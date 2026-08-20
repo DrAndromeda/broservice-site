@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html<div style="max-width:960px;margin:0 auto;padding:15px;">lang="en">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
@@ -23,6 +23,9 @@
         .wrap { overflow: hidden; position: relative; max-width: 961px; margin: auto; }
         a { text-decoration: none; cursor: pointer; }
         a:hover { text-decoration: none; }
+.lang-switch { display: inline-flex; gap: 2px; font-size: 10px; vertical-align: middle; }
+.lang-switch a { color: #888; text-decoration: none; padding: 1px 3px; }
+.lang-switch a.active { color: #e88800; border: 1px solid #e88800; border-radius: 2px; font-weight: 600; }
         a.button { background: #e88800; border-bottom: #000 1px solid; color: #fff; font-size: 12px; line-height: 15px; padding: 12px 30px; display: inline-block; border-radius: 6px; }
         a.button:hover { background: #1f1919; }
         a.link { color: #e88800; }
@@ -59,10 +62,11 @@
         #content > div { width: 76%; margin: 0 auto; }
         img { max-width: 100%; height: auto; border-radius: 7px; aspect-ratio: auto; }
         .justifyfull { text-align: justify; }
-        footer { background: var(--darker); color: #e88800; text-align: center; padding: 20px 0; }
+        footer > .container { max-width: 960px; margin: 0 auto; }
+footer { background: var(--darker); color: #e88800; text-align: center; padding: 20px 0; }
         footer a { color: #e88800; }
         footer a:hover { text-decoration: underline; }
-        .footer-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; text-align: left; margin-bottom: 20px; }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 20px; text-align: left; margin-bottom: 20px; }
         .footer-col h4 { color: #e88800; margin-bottom: 10px; font-size: 15px; }
         .footer-col p, .footer-col li { color: #ccc; font-size: 13px; line-height: 1.8; list-style: none; }
         .footer-col ul { list-style: none; padding: 0; }
@@ -112,10 +116,22 @@
             .block-1:nth-child(3) { clear: both; }
         }
     
-#content h3 { max-width: 700px; margin-left: auto; margin-right: auto; }
-#content h3 + p { max-width: 700px; margin-left: auto; margin-right: auto; }
-#content h3 + p + p { max-width: 700px; margin-left: auto; margin-right: auto; }
-#content strong { display: block; max-width: 700px; margin: 10px auto; text-align: center; }
+@media (max-width: 768px) {
+    .linkblock { float: none; text-align: center; margin: 20px 0 10px; font-size: 200%; }
+    .slogan { float: none; text-align: center; border-left: none; margin: 0; padding: 10px 0; }
+    .tooltips { float: none; text-align: center; margin: 10px 0; justify-content: center; }
+    .lang-switch { text-align: center; padding: 8px 0; }
+    ul.menu { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; padding: 3px; }
+    ul.menu li { text-align: center; }
+    ul.menu li:nth-child(9) { grid-column: 1 / 3; }
+    ul.menu li a { font-size: 12px; padding: 2px; }
+    .block-1 { width: 100% !important; float: none !important; margin: 10px 0 !important; }
+    .block-1 > div { padding: 0 15px !important; }
+    #content .wrap { max-width: 100%; padding: 0 10px; }
+    h1 { font-size: 26px; line-height: 34px; }
+    .footer-grid { grid-template-columns: 1fr; }
+    .main, .wrap { max-width: 100% !important; width: 100% !important; }
+}
 </style>
 <script type="application/ld+json">
 {
@@ -141,6 +157,7 @@
   }
 }
 </script>
+<script>function goHome(){window.location.href="/";}</script>
 </head>
 <body>
     <header>
@@ -172,14 +189,27 @@
             </div>
             <div class="nav-shadow">
                 <div>
-<nav><ul class="menu"><li><a href="/">🏠 Services</a></li><li><a href="/water-delivery-koh-phangan/">🚰 Water</a></li><li><a href="/bike-service-koh-phangan/">🛵 Bike</a></li><li><a href="/cleaning-koh-phangan/">🧹 Cleaning</a></li><li><a href="/ac-service-koh-phangan/">❄️ AC</a></li><li><a href="/plumber-koh-phangan/">🔧 Plumber</a></li><li><a href="/electrician-koh-phangan/">⚡ Electric</a></li><li><a href="/handyman-koh-phangan/">🔨 Handyman</a></li><li><a href="/contacts/">✉️ Contacts</a></li></ul></nav>                </div>
+                    <nav>
+                                                <ul class="menu">
+                            <li class="active"><a href="/" title="🏠 Services">🏠 Services</a></li>
+                            <li><a href="/water-delivery-koh-phangan/" title="🚰 Water">🚰 Water</a></li>
+                            <li><a href="/bike-service-koh-phangan/" title="🛵 Bike">🛵 Bike</a></li>
+                            <li><a href="/cleaning-koh-phangan/" title="🧹 Cleaning">🧹 Cleaning</a></li>
+                            <li><a href="/ac-service-koh-phangan/" title="❄️ AC">❄️ AC</a></li>
+                            <li><a href="/plumber-koh-phangan/" title="🔧 Plumber">🔧 Plumber</a></li>
+                            <li><a href="/electrician-koh-phangan/" title="⚡ Electric">⚡ Electric</a></li>
+                            <li><a href="/handyman-koh-phangan/" title="🔨 Handyman">🔨 Handyman</a></li>
+                            <li><a href="/contacts/" title="✉️ Contacts">✉️ Contacts</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
-    </header>
+    <div class="lang-switch"><a href="/" class="active">EN</a><a href="/ru/">RU</a><a href="/th/">TH</a><a href="/he/">HE</a></div></header>
     <div class="header-content" id="justi" >
         <div class="wrap main">
             <div class="block-1">
-                <img title="Fast!" src="/assets/images/water-delivery.jpg" alt="Fast!" class="img-radius"/>
+                <img title="Fast!" src="assets/images/water-delivery.jpg" alt="Fast!" class="img-radius"/>
                 <div class="border-1">
                     <p class="color-1 p2">🚰 Water Delivery</p>
                     <p>19L bottled water delivered to your villa or condo. Scheduled delivery, pumps and coolers available.</p>
@@ -187,7 +217,7 @@
                 </div>
             </div>
             <div class="block-1">
-                <img title="Clean!" src="/assets/images/cleaning.jpg" alt="Clean!" class="img-radius"/>
+                <img title="Clean!" src="assets/images/cleaning.jpg" alt="Clean!" class="img-radius"/>
                 <div class="border-1">
                     <p class="color-1 p2">🧹 Cleaning</p>
                     <p>Professional villa & condo cleaning. Weekly, bi‑weekly or one‑time. Eco‑friendly products.</p>
@@ -195,7 +225,7 @@
                 </div>
             </div>
             <div class="block-1">
-                <img title="Reliable!" src="/assets/images/plumber.jpg" alt="Reliable!" class="img-radius"/>
+                <img title="Reliable!" src="assets/images/plumber.jpg" alt="Reliable!" class="img-radius"/>
                 <div>
                     <p class="color-1 p2">🔧 Plumber</p>
                     <p>Leaky faucet? Clogged drain? Burst pipe? Our plumber handles all plumbing issues island‑wide.</p>
@@ -207,23 +237,15 @@
     <section id="content" class="content-subpages">
         <div>
             <div class="wrap">
-                <h1>BroService.in.th — All services on Koh Phangan in one place</h1>
-<div style="background:#f8f6f0; border-left:4px solid #e88800; padding:16px; margin:20px 0; border-radius:4px;"><strong>✅ BroService provides home & property services across Koh Phangan, Thailand, including plumbing, electrical work, AC service, cleaning, water delivery and bike repair.</strong> Call <strong>+66 80‑870‑5704</strong> or WhatsApp to arrange.</div>
-
+                
+        
+<div class="container" style="max-width:960px;margin:0 auto;padding:20px 15px;background:#edeef0;">
+<div style="background:#f8f6f0;border-left:4px solid #e88800;padding:14px 18px;border-radius:0 8px 8px 0;font-size:17px;line-height:1.7;color:#333;margin-bottom:25px;">BroService provides home and property services across Koh Phangan, Thailand — plumbing, electrical, AC, cleaning, water delivery, bike repair and handyman. Call +66 80-870-5704 or WhatsApp.</div><h1>BroService.in.th — All services on Koh Phangan in one place</h1>
                 <p><br><br></p>
                 <p class="justifyfull">BroService is a full‑cycle service center on the island. We have gathered the most in‑demand island services: from water delivery to bike repair. Skilled professionals, work on professional equipment, and 100% guarantee on all jobs.</p>
                 <p class="justifyfull"><strong>Service center Koh Phangan</strong> BroService provides fast repair, plumbing, cleaning, water delivery, and property rental assistance. No need to go anywhere else — everything on your island!</p>
-                </div>
-</div></div>
-</div></div>
-</div>
-<div style="margin:30px 0;">
-<p style="text-align:center;font-size:18px;font-weight:bold;color:#e88800;margin:20px 0;">📞 Call us now: <a href="tel:+66 80‑870‑5704" style="color:#e88800;text-decoration:none;">+66 80‑870‑5704</a></p><h2 style="font-size:22px;font-weight:600;color:#1f1919;margin-bottom:15px;border-left:4px solid #e88800;padding-left:12px;">❓ FAQ</h2>
-<div class="faq-item"><button onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'!this.nextElementSibling.style.display?'block':'none'" style="width:100%;text-align:left;background:#fff;border:1px solid #ddd;padding:12px 16px;border-radius:6px;cursor:pointer;font-size:15px;font-weight:600;color:#333;margin-bottom:4px;">What services does BroService offer?</button><div style="display:none;padding:12px 16px;background:#fff;border:1px solid #ddd;border-top:0;border-radius:0 0 6px 6px;margin-bottom:4px;color:#555;font-size:14px;">We offer plumbing, electrical, AC, cleaning, water delivery, bike repair, handyman, and property services across Koh Phangan.
-<div class="faq-item"><button onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'!this.nextElementSibling.style.display?'block':'none'" style="width:100%;text-align:left;background:#fff;border:1px solid #ddd;padding:12px 16px;border-radius:6px;cursor:pointer;font-size:15px;font-weight:600;color:#333;margin-bottom:4px;">How do I contact BroService?</button><div style="display:none;padding:12px 16px;background:#fff;border:1px solid #ddd;border-top:0;border-radius:0 0 6px 6px;margin-bottom:4px;color:#555;font-size:14px;">Call +66 80-870-5704, WhatsApp, Telegram or email. Available 8AM-8PM daily.
-<h2>BroService — popular services on Koh Phangan</h2>
-
-                <p><img id="rob" src="/assets/images/property-rental.jpg" width="484" height="300" alt="Koh Phangan services" title="Koh Phangan services" style="margin: 5px; float: right; max-width: 100%; height: auto; border-radius: 7px;"></p>
+                <h2>BroService — popular services on Koh Phangan</h2>
+                <p><img id="rob" src="assets/images/property-rental.jpg" width="484" height="300" alt="Koh Phangan services" title="Koh Phangan services" style="margin: 5px; float: right; max-width: 100%; height: auto; border-radius: 7px;"></p>
                 <p>No need to go anywhere else — everything on your island! BroService offers the full range of popular services:</p>
                 <ul class="justifyfull">
                     <li>🚰 Water Delivery — 19L bottles, pumps, regular delivery</li>
@@ -242,24 +264,28 @@
                     <li>Scheduled regular delivery</li>
                     <li>Discounts for regular customers</li>
                 </ul>
-                <p id="foot"><img src="/assets/images/property-rental.jpg" width="980" height="281" style="vertical-align: middle; display: block; margin-left: auto; margin-right: auto; max-width: 100%; height: auto; border-radius: 7px;" alt="BroService"></p>
+                <p id="foot"><img src="assets/images/property-rental.jpg" width="980" height="281" style="vertical-align: middle; display: block; margin-left: auto; margin-right: auto; max-width: 100%; height: auto; border-radius: 7px;" alt="BroService"></p>
                 <p style="text-align: center;"><span style="font-weight: bolder; color: #000000; font-size: 200%;">BroService.in.th</span></p>
-            
-        
+            </div>
+<h2 style="font-size:22px;font-weight:600;color:#1f1919;margin-bottom:15px;border-left:4px solid #e88800;padding-left:12px;">❓ FAQ</h2>
+<div class="faq-item"><button onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'||!this.nextElementSibling.style.display?'block':'none'" style="width:100%;text-align:left;background:#fff;border:1px solid #ddd;padding:12px 16px;border-radius:6px;cursor:pointer;font-size:15px;font-weight:600;color:#333;margin-bottom:4px;">What services does BroService offer?</button>
+<div style="display:none;padding:12px 16px;background:#fff;border:1px solid #ddd;border-top:0;border-radius:0 0 6px 6px;margin-bottom:4px;color:#555;font-size:14px;">We offer plumbing, electrical, AC, cleaning, water delivery, bike repair, handyman, and property services across Koh Phangan.</div></div>
+<div class="faq-item"><button onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'||!this.nextElementSibling.style.display?'block':'none'" style="width:100%;text-align:left;background:#fff;border:1px solid #ddd;padding:12px 16px;border-radius:6px;cursor:pointer;font-size:15px;font-weight:600;color:#333;margin-bottom:4px;">How do I contact BroService?</button>
+<div style="display:none;padding:12px 16px;background:#fff;border:1px solid #ddd;border-top:0;border-radius:0 0 6px 6px;margin-bottom:4px;color:#555;font-size:14px;">Call +66 80-870-5704, WhatsApp, Telegram or email. Available 8AM-8PM daily.</div></div>
+<div class="faq-item"><button onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'||!this.nextElementSibling.style.display?'block':'none'" style="width:100%;text-align:left;background:#fff;border:1px solid #ddd;padding:12px 16px;border-radius:6px;cursor:pointer;font-size:15px;font-weight:600;color:#333;margin-bottom:4px;">Do you offer water delivery on Koh Phangan?</button>
+<div style="display:none;padding:12px 16px;background:#fff;border:1px solid #ddd;border-top:0;border-radius:0 0 6px 6px;margin-bottom:4px;color:#555;font-size:14px;">Yes, 19L bottles delivered to your villa or condo. Scheduled delivery available.</div></div>
+</div>
+</div>
+    </section>
+    <div style="text-align:center;padding:30px 15px;background:var(--bg);">
+        <a href="https://wa.me/+66808705704" target="_blank" style="display:inline-flex;align-items:center;gap:12px;background:#25D366;color:#fff;font-size:22px;font-weight:bold;padding:18px 40px;border-radius:50px;text-decoration:none;box-shadow:0 4px 15px rgba(37,211,102,0.3);transition:transform 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+            💬 WhatsApp Us
+        </a>
+        <p style="margin-top:10px;color:#888;font-size:13px;">Fast reply — we're here to help!</p>
+    </div>
     
-
-<h2 style="font-size:22px;font-weight:600;color:#1f1919;">📞 Book Now!</h2>
-<p style="font-size:16px;color:#555;margin:10px 0;">Available 8:00 AM — 8:00 PM, 7 days a week</p>
-<a href="tel:+66 80-870-5704" style="display:inline-block;background:#e88800;color:#fff;padding:12px 30px;border-radius:50px;font-size:17px;font-weight:bold;text-decoration:none;margin:8px;">📞 +66 80-870-5704</a>
-<a href="https://wa.me/+66808705704" target="_blank" style="display:inline-block;background:#25D366;color:#fff;padding:12px 30px;border-radius:50px;font-size:17px;font-weight:bold;text-decoration:none;margin:8px;">💬 WhatsApp Us</a>
-</section>
-<div style="text-align:center;padding:20px 15px;">
-<h2 style="font-size:20px;font-weight:600;color:#e88800;margin:0 0 10px;">📞 Book Now!</h2>
-<p style="font-size:15px;color:#555;margin:0 0 12px;">Available 8AM — 8PM, 7 days a week</p>
-<a href="tel:+66 80-870-5704" style="display:inline-block;background:#e88800;color:#fff;padding:10px 24px;border-radius:50px;font-size:16px;font-weight:bold;text-decoration:none;margin:4px;">📞 +66 80-870-5704</a>
-<a href="https://wa.me/+66808705704" target="_blank" style="display:inline-block;background:#25D366;color:#fff;padding:10px 24px;border-radius:50px;font-size:16px;font-weight:bold;text-decoration:none;margin:4px;">💬 WhatsApp Us</a>
-</div><footer>
-        
+    <footer>
+        <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
                     <h4>BroService.in.th</h4>
@@ -308,6 +334,5 @@
                 <p>© 2026 <a href="index.html">BroService.in.th</a> · All rights reserved · Website by <a href="https://adfoto.com.ua" target="_blank">adfoto.com.ua</a></p>
             </div>
         
-    </div></p></p></p></p></p></p></p></p></p></p></li></footer>
-</body>
-</html</div>>
+    </div></p></p></p></p></p></p></p></p></p></p></li></li></li></li></li></footer></body>
+</html>

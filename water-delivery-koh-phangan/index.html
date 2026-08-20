@@ -60,8 +60,8 @@
             align-items: center;
             gap: 8px;
         }
-        .header-phone { font-size: 15px; font-weight: bold; }
-        .header-phone a { color: #e88800; font-weight: bold; }
+        .header-phone { font-size: 13px; color: #d3d3d3; }
+        .header-phone a { color: var(--primary); }
         .social-icons { display: flex; gap: 3px; }
         .social-icons a { display: inline-block; transition: opacity 0.2s; }
         .social-icons a:hover { opacity: 0.7; }
@@ -148,15 +148,44 @@ ul.menu li a { font-size: 13px; line-height: 16px; color: #1f1919; font-weight: 
         .block .btn:hover { background: var(--primary-dark); text-decoration: none; }
 
         /* Content */
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        #content {
+            background: var(--bg);
+            padding: 20px 0 25px;
+        }
+        #content h1 {
+            font-family: 'Inter', sans-serif;
+            font-size: 28px;
+            font-weight: 700;
+            color: #1f1919;
+            margin-bottom: 14px;
+        }
+        #content h2 {
+            font-family: 'Inter', sans-serif;
+            font-size: 22px;
+            font-weight: 600;
+            color: #1f1919;
+            margin: 18px 0 8px;
+            border-left: 4px solid var(--primary);
+            padding-left: 12px;
+        }
+        #content h3 {
+            font-family: 'Inter', sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--primary);
+            margin: 16px 0 6px;
+        }
+        #content p { margin: 10px 0; color: #444; line-height: 1.65; }
+        #content .justifyfull { text-align: justify; }
+        #content ul { margin: 10px 0 16px; padding-left: 20px; list-style: none; }
+        #content ul li { margin: 5px 0; padding-left: 20px; position: relative; }
+        #content ul li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: bold;
+        }
         .float-img {
             float: right;
             margin: 0 0 15px 20px;
@@ -222,7 +251,8 @@ ul.menu li a { font-size: 13px; line-height: 16px; color: #1f1919; font-weight: 
         }
         .footer-bottom a { color: var(--primary); }
 
-        
+        @media (max-width: 768px) {
+            .header-inner { flex-direction: column; gap: 5px; text-align: center; }
             .header-right { flex-direction: column; gap: 5px; }
             ul.menu { 
                 display: grid; 
@@ -239,105 +269,12 @@ ul.menu li a { font-size: 13px; line-height: 16px; color: #1f1919; font-weight: 
                 display: block;
             }
             .hero h1 { font-size: 24px; }
-            
-            
+            #content h1 { font-size: 22px; }
+            #content h2 { font-size: 18px; }
             .float-img { float: none; margin: 0 auto 15px; max-width: 100%; height: auto; }
             .footer-grid { grid-template-columns: 1fr; }
         }
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media only screen and (max-width: 768px) {
-    
-    
-    
-    
-    
-    ul.menu { 
-        display: grid; 
-        grid-template-columns: 1fr 1fr; 
-        gap: 2px; 
-        padding: 3px; 
-    }
-    ul.menu li { 
-        text-align: center; 
-        list-style: none; 
-        padding: 4px 2px; 
-    }
-    ul.menu li a { 
-        font-size: 12px; 
-        display: block; 
-        color: #1f1919; 
-        font-weight: 600; 
-    }
-    ul.menu li:last-child { 
-        grid-column: 1 / 3; 
-        text-align: center; 
-    }
-    .header-inner { 
-        flex-direction: column; 
-        align-items: center; 
-        text-align: center; 
-    }
-    .header-right { 
-        display: flex; 
-        flex-direction: column; 
-        align-items: center; 
-        margin-top: 5px; 
-    }
-    .header-phone { 
-        font-size: 14px; 
-        font-weight: bold; 
-        display: block !important; 
-    }
-    .header-phone a { 
-        color: #e88800 !important; 
-    }
-}
-
-#content { text-align: center; }
-#content h1 { background: #fff; padding: 20px; border-radius: 4px; text-align: center; font-size: 24px; margin: 0 auto 20px; max-width: 800px; }
-#content h2 { text-align: center; font-size: 22px; margin: 25px auto 15px; max-width: 700px; }
-#content h3 { text-align: center; font-size: 18px; margin: 20px auto 12px; max-width: 700px; }
-#content p { text-align: left; max-width: 700px; margin: 10px auto; padding: 0 15px; line-height: 1.7; }
-#content ul { text-align: left; max-width: 600px; margin: 10px auto; padding: 0 15px 0 35px; list-style-position: outside; }
-#content li { margin-bottom: 8px; line-height: 1.6; }
-#content table { margin: 15px auto; }
-#content .faq-item { max-width: 700px; margin: 0 auto 4px; }
-#content .faq-item button { text-align: left; }
-
-#content h3 { max-width: 700px; margin-left: auto; margin-right: auto; }
-#content h3 + p { max-width: 700px; margin-left: auto; margin-right: auto; }
-#content h3 + p + p { max-width: 700px; margin-left: auto; margin-right: auto; }
-#content strong { display: block; max-width: 700px; margin: 10px auto; text-align: center; }
-</style>
+    </style>
     <meta name="theme-color" content="#1a1414">
     <link rel="preload" as="image" href="/assets/images/water-delivery.jpg">
 <script type="application/ld+json">
@@ -381,7 +318,7 @@ ul.menu li a { font-size: 13px; line-height: 16px; color: #1f1919; font-weight: 
         <div class="container">
             <div class="header-inner">
                 <div class="logo"><span>Bro</span>Service.in.th</div>
-                <div class="header-right"><div class="header-phone"><a href="tel:+66808705704">📞 +66 80‑870‑5704</a></div>
+                <div class="header-right">
                     <div class="header-phone"><a href="tel:+6680-870-5704">📞 </a></div>
                     <div class="social-icons">
                         <a href="https://wa.me/+66808705704" target="_blank"><svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="15" fill="#25D366"/><path fill="#FFF" d="M10 16c0 3.3 2.7 6 6 6c1.3 0 2.6-.4 3.7-1.1l2.1 1.1l-.8-2.1c.6-1 .9-2.1.9-3.2c0-3.3-2.7-6-6-6s-6 2.7-6 6zm9.1 3.3l-.5-.3c-1-.5-1.8-.4-2.5.2l-.4.3c-.5.4-.9.8-1.6.8c-.7 0-1.5-.5-2.2-1.2c-1.1-1-1.8-2.4-1.9-3.7c-.1-1.4.6-2.7 1.7-3.5l.4-.3c.7-.5.8-1.3.2-2.2l-.4-.7c-.5-.8-1.3-1.3-2.2-1.3c-1 0-1.8.6-2.3 1.3c-.8 1.1-1.2 2.5-1.2 3.9c0 3 1.6 5.7 4.1 7.2c2 1.2 4.4 1.8 6.8 1.5c1.3-.2 2.5-.7 3.6-1.5c.8-.6 1.5-1.4 2-2.3c.5-.9.6-1.9.3-2.9c-.3-.9-1-1.6-1.9-1.9c-.8-.3-1.6 0-2.3.5z"/></svg></a>
@@ -400,12 +337,12 @@ ul.menu li a { font-size: 13px; line-height: 16px; color: #1f1919; font-weight: 
     <div class="service-hero">
         <div class="container">
             <img loading="lazy" width="800" height="533" src="/assets/images/water-delivery.jpg" loading="lazy" alt="Water Delivery Koh Phangan — 19L bottled water delivery">
-            
+            <h1>Water Delivery on Koh Phangan</h1>
 <div style="background:#f8f6f0; border-left:4px solid #e88800; padding:16px; margin:20px 0; border-radius:4px;"><strong>✅ Water Delivery in Koh Phangan — BroService delivers drinking water (bottles, jugs) to homes, villas, apartments and businesses across the island.</strong> Call <strong>+66 80‑870‑5704</strong> or WhatsApp to arrange.</div>
 
         </div>
     </div>
-        <section id="content"><div style="max-width:960px;margin:0 auto;padding:15px;"><h1>Water Delivery on Koh Phangan</h1><p class="justifyfull">Water delivery on Koh Phangan is essential for every villa, condo, and business. At <strong>BroService.in.th</strong>, we deliver clean 19L bottled water directly to your door — fast, reliable, and affordable.</p>
+        <section id="content"><div style="max-width:960px;margin:0 auto;padding:15px;"><p class="justifyfull">Water delivery on Koh Phangan is essential for every villa, condo, and business. At <strong>BroService.in.th</strong>, we deliver clean 19L bottled water directly to your door — fast, reliable, and affordable.</p>
             <p class="justifyfull">Living on a tropical island means staying hydrated is essential. With temperatures averaging 30°C year-round, having clean drinking water delivered to your door is not just a convenience — it's a necessity. Whether you're in a beachfront villa or a mountain view condo, we ensure you never run out of fresh water.</p>
             <p class="justifyfull">Why choose our water delivery on Koh Phangan? We offer the best prices on the island — just ฿60 per 19L bottle with discounts on bulk orders. Same-day delivery means you never run out. Mechanical pumps and coolers available for rent. Regular weekly and bi-weekly subscription plans save you even more.</p>
             
@@ -472,9 +409,9 @@ ul.menu li a { font-size: 13px; line-height: 16px; color: #1f1919; font-weight: 
                             </tr>
                     </tbody>
                 </table>
+            </div>
             
-            
-            
+            </div>
 </div><h2>✅ Why Choose BroService for Water?</h2>
                         <ul>
                 <li>✅ <strong>Always in Stock</strong> — we never run out, deliveries every day</li>
@@ -490,7 +427,7 @@ ul.menu li a { font-size: 13px; line-height: 16px; color: #1f1919; font-weight: 
 
             
             <strong>📞 +66 80‑870‑5704</strong> <p style="text-align: center;">
-            <div </div>
+            <div </div>style="margin:25px 0;text-align:center;">
                 <img loading="lazy" width="800" height="533" src="/assets/images/water-delivery.jpg" style="max-width:100%;height:auto;border-radius:8px;" alt="Water Delivery Koh Phangan">
             
             <div style="text-align:center;margin:20px 0;"><span style="font-weight: 700; color: #000; font-size: 22px;">BroService.in.th — Water Delivery on Koh Phangan</span></p>
@@ -556,5 +493,5 @@ ul.menu li a { font-size: 13px; line-height: 16px; color: #1f1919; font-weight: 
             </div>
         
     </div></p></p></p></p></p></p></p></p></p></p></li></li></li></li></li></footer>
-</div></div></body>
+</body>
 </html>
