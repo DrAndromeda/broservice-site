@@ -60,8 +60,8 @@
             align-items: center;
             gap: 8px;
         }
-        .header-phone { font-size: 13px; color: #d3d3d3; }
-        .header-phone a { color: var(--primary); }
+        .header-phone { font-size: 15px; font-weight: bold; }
+        .header-phone a { color: #e88800; font-weight: bold; }
         .social-icons { display: flex; gap: 3px; }
         .social-icons a { display: inline-block; transition: opacity 0.2s; }
         .social-icons a:hover { opacity: 0.7; }
@@ -148,15 +148,44 @@ ul.menu li a { font-size: 13px; line-height: 16px; color: #1f1919; font-weight: 
         .block .btn:hover { background: var(--primary-dark); text-decoration: none; }
 
         /* Content */
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        #content {
+            background: var(--bg);
+            padding: 20px 0 25px;
+        }
+        #content h1 {
+            font-family: 'Inter', sans-serif;
+            font-size: 28px;
+            font-weight: 700;
+            color: #1f1919;
+            margin-bottom: 14px;
+        }
+        #content h2 {
+            font-family: 'Inter', sans-serif;
+            font-size: 22px;
+            font-weight: 600;
+            color: #1f1919;
+            margin: 18px 0 8px;
+            border-left: 4px solid var(--primary);
+            padding-left: 12px;
+        }
+        #content h3 {
+            font-family: 'Inter', sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--primary);
+            margin: 16px 0 6px;
+        }
+        #content p { margin: 10px 0; color: #444; line-height: 1.65; }
+        #content .justifyfull { text-align: justify; }
+        #content ul { margin: 10px 0 16px; padding-left: 20px; list-style: none; }
+        #content ul li { margin: 5px 0; padding-left: 20px; position: relative; }
+        #content ul li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: bold;
+        }
         .float-img {
             float: right;
             margin: 0 0 15px 20px;
@@ -222,7 +251,8 @@ ul.menu li a { font-size: 13px; line-height: 16px; color: #1f1919; font-weight: 
         }
         .footer-bottom a { color: var(--primary); }
 
-        
+        @media (max-width: 768px) {
+            .header-inner { flex-direction: column; gap: 5px; text-align: center; }
             .header-right { flex-direction: column; gap: 5px; }
             ul.menu { 
                 display: grid; 
@@ -239,12 +269,22 @@ ul.menu li a { font-size: 13px; line-height: 16px; color: #1f1919; font-weight: 
                 display: block;
             }
             .hero h1 { font-size: 24px; }
-            
-            
+            #content h1 { font-size: 22px; }
+            #content h2 { font-size: 18px; }
             .float-img { float: none; margin: 0 auto 15px; max-width: 100%; height: auto; }
             .footer-grid { grid-template-columns: 1fr; }
         }
-    </style>
+    
+/* Center content */
+#content { text-align: center; }
+#content p, #content li, #content .justifyfull { text-align: left; max-width: 700px; margin: 10px auto; }
+#content ul { display: inline-block; text-align: left; max-width: 600px; padding-left: 35px; }
+#content h2 { text-align: center; }
+#content h3 { text-align: center; }
+#content table { margin: 15px auto !important; }
+#content .faq-item { text-align: left; max-width: 700px; margin: 0 auto; }
+.logo a { text-decoration: none; color: inherit; }
+</style>
     <meta name="theme-color" content="#1a1414">
     <link rel="preload" as="image" href="/assets/images/water-delivery.jpg">
 <script type="application/ld+json">
@@ -287,9 +327,9 @@ ul.menu li a { font-size: 13px; line-height: 16px; color: #1f1919; font-weight: 
     <header>
         <div class="container">
             <div class="header-inner">
-                <div class="logo"><span>Bro</span>Service.in.th</div>
+                <div class="logo" onclick="window.location='/'" style="cursor:pointer;"><span>Bro</span>Service.in.th</div>
                 <div class="header-right">
-                    <div class="header-phone"><a href="tel:+6680-870-5704">📞 </a></div>
+                    <div class="header-phone"><a href="tel:+66808705704">📞 +66 80-870-5704</a></div>
                     <div class="social-icons">
                         <a href="https://wa.me/+66808705704" target="_blank"><svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="15" fill="#25D366"/><path fill="#FFF" d="M10 16c0 3.3 2.7 6 6 6c1.3 0 2.6-.4 3.7-1.1l2.1 1.1l-.8-2.1c.6-1 .9-2.1.9-3.2c0-3.3-2.7-6-6-6s-6 2.7-6 6zm9.1 3.3l-.5-.3c-1-.5-1.8-.4-2.5.2l-.4.3c-.5.4-.9.8-1.6.8c-.7 0-1.5-.5-2.2-1.2c-1.1-1-1.8-2.4-1.9-3.7c-.1-1.4.6-2.7 1.7-3.5l.4-.3c.7-.5.8-1.3.2-2.2l-.4-.7c-.5-.8-1.3-1.3-2.2-1.3c-1 0-1.8.6-2.3 1.3c-.8 1.1-1.2 2.5-1.2 3.9c0 3 1.6 5.7 4.1 7.2c2 1.2 4.4 1.8 6.8 1.5c1.3-.2 2.5-.7 3.6-1.5c.8-.6 1.5-1.4 2-2.3c.5-.9.6-1.9.3-2.9c-.3-.9-1-1.6-1.9-1.9c-.8-.3-1.6 0-2.3.5z"/></svg></a>
                         <a href="https://t.me/broservice_kohphangan" target="_blank"><svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="15" fill="#26A5E4"/><path fill="#FFF" d="M22.6 10.2l-2.8 13.3c-.2.9-.7 1.1-1.4.7l-3.9-2.9l-1.9 1.8c-.2.2-.4.4-.7.4l.3-4 7.2-6.5c.3-.3-.1-.5-.5-.2L12 18.4l-4-1.3c-.9-.3-.9-.9.2-1.3l15.6-6c.8-.3 1.5.2 1.2 1.3z"/></svg></a>
@@ -300,7 +340,7 @@ ul.menu li a { font-size: 13px; line-height: 16px; color: #1f1919; font-weight: 
                 </div>
             </div>
 <nav><ul class="menu"><li><a href="/">🏠 Services</a></li><li><a href="/water-delivery-koh-phangan/">🚰 Water</a></li><li><a href="/bike-service-koh-phangan/">🛵 Bike</a></li><li><a href="/cleaning-koh-phangan/">🧹 Cleaning</a></li><li><a href="/ac-service-koh-phangan/">❄️ AC</a></li><li><a href="/plumber-koh-phangan/">🔧 Plumber</a></li><li><a href="/electrician-koh-phangan/">⚡ Electric</a></li><li><a href="/handyman-koh-phangan/">🔨 Handyman</a></li><li><a href="/contacts/">✉️ Contacts</a></li></ul></nav>        </div>
-    </header>
+    </header><div class="lang-switch" style="text-align:center;padding:5px;font-size:12px;"><a href="/" style="color:#e88800;font-weight:bold;">EN</a> | <a href="/ru/" style="color:#888;">RU</a> | <a href="/th/" style="color:#888;">TH</a> | <a href="/he/" style="color:#888;">HE</a></div>
     <div class="breadcrumbs">
         <div class="container"><a href="index.html">Services</a> <span>›</span> <span>Water Delivery Koh Phangan</span></div>
     </div>
@@ -379,10 +419,7 @@ ul.menu li a { font-size: 13px; line-height: 16px; color: #1f1919; font-weight: 
                             </tr>
                     </tbody>
                 </table>
-            </div>
-            
-            </div>
-</div><h2>✅ Why Choose BroService for Water?</h2>
+            </div></div><div style="max-width:960px;margin:0 auto;text-align:center;padding:0 15px;"><h2>✅ Why Choose BroService for Water?</h2>
                         <ul>
                 <li>✅ <strong>Always in Stock</strong> — we never run out, deliveries every day</li>
                 <li>✅ <strong>Best Prices</strong> — ฿60 per bottle, discounts on bulk orders</li>
@@ -396,8 +433,8 @@ ul.menu li a { font-size: 13px; line-height: 16px; color: #1f1919; font-weight: 
             
 
             
-            <strong>📞 +66 80‑870‑5704</strong> <p style="text-align: center;">
-            <div </div>style="margin:25px 0;text-align:center;">
+            <p style="text-align: center;"><strong>📞 +66 80‑870‑5704</strong></p><p>
+            <div </div>
                 <img loading="lazy" width="800" height="533" src="/assets/images/water-delivery.jpg" style="max-width:100%;height:auto;border-radius:8px;" alt="Water Delivery Koh Phangan">
             
             <div style="text-align:center;margin:20px 0;"><span style="font-weight: 700; color: #000; font-size: 22px;">BroService.in.th — Water Delivery on Koh Phangan</span></p>
@@ -406,8 +443,8 @@ ul.menu li a { font-size: 13px; line-height: 16px; color: #1f1919; font-weight: 
 <p style="font-size:16px;color:#555;margin:10px 0;">Available 8:00 AM — 8:00 PM, 7 days a week</p>
 <a href="tel:+66 80-870-5704" style="display:inline-block;background:#e88800;color:#fff;padding:12px 30px;border-radius:50px;font-size:17px;font-weight:bold;text-decoration:none;margin:8px;">📞 +66 80-870-5704</a>
 <a href="https://wa.me/+66808705704" target="_blank" style="display:inline-block;background:#25D366;color:#fff;padding:12px 30px;border-radius:50px;font-size:17px;font-weight:bold;text-decoration:none;margin:8px;">💬 WhatsApp Us</a>
-</section>
-<div style="text-align:center;padding:20px 15px;">
+</div></div></section>
+<div style="max-width:960px;margin:0 auto;text-align:center;padding:20px 15px;">
 <h2 style="font-size:20px;font-weight:600;color:#e88800;margin:0 0 10px;">📞 Book Now!</h2>
 <p style="font-size:15px;color:#555;margin:0 0 12px;">Available 8AM — 8PM, 7 days a week</p>
 <a href="tel:+66 80-870-5704" style="display:inline-block;background:#e88800;color:#fff;padding:10px 24px;border-radius:50px;font-size:16px;font-weight:bold;text-decoration:none;margin:4px;">📞 +66 80-870-5704</a>
@@ -440,7 +477,7 @@ ul.menu li a { font-size: 13px; line-height: 16px; color: #1f1919; font-weight: 
                 <div class="footer-col">
                     <h4>Contact</h4>
                     <ul class="footer-links">
-                        <li><a href="tel:+6680-870-5704">📞 </a></li>
+                        <li><a href="tel:+66808705704">📞 +66 80-870-5704</a></li>
                         <li><a href="mailto:info@broservice.in.th">✉️ info@broservice.in.th</a></li>
                         <li><a href="https://wa.me/+66808705704">💬 WhatsApp</a></li>
                         <li><a href="https://t.me/broservice_kohphangan">✈️ Telegram</a></li>

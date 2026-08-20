@@ -53,13 +53,13 @@
         ul.menu li a { font-size: 14px; line-height: 18px; color: #1f1919; font-weight: bold; white-space: nowrap; }
         ul.menu li a:hover { color: #fff; }
         ul.menu li.active a { color: #e88800; font-weight: 700; }
-        
+        #content { background: #edeef0; width: 100%; padding: 0; }
         .content-subpages { padding-top: 18px !important; }
         .header-content { width: 100%; background: #edeef0; margin: 0 auto; position: relative; z-index: 99; margin-top: -25px; padding-bottom: 25px; }
         .img-radius { border-radius: 7px; }
         .block-1 { color: #8f8b8c; padding-top: 60px; width: 320px; float: left; text-align: center; }
         .block-1 > div { padding: 0 30px; margin-top: 14px; }
-        
+        #content > div { width: 76%; margin: 0 auto; }
         img { max-width: 100%; height: auto; border-radius: 7px; aspect-ratio: auto; }
         .justifyfull { text-align: justify; }
         footer > .container { max-width: 960px; margin: 0 auto; }
@@ -75,8 +75,9 @@ footer { background: var(--darker); color: #e88800; text-align: center; padding:
         .footer-social { display: flex; gap: 6px; margin-top: 8px; }
         .footer-social a svg { width: 22px; height: 22px; border-radius: 50%; display: block; }
         .footer-bottom { border-top: 1px solid #333; padding-top: 15px; margin-top: 15px; font-size: 12px; color: #888; }
-         }
-        
+        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; } }
+        @media only screen and (max-width: 768px) {
+            h1 { font-size: 170%; letter-spacing: -1px; display: block; }
             .block-1 { width: 100%; padding-top: 16px; }
             .block-1 > div { padding: 0 8px; }
             .block-1 > div { padding: 0 15px; }
@@ -108,13 +109,15 @@ footer { background: var(--darker); color: #e88800; text-align: center; padding:
                 text-align: center;
                 width: 100%;
             }
-            
+            #content > div { width: 95%; }
         }
-        
+        @media only screen and (min-width: 481px) and (max-width: 768px) {
+            .block-1 { width: 50%; }
             .block-1:nth-child(3) { clear: both; }
         }
     
-
+@media (max-width: 768px) {
+    .linkblock { float: none; text-align: center; margin: 20px 0 10px; font-size: 200%; }
     .slogan { float: none; text-align: center; border-left: none; margin: 0; padding: 10px 0; }
     .tooltips { float: none; text-align: center; margin: 10px 0; justify-content: center; }
     .lang-switch { text-align: center; padding: 8px 0; }
@@ -124,11 +127,21 @@ footer { background: var(--darker); color: #e88800; text-align: center; padding:
     ul.menu li a { font-size: 12px; padding: 2px; }
     .block-1 { width: 100% !important; float: none !important; margin: 10px 0 !important; }
     .block-1 > div { padding: 0 15px !important; }
-    
+    #content .wrap { max-width: 100%; padding: 0 10px; }
     h1 { font-size: 26px; line-height: 34px; }
     .footer-grid { grid-template-columns: 1fr; }
     .main, .wrap { max-width: 100% !important; width: 100% !important; }
 }
+
+/* Center content */
+#content { text-align: center; }
+#content p, #content li, #content .justifyfull { text-align: left; max-width: 700px; margin: 10px auto; }
+#content ul { display: inline-block; text-align: left; max-width: 600px; padding-left: 35px; }
+#content h2 { text-align: center; }
+#content h3 { text-align: center; }
+#content table { margin: 15px auto !important; }
+#content .faq-item { text-align: left; max-width: 700px; margin: 0 auto; }
+.logo a { text-decoration: none; color: inherit; }
 </style>
 <script type="application/ld+json">
 {
@@ -238,10 +251,12 @@ footer { background: var(--darker); color: #e88800; text-align: center; padding:
         
 <div class="container" style="max-width:960px;margin:0 auto;padding:20px 15px;background:#edeef0;">
 <div style="background:#f8f6f0;border-left:4px solid #e88800;padding:14px 18px;border-radius:0 8px 8px 0;font-size:17px;line-height:1.7;color:#333;margin-bottom:25px;">BroService provides home and property services across Koh Phangan, Thailand — plumbing, electrical, AC, cleaning, water delivery, bike repair and handyman. Call +66 80-870-5704 or WhatsApp.</div><h1>BroService.in.th — All services on Koh Phangan in one place</h1>
+<p style="text-align:center;font-size:18px;font-weight:bold;color:#e88800;">📞 <a href="tel:+66808705704" style="color:#e88800;text-decoration:none;">+66 80-870-5704</a></p>
                 <p><br><br></p>
                 <p class="justifyfull">BroService is a full‑cycle service center on the island. We have gathered the most in‑demand island services: from water delivery to bike repair. Skilled professionals, work on professional equipment, and 100% guarantee on all jobs.</p>
                 <p class="justifyfull"><strong>Service center Koh Phangan</strong> BroService provides fast repair, plumbing, cleaning, water delivery, and property rental assistance. No need to go anywhere else — everything on your island!</p>
                 <h2>BroService — popular services on Koh Phangan</h2>
+<p style="text-align:center;"><strong>📞 +66 80-870-5704</strong></p>
                 <p><img id="rob" src="assets/images/property-rental.jpg" width="484" height="300" alt="Koh Phangan services" title="Koh Phangan services" style="margin: 5px; float: right; max-width: 100%; height: auto; border-radius: 7px;"></p>
                 <p>No need to go anywhere else — everything on your island! BroService offers the full range of popular services:</p>
                 <ul class="justifyfull">
@@ -309,7 +324,7 @@ footer { background: var(--darker); color: #e88800; text-align: center; padding:
                 <div class="footer-col">
                     <h4>Contact</h4>
                     <ul class="footer-links">
-                        <li><a href="tel:+6680-870-5704">📞 </a></li>
+                        <li><a href="tel:+66808705704">📞 +66 80-870-5704</a></li>
                         <li><a href="mailto:info@broservice.in.th">✉️ info@broservice.in.th</a></li>
                         <li><a href="https://wa.me/+66808705704">💬 WhatsApp</a></li>
                         <li><a href="https://t.me/broservice_kohphangan">✈️ Telegram</a></li>
