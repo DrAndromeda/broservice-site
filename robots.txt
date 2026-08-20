@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://broservice.in.th/sitemap.xml
+Sitemap: https://drandromeda.github.io/broservice-site/sitemap.xml
