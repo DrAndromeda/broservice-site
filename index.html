@@ -23,9 +23,9 @@
         .wrap { overflow: hidden; position: relative; max-width: 961px; margin: auto; }
         a { text-decoration: none; cursor: pointer; }
         a:hover { text-decoration: none; }
-.lang-switch { display: inline-flex; gap: 2px; font-size: 10px; vertical-align: middle; }
-.lang-switch a { color: #888; text-decoration: none; padding: 1px 3px; }
-.lang-switch a.active { color: #e88800; border: 1px solid #e88800; border-radius: 2px; font-weight: 600; }
+.lang-switch { display: flex; justify-content: center; gap: 8px; padding: 2px 0; font-size: 12px; position: relative; z-index: 100; background: none; }
+.lang-switch a { color: #888; text-decoration: none; padding: 5px 12px; }
+.lang-switch a.active { color: #e88800; border: 2px solid #e88800; border-radius: 4px; font-weight: 700; padding: 5px 12px; }
         a.button { background: #e88800; border-bottom: #000 1px solid; color: #fff; font-size: 12px; line-height: 15px; padding: 12px 30px; display: inline-block; border-radius: 6px; }
         a.button:hover { background: #1f1919; }
         a.link { color: #e88800; }
@@ -55,7 +55,7 @@
         ul.menu li.active a { color: #e88800; font-weight: 700; }
         #content { background: #edeef0; width: 100%; padding: 0; }
         .content-subpages { padding-top: 18px !important; }
-        .header-content { width: 100%; background: #edeef0; margin: 0 auto; position: relative; z-index: 99; margin-top: -25px; padding-bottom: 25px; }
+        .header-content { width: 100%; background: #edeef0; margin: 0 auto; position: relative; z-index: 99; padding-bottom: 25px; }
         .img-radius { border-radius: 7px; }
         .block-1 { color: #8f8b8c; padding-top: 60px; width: 320px; float: left; text-align: center; }
         .block-1 > div { padding: 0 30px; margin-top: 14px; }
@@ -142,6 +142,20 @@ footer { background: var(--darker); color: #e88800; text-align: center; padding:
 #content table { margin: 15px auto !important; }
 #content .faq-item { text-align: left; max-width: 700px; margin: 0 auto; }
 .logo a { text-decoration: none; color: inherit; }
+
+@media (max-width: 768px) {
+    ul.menu { flex-wrap: wrap; justify-content: center; }
+    ul.menu li { padding: 4px 5px; }
+    ul.menu li a { font-size: 12px; }
+    .footer-grid { grid-template-columns: 1fr; }
+    .header-inner { flex-direction: column; gap: 5px; text-align: center; }
+    h1 { font-size: 170%; }
+    img { max-width: 100%; height: auto; }
+    .lang-switch { font-size: 11px; }
+    .block-1 { width: 100%; float: none; padding-top: 30px; }
+    #content > div { width: 100%; }
+    .service-hero img, .container img { max-width: 100%; height: auto; }
+}
 </style>
 <script type="application/ld+json">
 {
