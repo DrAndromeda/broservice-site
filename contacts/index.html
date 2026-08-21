@@ -7,251 +7,263 @@
     <meta name="description" content="Contact us now for instant response. Phone, WhatsApp, Telegram. We speak English, Thai, Russian. +66 80-870-5704.">
     <link rel="icon" href="/assets/images/favicon.ico">
     <style>
-        :root {
-            --primary: #e88800;
-            --primary-dark: #c47000;
-            --dark: #1a1414;
-            --dark2: #2b2424;
-            --darker: #1f1919;
-            --bg: #edeef0;
-            --text-light: #8f8b8c;
-            --white: #fff;
-        }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        html { scroll-behavior: smooth; }
-        body {
-            font-family: Open Sans, Arial, sans-serif;
-            color: #000;
-            background: var(--dark);
-            line-height: 1.65;
-            font-size: 15px;
-        }
-        .container { max-width: 960px; margin: 0 auto; padding: 0 15px; }
-        a { text-decoration: none; color: var(--primary); }
-        a:hover { text-decoration: underline; }
-        header {
-            background: linear-gradient(180deg, var(--dark2), var(--darker));
-            padding: 4px 0 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        .header-inner {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0 0 2px;
-        }
-        .logo {
-            font-family: Inter, sans-serif;
-            font-size: 22px;
-            font-weight: 700;
-            color: var(--primary);
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
-        }
-        .logo span { color: #d3d3d3; font-weight: 300; }
-        .header-right {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .header-phone { font-size: 15px; font-weight: bold; }
-        .header-phone a { color: #e88800; font-weight: bold; }
-        .social-icons { display: flex; gap: 3px; }
-        .social-icons a { display: inline-block; transition: opacity 0.2s; }
-        .social-icons a:hover { opacity: 0.7; }
-        .social-icons svg { width: 22px; height: 22px; border-radius: 50%; display: block; }
-        nav {
-            background: linear-gradient(180deg, #e57c00, #c47000);
-            border-radius: 6px 6px 0 0;
-            margin-top: 4px;
-        }
-        ul.menu {
-            display: flex;
-            justify-content: center;
-            flex-wrap: nowrap;
-            list-style: none;
-            padding: 4px 4px;
-        }
-        ul.menu li { display: inline-block; line-height: 16px; margin: 2px 1px; padding: 4px 6px; border-radius: 5px; transition: background 0.2s; }
-        ul.menu li:hover { background: rgba(0,0,0,0.08); }
-        ul.menu li a { font-size: 13px; line-height: 16px; color: #1f1919; font-weight: 600; white-space: nowrap; }
-        ul.menu li a:hover { color: #fff; }
-        ul.menu li.active { background: rgba(0,0,0,0.1); }
-        ul.menu li.active a { color: #fff; }
-        .breadcrumbs {
-            background: var(--bg);
-            padding: 6px 0;
-            font-size: 13px;
-            color: #888;
-        }
-        .breadcrumbs a { color: var(--primary); }
-        .hero {
-            background: var(--bg);
-            padding: 20px 0 15px;
-        }
-        .hero h1 {
-            font-family: Inter, sans-serif;
-            font-size: 30px;
-            font-weight: 700;
-            color: #1f1919;
-            text-align: center;
-            margin-bottom: 8px;
-        }
-        .hero-subtitle {
-            text-align: center;
-            color: var(--text-light);
-            font-size: 14px;
-            max-width: 650px;
-            margin: 0 auto 20px;
-        }
-        .blocks {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            flex-wrap: nowrap;
-        }
-        .block {
-            flex: 1 1 270px;
-            max-width: 290px;
-            background: var(--white);
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-            transition: transform 0.2s;
-        }
-        .block:hover { transform: translateY(-2px); }
-        .block img { width: 100%; display: block; }
-        .block-content { padding: 14px; }
-        .block h3 { font-size: 18px; color: var(--primary); margin-bottom: 6px; }
-        .block p { color: var(--text-light); font-size: 13px; line-height: 1.5; margin-bottom: 12px; }
-        .block .btn {
-            display: inline-block;
-            background: var(--primary);
-            color: var(--white);
-            padding: 8px 20px;
-            border-radius: 5px;
-            font-weight: 600;
-            font-size: 13px;
-        }
-        .block .btn:hover { background: var(--primary-dark); text-decoration: none; }
-        #content {
-            background: var(--bg);
-            padding: 20px 0 25px;
-            text-align: center;
-        }
-        #content p, #content li, #content .justifyfull { text-align: left; max-width: 700px; margin: 10px auto; }
-        #content ul { display: inline-block; text-align: left; max-width: 600px; padding-left: 35px; }
-        #content h1 {
-            font-family: Inter, sans-serif;
-            font-size: 28px;
-            font-weight: 700;
-            color: #1f1919;
-            margin-bottom: 14px;
-        }
-        #content h2 {
-            font-family: Inter, sans-serif;
-            font-size: 22px;
-            font-weight: 600;
-            color: #1f1919;
-            margin: 18px 0 8px;
-            border-left: 4px solid var(--primary);
-            padding-left: 12px;
-            text-align: center;
-        }
-        #content h3 {
-            font-family: Inter, sans-serif;
-            font-size: 18px;
-            font-weight: 600;
-            color: var(--primary);
-            margin: 16px 0 6px;
-            text-align: center;
-        }
-        #content p { margin: 10px 0; color: #444; line-height: 1.65; }
-        #content .justifyfull { text-align: justify; }
-        #content ul { margin: 10px 0 16px; padding-left: 20px; list-style: none; }
-        #content ul li { margin: 5px 0; padding-left: 20px; position: relative; }
-        #content ul li::before {
-            content: "\2713";
-            position: absolute;
-            left: 0;
-            color: var(--primary);
-            font-weight: bold;
-        }
-        #content table { margin: 15px auto !important; }
-        #content .faq-item { text-align: left; max-width: 700px; margin: 0 auto; }
-        .float-img {
-            float: right;
-            margin: 0 0 15px 20px;
-            border-radius: 8px;
-            max-width: 40%;
-        }
-        .big-banner { margin: 20px 0; text-align: center; }
-        .big-banner img { max-width: 100%; border-radius: 8px; }
-        .service-hero img { max-width: 100%; height: auto; display: block; margin: 0 auto; border-radius: 8px; }
-        img { max-width: 100%; height: auto; border-radius: 7px; }
-        #content img { max-width: 100%; height: auto; max-height: 400px; object-fit: contain; }
-        .wrap img { max-width: 100%; height: auto; }
-        .cta-block {
-            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-            color: var(--white);
-            padding: 24px 20px;
-            border-radius: 10px;
-            text-align: center;
-            margin: 20px 0;
-        }
-        .cta-block h2 { color: var(--white) !important; font-size: 24px !important; border: none !important; padding: 0 !important; margin-bottom: 10px !important; }
-        .cta-block .phone { font-size: 28px; font-weight: 700; margin: 10px 0; }
-        .cta-block .phone a { color: var(--white); }
-        .cta-block .phone a:hover { text-decoration: none; }
-        .cta-block .hours { font-size: 14px; opacity: 0.9; }
-        footer {
-            background: var(--dark);
-            color: #aaa;
-            padding: 30px 0 20px;
-        }
-        .footer-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 25px;
-            margin-bottom: 20px;
-        }
-        .footer-col h4 {
-            font-family: Inter, sans-serif;
-            font-size: 16px;
-            font-weight: 600;
-            color: var(--white);
-            margin-bottom: 12px;
-        }
-        .footer-col p { font-size: 13px; line-height: 1.5; color: #aaa; }
-        .footer-links { list-style: none; }
-        .footer-links li { margin-bottom: 6px; }
-        .footer-links a { font-size: 13px; color: #aaa; transition: color 0.2s; }
-        .footer-links a:hover { color: var(--primary); }
-        .footer-social { display: flex; gap: 6px; margin-top: 10px; }
-        .footer-social a { display: inline-block; transition: opacity 0.2s; }
-        .footer-social a:hover { opacity: 0.7; }
-        .footer-social svg { width: 22px; height: 22px; border-radius: 50%; }
-        .footer-bottom {
-            border-top: 1px solid #333;
-            padding-top: 15px;
-            text-align: center;
-            font-size: 13px;
-            color: #888;
-        }
-        .footer-bottom a { color: var(--primary); }
-        .logo a { text-decoration: none; color: inherit; }
+:root {
+    --primary: #e88800;
+    --primary-dark: #c47000;
+    --dark: #1a1414;
+    --dark2: #2b2424;
+    --darker: #1f1919;
+    --bg: #edeef0;
+    --text-light: #8f8b8c;
+    --white: #fff;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: Open Sans, Arial, sans-serif; color: #000; background: var(--dark); line-height: 1.65; font-size: 15px; }
+.container { max-width: 960px; margin: 0 auto; padding: 0 15px; }
+a { text-decoration: none; color: var(--primary); }
+a:hover { text-decoration: underline; }
+header { background: linear-gradient(180deg, var(--dark2), var(--darker)); padding: 4px 0 0; position: sticky; top: 0; z-index: 100; }
+.header-inner { display: flex; align-items: center; justify-content: space-between; padding: 0 0 2px; }
+.logo { font-family: Inter, sans-serif; font-size: 22px; font-weight: 700; color: var(--primary); text-shadow: 1px 1px 2px rgba(0,0,0,0.3); }
+.logo span { color: #d3d3d3; font-weight: 300; }
+.header-right { display: flex; align-items: center; gap: 8px; }
+.header-phone { font-size: 15px; font-weight: bold; }
+.header-phone a { color: #e88800; font-weight: bold; }
+.social-icons { display: flex; gap: 3px; }
+.social-icons a { display: inline-block; transition: opacity 0.2s; }
+.social-icons a:hover { opacity: 0.7; }
+.social-icons svg { width: 22px; height: 22px; border-radius: 50%; display: block; }
+nav { background: linear-gradient(180deg, #e57c00, #c47000); border-radius: 6px 6px 0 0; margin-top: 4px; }
+ul.menu { display: flex; justify-content: center; flex-wrap: nowrap; list-style: none; padding: 4px 4px; }
+ul.menu li { display: inline-block; line-height: 16px; margin: 2px 1px; padding: 4px 6px; border-radius: 5px; transition: background 0.2s; }
+ul.menu li:hover { background: rgba(0,0,0,0.08); }
+ul.menu li a { font-size: 13px; line-height: 16px; color: #1f1919; font-weight: 600; white-space: nowrap; }
+ul.menu li a:hover { color: #fff; }
+ul.menu li.active { background: rgba(0,0,0,0.1); }
+ul.menu li.active a { color: #fff; }
+.breadcrumbs { background: var(--bg); padding: 6px 0; font-size: 13px; color: #888; }
+.breadcrumbs a { color: var(--primary); }
+.hero { background: var(--bg); padding: 20px 0 15px; }
+.hero h1 { font-family: Inter, sans-serif; font-size: 30px; font-weight: 700; color: #1f1919; text-align: center; margin-bottom: 8px; }
+.hero-subtitle { text-align: center; color: var(--text-light); font-size: 14px; max-width: 650px; margin: 0 auto 20px; }
+.blocks { display: flex; gap: 20px; justify-content: center; flex-wrap: nowrap; }
+.block { flex: 1 1 270px; max-width: 290px; background: var(--white); border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+.block:hover { transform: translateY(-2px); }
+.block img { width: 100%; display: block; }
+.block-content { padding: 14px; }
+.block h3 { font-size: 18px; color: var(--primary); margin-bottom: 6px; }
+.block p { color: var(--text-light); font-size: 13px; line-height: 1.5; margin-bottom: 12px; }
+.block .btn { display: inline-block; background: var(--primary); color: var(--white); padding: 8px 20px; border-radius: 5px; font-weight: 600; font-size: 13px; }
+.block .btn:hover { background: var(--primary-dark); text-decoration: none; }
+#content { background: var(--bg); padding: 20px 0 25px; text-align: center; }
+#content p, #content li, #content .justifyfull { text-align: left; max-width: 700px; margin: 10px auto; }
+#content ul { display: inline-block; text-align: left; max-width: 600px; padding-left: 35px; }
+#content h1 { font-family: Inter, sans-serif; font-size: 28px; font-weight: 700; color: #1f1919; margin-bottom: 14px; }
+#content h2 { font-family: Inter, sans-serif; font-size: 22px; font-weight: 600; color: #1f1919; margin: 18px 0 8px; border-left: 4px solid var(--primary); padding-left: 12px; text-align: center; }
+#content h3 { font-family: Inter, sans-serif; font-size: 18px; font-weight: 600; color: var(--primary); margin: 16px 0 6px; text-align: center; }
+#content p { margin: 10px 0; color: #444; line-height: 1.65; }
+#content .justifyfull { text-align: justify; }
+#content ul { margin: 10px 0 16px; padding-left: 20px; list-style: none; }
+#content ul li { margin: 5px 0; padding-left: 20px; position: relative; }
+#content ul li::before { content: '¹3'; position: absolute; left: 0; color: var(--primary); font-weight: bold; }
+#content table { margin: 15px auto !important; }
+#content .faq-item { text-align: left; max-width: 700px; margin: 0 auto; }
+.float-img { float: right; margin: 0 0 15px 20px; border-radius: 8px; max-width: 40%; }
+.big-banner { margin: 20px 0; text-align: center; }
+.big-banner img { max-width: 100%; border-radius: 8px; }
+.service-hero img { max-width: 100%; height: auto; display: block; margin: 0 auto; border-radius: 8px; }
+img { max-width: 100%; height: auto; border-radius: 7px; }
+#content img { max-width: 100%; height: auto; max-height: 400px; object-fit: contain; }
+.wrap img { max-width: 100%; height: auto; }
+.cta-block { background: linear-gradient(135deg, var(--primary), var(--primary-dark)); color: var(--white); padding: 24px 20px; border-radius: 10px; text-align: center; margin: 20px 0; }
+.cta-block h2 { color: var(--white) !important; font-size: 24px !important; border: none !important; padding: 0 !important; margin-bottom: 10px !important; }
+.cta-block .phone { font-size: 28px; font-weight: 700; margin: 10px 0; }
+.cta-block .phone a { color: var(--white); }
+.cta-block .phone a:hover { text-decoration: none; }
+.cta-block .hours { font-size: 14px; opacity: 0.9; }
+footer { background: var(--dark); color: #aaa; padding: 30px 0 20px; }
+.footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 25px; margin-bottom: 20px; }
+.footer-col h4 { font-family: Inter, sans-serif; font-size: 16px; font-weight: 600; color: var(--white); margin-bottom: 12px; }
+.footer-col p { font-size: 13px; line-height: 1.5; color: #aaa; }
+.footer-links { list-style: none; }
+.footer-links li { margin-bottom: 6px; }
+.footer-links a { font-size: 13px; color: #aaa; }
+.footer-links a:hover { color: var(--primary); }
+.footer-social { display: flex; gap: 6px; margin-top: 10px; }
+.footer-social a { display: inline-block; }
+.footer-social a:hover { opacity: 0.7; }
+.footer-social svg { width: 22px; height: 22px; border-radius: 50%; }
+.footer-bottom { border-top: 1px solid #333; padding-top: 15px; text-align: center; font-size: 13px; color: #888; }
+.footer-bottom a { color: var(--primary); }
+.logo a { text-decoration: none; color: inherit; }
 
-        @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
+    ul.menu { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; padding: 4px; }
+    ul.menu li { padding: 4px 2px; text-align: center; margin: 0; display: flex; justify-content: center; }
+    ul.menu li:nth-child(9) { grid-column: 1/3; }
+    ul.menu li a { font-size: 11px; }
+    .header-right { flex-direction: column; gap: 5px; }
+    .hero h1 { font-size: 24px; }
+    #content h1 { font-size: 22px; }
+    #content h2 { font-size: 18px; }
+    .float-img { float: none; margin: 0 auto 15px; max-width: 100%; }
+    .footer-grid { grid-template-columns: 1fr; }
+}
+
+
+        @media (max-width: 768px) {
             ul.menu { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; padding: 4px; }
             ul.menu li { padding: 4px 2px; text-align: center; margin: 0; display: flex; justify-content: center; }
             ul.menu li:nth-child(9) { grid-column: 1/3; }
             ul.menu li a { font-size: 11px; }
-            .header-right { flex-direction: column; gap: 5px; }
-            .hero h1 { font-size: 24px; }
-            #content h1 { font-size: 22px; }
-            #content h2 { font-size: 18px; }
-            .float-img { float: none; margin: 0 auto 15px; max-width: 100%; }
-            .footer-grid { grid-template-columns: 1fr; }
-        }</style>
-        
+            .linkblock { float: none; font-size: 180%; text-align: center; margin: 15px 0 5px; }
+            .slogan { float: none; border-left: none; margin: 10px 0; padding: 10px 15px; text-align: center; }
+            .tooltips { float: none; margin: 10px 0; display: flex; justify-content: center; gap: 6px; }
+            .footer-grid { grid-template-columns: 1fr; padding: 0 10px; }
+            #content > div { width: 95%; max-width: 100%; }
+            .block-1 { width: 100%; margin: 10px 0; }
+            .block-1 img { width: 100%; height: auto; max-height: 200px; object-fit: cover; }
+            h1 { font-size: 170%; }
+            .lang-switch { font-size: 11px; }
+        }
+    <link rel="canonical" href="https://broservice.in.th/contacts/">
+    <meta property="og:title" content="Contact Us — BroService.in.th">
+    <meta property="og:description" content="Contact us now. Phone, WhatsApp, Telegram. We speak English, Thai, Russian.">
+    <meta property="og:url" content="https://broservice.in.th/contacts/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact Us — BroService.in.th">
+    </style><script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+        {"@type":"Question","name":"What services does BroService offer?","acceptedAnswer":{"@type":"Answer","text":"Plumbing, electrical, AC, cleaning, water delivery, bike repair, handyman, and property services across Koh Phangan."}},
+        {"@type":"Question","name":"How do I contact BroService?","acceptedAnswer":{"@type":"Answer","text":"Call +66 80-870-5704, WhatsApp, Telegram or email. Available 8AM-8PM daily."}}
+    ]}
+    </script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"LocalBusiness","name":"BroService.in.th","telephone":"+66 80-870-5704","address":{"@type":"PostalAddress","addressLocality":"Koh Phangan","addressRegion":"Surat Thani","addressCountry":"TH"}}
+    </script>
+</head>
+<body>
+<header><div class="wrap">
+<div class="linkblock" onclick="location.href='/'"><a><b style="color:#e0e0e0;">Bro</b><span style="color:#e88800;">Service.in.th</span></a></div>
+<div class="slogan">Your Local Service Team on Koh Phangan!<br><a href="tel:+66808705704" style="color:#e88800;">📞 +66 80-870-5704</a></div>
+<div class="tooltips">
+<a href="https://wa.me/+66808705704" target="_blank"><svg viewBox="0 0 32 32" width="28" height="28"><circle cx="16" cy="16" r="15" fill="#25D366"/><path fill="#FFF" d="M22.5 11.5c-3.6-3.6-9.4-3.6-13 0s-3.6 9.4 0 13c1.5 1.5 3.5 2.5 5.7 2.8l1.9.4.4-1.9c.3-1.5 1-2.9 2.1-4 1.4-1.4 3.3-2.3 5.3-2.5 2.1-.2 4.2.3 5.9 1.5 1.1.8 2 1.9 2.6 3.2.6 1.3.8 2.7.6 4.1-.2 1.4-.9 2.7-2 3.7-1.1 1-2.5 1.6-4 1.8-2.2.3-4.5-.1-6.4-1.1-.9-.5-1.7-1.1-2.4-1.8l-4.3 2.2c.9 1.3 2.1 2.4 3.4 3.2 2.6 1.7 5.7 2.4 8.8 1.8 3.1-.6 5.9-2.4 7.9-5 .6-.8 1.1-1.7 1.4-2.7.3-1 .4-2 .2-3-.2-1-.7-1.9-1.4-2.7-1.6-1.8-3.8-3-6.3-3.3-2.7-.3-5.4.4-7.6 2.1-1.1.8-2 1.8-2.7 3-.7 1.2-1.1 2.5-1.2 3.8-.1 1.4.2 2.8.8 4 .5 1.1 1.3 2 2.3 2.8l.1.1-1.9 1c-.9-.9-1.6-1.9-2.1-3.1-1.1-2.5-1.1-5.4 0-7.9s3.1-4.6 5.6-5.7c2.5-1.1 5.4-1.1 7.9 0s4.6 3.1 5.7 5.6c1.1 2.5 1.1 5.4 0 7.9-1.1 2.5-3.1 4.6-5.6 5.7-2.2 1-4.7 1.2-7 .6l-.1-.1c-.4-.1-.8-.3-1.2-.5l-4.3 2.2c.6.4 1.3.7 1.9.9 1.5.5 3 .7 4.6.6 1.9-.1 3.7-.7 5.3-1.7 1.5-1 2.8-2.3 3.7-3.9.9-1.6 1.4-3.3 1.5-5.1.1-1.8-.3-3.6-1.1-5.2-.8-1.6-2-2.9-3.5-3.9-1.5-1-3.3-1.6-5.1-1.7-1.8-.1-3.6.3-5.2 1.1-1.6.8-2.9 2-3.9 3.5-1 1.5-1.6 3.3-1.7 5.1 0 1.2.2 2.5.7 3.6.4.9 1 1.8 1.7 2.5l-2.3 1.2c-1-1.2-1.7-2.6-2.2-4.1-.9-2.7-.9-5.6 0-8.3.9-2.7 2.7-5 5.1-6.6 2.4-1.6 5.2-2.4 8.1-2.3s5.7 1 8 2.8z"/></svg></a>
+<a href="https://t.me/broservice_kohphangan" target="_blank"><svg viewBox="0 0 32 32" width="28" height="28"><circle cx="16" cy="16" r="15" fill="#26A5E4"/><path fill="#FFF" d="M22.6 10.2l-2.8 13.3c-.2.9-.7 1.1-1.4.7l-3.9-2.9-1.9 1.8c-.2.2-.4.4-.7.4l.3-4 7.2-6.5c.3-.3-.1-.5-.5-.2L12 18.4l-4-1.3c-.9-.3-.9-.9.2-1.3l15.6-6c.8-.3 1.5.2 1.2 1.3z"/></svg></a>
+<a href="https://line.me/ti/p/@broservice" target="_blank"><svg viewBox="0 0 32 32" width="28" height="28"><circle cx="16" cy="16" r="15" fill="#00C300"/><path fill="#FFF" d="M23.4 12.5c-.3-1.7-1.7-3-3.4-3.3-2.6-.5-5.3-.5-7.9 0-1.7.3-3.1 1.6-3.4 3.3-.5 2.6-.5 5.3 0 7.9.3 1.7 1.7 3 3.4 3.3 2.6.5 5.3.5 7.9 0 1.7-.3 3.1-1.6 3.4-3.3.5-2.6.5-5.3 0-7.9zm-4.8 5.9l-2.6 2.6c-.2.2-.5.2-.7 0l-2.6-2.6c-.6-.6-1-1.3-1-2.2 0-1.6 1.3-2.9 2.9-2.9 1.6 0 2.9 1.3 2.9 2.9 0 .9-.4 1.7-1 2.2z"/></svg></a>
+<a href="https://facebook.com/broservice.kohphangan" target="_blank"><svg viewBox="0 0 32 32" width="28" height="28"><circle cx="16" cy="16" r="15" fill="#1877F2"/><path fill="#FFF" d="M21.8 11.2h-2.5c-1.4 0-1.7.7-1.7 1.6v2.1h3.3l-.4 3.3h-2.9v8.5h-3.4v-8.5h-2.8v-3.3h2.8v-2.5c0-2.8 1.7-4.3 4.2-4.3 1.2 0 2.2.1 2.5.2v2.9z"/></svg></a>
+<a href="https://instagram.com/broservice_kohphangan" target="_blank"><svg viewBox="0 0 32 32" width="28" height="28"><circle cx="16" cy="16" r="15" fill="#E4405F"/><path fill="#FFF" d="M20.5 11.5h-9c-2.5 0-4.5 2-4.5 4.5v9c0 2.5 2 4.5 4.5 4.5h9c2.5 0 4.5-2 4.5-4.5v-9c0-2.5-2-4.5-4.5-4.5zm-4.5 12c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6zm6-10.5c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5z"/></svg></a>
+</div></div>
+<div class="nav-shadow"><div><nav><ul class="menu">
+<li><a href="/">🏠 Services</a></li>
+<li><a href="/water-delivery-koh-phangan/">🚰 Water</a></li>
+<li><a href="/bike-service-koh-phangan/">🛵 Bike</a></li>
+<li><a href="/cleaning-koh-phangan/">🧹 Cleaning</a></li>
+<li><a href="/ac-service-koh-phangan/">❄️ AC</a></li>
+<li><a href="/plumber-koh-phangan/">🔧 Plumber</a></li>
+<li><a href="/electrician-koh-phangan/">⚡ Electric</a></li>
+<li><a href="/handyman-koh-phangan/">🔨 Handyman</a></li>
+<li class="active"><a href="/contacts/">✉️ Contacts</a></li>
+</ul></nav></div></div>
+<div class="lang-switch"><a href="/">EN</a><a href="/ru/">RU</a><a href="/th/">TH</a><a href="/he/">HE</a></div>
+</header>
+
+<section id="content"><div><div class="wrap">
+<div style="max-width:960px;margin:0 auto;padding:20px 15px;background:#edeef0;">
+
+<h1>Contact Us</h1>
+
+<div style="background:#f8f6f0;border-left:4px solid #e88800;padding:18px 22px;border-radius:8px;font-size:16px;line-height:1.7;color:#333;margin:0 auto 25px;max-width:700px;text-align:center;">
+<strong>Get in touch with BroService</strong> — we speak English, Russian, and Thai. Call or WhatsApp for instant response.
+</div>
+
+<p style="text-align:center;font-size:18px;font-weight:bold;color:#e88800;margin:0 0 5px;">📞 <a href="tel:+66808705704" style="color:#e88800;text-decoration:none;">+66 80-870-5704</a></p>
+<p style="text-align:center;font-size:14px;color:#666;margin:0 0 25px;">Available 8:00 AM — 8:00 PM, 7 days a week</p>
+
+<div style="display:flex;flex-wrap:wrap;justify-content:center;gap:15px;margin:0 auto 25px;max-width:700px;">
+<div style="flex:1;min-width:180px;background:#fff;border-radius:8px;padding:15px;box-shadow:0 1px 3px rgba(0,0,0,0.08);text-align:center;">
+<h3 style="font-size:16px;color:#e88800;margin:0 0 5px;">📞 Phone / WhatsApp</h3>
+<p style="font-size:14px;color:#555;margin:0;"><a href="tel:+66808705704" style="font-weight:bold;">+66 80-870-5704</a></p>
+<p style="font-size:12px;color:#888;">Available on WhatsApp, Telegram & calls</p>
+</div>
+<div style="flex:1;min-width:180px;background:#fff;border-radius:8px;padding:15px;box-shadow:0 1px 3px rgba(0,0,0,0.08);text-align:center;">
+<h3 style="font-size:16px;color:#e88800;margin:0 0 5px;">✉️ Email</h3>
+<p style="font-size:14px;color:#555;margin:0;"><a href="mailto:info@broservice.in.th">info@broservice.in.th</a></p>
+<p style="font-size:12px;color:#888;">Reply within 24 hours</p>
+</div>
+<div style="flex:1;min-width:180px;background:#fff;border-radius:8px;padding:15px;box-shadow:0 1px 3px rgba(0,0,0,0.08);text-align:center;">
+<h3 style="font-size:16px;color:#e88800;margin:0 0 5px;">🕐 Hours</h3>
+<p style="font-size:14px;color:#555;margin:0;">Mon-Sat: 8AM-8PM</p>
+<p style="font-size:14px;color:#555;margin:0;">Sun: 10AM-6PM</p>
+</div>
+<div style="flex:1;min-width:180px;background:#fff;border-radius:8px;padding:15px;box-shadow:0 1px 3px rgba(0,0,0,0.08);text-align:center;">
+<h3 style="font-size:16px;color:#e88800;margin:0 0 5px;">📍 Location</h3>
+<p style="font-size:14px;color:#555;margin:0;">Koh Phangan, Thailand</p>
+<p style="font-size:12px;color:#888;">We come to you island-wide</p>
+</div>
+<div style="flex:1;min-width:180px;background:#fff;border-radius:8px;padding:15px;box-shadow:0 1px 3px rgba(0,0,0,0.08);text-align:center;">
+<h3 style="font-size:16px;color:#e88800;margin:0 0 5px;">💬 Social</h3>
+<p style="font-size:14px;color:#555;margin:0;">Telegram: @broservice_kohphangan</p>
+<p style="font-size:14px;color:#555;margin:0;">Line: @broservice</p>
+</div>
+<div style="flex:1;min-width:180px;background:#fff;border-radius:8px;padding:15px;box-shadow:0 1px 3px rgba(0,0,0,0.08);text-align:center;">
+<h3 style="font-size:16px;color:#e88800;margin:0 0 5px;">🌐 Languages</h3>
+<p style="font-size:14px;color:#555;margin:0;">English · Русский · ไทย</p>
+</div>
+</div>
+
+<h2 style="font-size:22px;font-weight:600;color:#1f1919;margin-bottom:15px;border-left:4px solid #e88800;padding-left:12px;">❓ FAQ</h2>
+
+<div class="faq-item"><button onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'||!this.nextElementSibling.style.display?'block':'none'" style="width:100%;text-align:left;background:#fff;border:1px solid #ddd;padding:12px 16px;border-radius:6px;cursor:pointer;font-size:15px;font-weight:600;color:#333;margin-bottom:4px;">What services does BroService offer?</button><div style="display:none;padding:12px 16px;background:#fff;border:1px solid #ddd;border-top:0;border-radius:0 0 6px 6px;margin-bottom:4px;color:#555;font-size:14px;">We offer plumbing, electrical, AC, cleaning, water delivery, bike repair, handyman, and property services across Koh Phangan.</div></div>
+
+<div class="faq-item"><button onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'||!this.nextElementSibling.style.display?'block':'none'" style="width:100%;text-align:left;background:#fff;border:1px solid #ddd;padding:12px 16px;border-radius:6px;cursor:pointer;font-size:15px;font-weight:600;color:#333;margin-bottom:4px;">How do I contact BroService?</button><div style="display:none;padding:12px 16px;background:#fff;border:1px solid #ddd;border-top:0;border-radius:0 0 6px 6px;margin-bottom:4px;color:#555;font-size:14px;">Call +66 80-870-5704, WhatsApp, Telegram or email. Available 8AM-8PM daily.</div></div>
+
+<div class="faq-item"><button onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'?'block':'none'" style="width:100%;text-align:left;background:#fff;border:1px solid #ddd;padding:12px 16px;border-radius:6px;cursor:pointer;font-size:15px;font-weight:600;color:#333;margin-bottom:4px;"><strong>Do you guarantee your work?</strong></button><div style="display:none;padding:12px 16px;background:#fff;border:1px solid #ddd;border-top:0;border-radius:0 0 6px 6px;margin-bottom:4px;color:#555;font-size:14px;">Yes, all work comes with a warranty. If something is not right, we will come back and fix it at no extra cost.</div></div>
+
+<div class="faq-item"><button onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'?'block':'none'" style="width:100%;text-align:left;background:#fff;border:1px solid #ddd;padding:12px 16px;border-radius:6px;cursor:pointer;font-size:15px;font-weight:600;color:#333;margin-bottom:4px;"><strong>How do I pay?</strong></button><div style="display:none;padding:12px 16px;background:#fff;border:1px solid #ddd;border-top:0;border-radius:0 0 6px 6px;margin-bottom:4px;color:#555;font-size:14px;">We accept cash, bank transfer, and PromptPay. Payment is due after the work is completed to your satisfaction.</div></div>
+
+<div style="text-align:center;margin:30px auto 10px;">
+<a href="https://wa.me/+66808705704" target="_blank" style="display:inline-flex;align-items:center;gap:12px;background:#25D366;color:#fff;font-size:22px;font-weight:bold;padding:18px 40px;border-radius:50px;text-decoration:none;box-shadow:0 4px 15px rgba(37,211,102,0.3);">💬 WhatsApp Us</a>
+<p style="margin-top:10px;color:#888;font-size:13px;">Fast reply — we are here to help!</p>
+</div>
+
+</div></div></div></section>
+
+<footer><div class="wrap">
+<div class="footer-grid">
+<div class="footer-col"><h4>BroService.in.th</h4><p>Your Local Service Team on Koh Phangan.</p>
+<div class="footer-social">
+<a href="https://wa.me/+66808705704" target="_blank"><svg viewBox="0 0 32 32" width="22" height="22"><circle cx="16" cy="16" r="15" fill="#25D366"/><path fill="#FFF" d="M10 16c0 3.3 2.7 6 6 6c1.3 0 2.6-.4 3.7-1.1l2.1 1.1-.8-2.1c.6-1 .9-2.1.9-3.2c0-3.3-2.7-6-6-6s-6 2.7-6 6z"/></svg></a>
+<a href="https://t.me/broservice_kohphangan" target="_blank"><svg viewBox="0 0 32 32" width="22" height="22"><circle cx="16" cy="16" r="15" fill="#26A5E4"/><path fill="#FFF" d="M22.6 10.2l-2.8 13.3c-.2.9-.7 1.1-1.4.7l-3.9-2.9-1.9 1.8c-.2.2-.4.4-.7.4l.3-4 7.2-6.5"/></svg></a>
+<a href="https://line.me/ti/p/@broservice" target="_blank"><svg viewBox="0 0 32 32" width="22" height="22"><circle cx="16" cy="16" r="15" fill="#00C300"/><path fill="#FFF" d="M23.4 12.5c-.3-1.7-1.7-3-3.4-3.3-2.6-.5-5.3-.5-7.9 0-1.7.3-3.1 1.6-3.4 3.3-.5 2.6-.5 5.3 0 7.9"/></svg></a>
+<a href="https://facebook.com/broservice.kohphangan" target="_blank"><svg viewBox="0 0 32 32" width="22" height="22"><circle cx="16" cy="16" r="15" fill="#1877F2"/><path fill="#FFF" d="M21.8 11.2h-2.5c-1.4 0-1.7.7-1.7 1.6v2.1h3.3l-.4 3.3h-2.9v8.5h-3.4v-8.5h-2.8v-3.3h2.8v-2.5c0-2.8 1.7-4.3 4.2-4.3"/></svg></a>
+<a href="https://instagram.com/broservice_kohphangan" target="_blank"><svg viewBox="0 0 32 32" width="22" height="22"><circle cx="16" cy="16" r="15" fill="#E4405F"/><path fill="#FFF" d="M20.5 11.5h-9c-2.5 0-4.5 2-4.5 4.5v9c0 2.5 2 4.5 4.5 4.5h9c2.5 0 4.5-2 4.5-4.5v-9c0-2.5-2-4.5-4.5-4.5z"/></svg></a>
+</div></div>
+<div class="footer-col"><h4>Services</h4><ul class="footer-links">
+<li><a href="/water-delivery-koh-phangan/">🚰 Water Delivery</a></li>
+<li><a href="/cleaning-koh-phangan/">🧹 Cleaning</a></li>
+<li><a href="/plumber-koh-phangan/">🔧 Plumber</a></li>
+<li><a href="/ac-service-koh-phangan/">❄️ AC Service</a></li>
+<li><a href="/bike-service-koh-phangan/">🛵 Bike Service</a></li>
+<li><a href="/property-rental/">🏠 Property Rental</a></li>
+</ul></div>
+<div class="footer-col"><h4>Contact</h4><ul class="footer-links">
+<li><a href="tel:+66808705704">📞 +66 80-870-5704</a></li>
+<li><a href="mailto:info@broservice.in.th">✉️ info@broservice.in.th</a></li>
+<li><a href="https://wa.me/+66808705704">💬 WhatsApp</a></li>
+<li><a href="https://t.me/broservice_kohphangan">✈️ Telegram</a></li>
+<li><a href="/contacts/">📋 Contact page</a></li>
+</ul></div>
+<div class="footer-col"><h4>Info</h4><ul class="footer-links">
+<li><a href="/">🏠 Services</a></li>
+<li><a href="/contacts/">✉️ Contacts</a></li>
+<li><a href="/sitemap.xml">🗺️ Sitemap</a></li>
+<li><span style="color:#888;">⚡ Available 8AM-8PM</span></li>
+<li><span style="color:#888;">🌴 Koh Phangan, Thailand</span></li>
+</ul></div>
+</div>
+<div class="footer-bottom"><p>© 2026 <a href="/">BroService.in.th</a> · All rights reserved · Website by <a href="https://adfoto.com.ua">adfoto.com.ua</a></p></div>
+</div></footer>
+</body>
+</html>
