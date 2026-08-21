@@ -6,113 +6,89 @@
     <title>Contact Us — BroService.in.th</title>
     <meta name="description" content="Contact us now for instant response. Phone, WhatsApp, Telegram. We speak English, Thai, Russian. +66 80-870-5704.">
     <link rel="icon" href="/assets/images/favicon.ico">
-    <style>
-:root {
-    --primary: #e88800;
-    --primary-dark: #c47000;
-    --dark: #1a1414;
-    --dark2: #2b2424;
-    --darker: #1f1919;
-    --bg: #edeef0;
-    --text-light: #8f8b8c;
-    --white: #fff;
-}
-* { margin: 0; padding: 0; box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-body { font-family: Open Sans, Arial, sans-serif; color: #000; background: var(--dark); line-height: 1.65; font-size: 15px; }
-.container { max-width: 960px; margin: 0 auto; padding: 0 15px; }
-a { text-decoration: none; color: var(--primary); }
-a:hover { text-decoration: underline; }
-header { background: linear-gradient(180deg, var(--dark2), var(--darker)); padding: 4px 0 0; position: sticky; top: 0; z-index: 100; }
-.header-inner { display: flex; align-items: center; justify-content: space-between; padding: 0 0 2px; }
-.logo { font-family: Inter, sans-serif; font-size: 22px; font-weight: 700; color: var(--primary); text-shadow: 1px 1px 2px rgba(0,0,0,0.3); }
-.logo span { color: #d3d3d3; font-weight: 300; }
-.header-right { display: flex; align-items: center; gap: 8px; }
-.header-phone { font-size: 15px; font-weight: bold; }
-.header-phone a { color: #e88800; font-weight: bold; }
-.social-icons { display: flex; gap: 3px; }
-.social-icons a { display: inline-block; transition: opacity 0.2s; }
-.social-icons a:hover { opacity: 0.7; }
-.social-icons svg { width: 22px; height: 22px; border-radius: 50%; display: block; }
-nav { background: linear-gradient(180deg, #e57c00, #c47000); border-radius: 6px 6px 0 0; margin-top: 4px; }
-ul.menu { display: flex; justify-content: center; flex-wrap: nowrap; list-style: none; padding: 4px 4px; }
-ul.menu li { display: inline-block; line-height: 16px; margin: 2px 1px; padding: 4px 6px; border-radius: 5px; transition: background 0.2s; }
-ul.menu li:hover { background: rgba(0,0,0,0.08); }
-ul.menu li a { font-size: 13px; line-height: 16px; color: #1f1919; font-weight: 600; white-space: nowrap; }
-ul.menu li a:hover { color: #fff; }
-ul.menu li.active { background: rgba(0,0,0,0.1); }
-ul.menu li.active a { color: #fff; }
-.breadcrumbs { background: var(--bg); padding: 6px 0; font-size: 13px; color: #888; }
-.breadcrumbs a { color: var(--primary); }
-.hero { background: var(--bg); padding: 20px 0 15px; }
-.hero h1 { font-family: Inter, sans-serif; font-size: 30px; font-weight: 700; color: #1f1919; text-align: center; margin-bottom: 8px; }
-.hero-subtitle { text-align: center; color: var(--text-light); font-size: 14px; max-width: 650px; margin: 0 auto 20px; }
-.blocks { display: flex; gap: 20px; justify-content: center; flex-wrap: nowrap; }
-.block { flex: 1 1 270px; max-width: 290px; background: var(--white); border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
-.block:hover { transform: translateY(-2px); }
-.block img { width: 100%; display: block; }
-.block-content { padding: 14px; }
-.block h3 { font-size: 18px; color: var(--primary); margin-bottom: 6px; }
-.block p { color: var(--text-light); font-size: 13px; line-height: 1.5; margin-bottom: 12px; }
-.block .btn { display: inline-block; background: var(--primary); color: var(--white); padding: 8px 20px; border-radius: 5px; font-weight: 600; font-size: 13px; }
-.block .btn:hover { background: var(--primary-dark); text-decoration: none; }
-#content { background: var(--bg); padding: 20px 0 25px; text-align: center; }
-#content p, #content li, #content .justifyfull { text-align: left; max-width: 700px; margin: 10px auto; }
-#content ul { display: inline-block; text-align: left; max-width: 600px; padding-left: 35px; }
-#content h1 { font-family: Inter, sans-serif; font-size: 28px; font-weight: 700; color: #1f1919; margin-bottom: 14px; }
-#content h2 { font-family: Inter, sans-serif; font-size: 22px; font-weight: 600; color: #1f1919; margin: 18px 0 8px; border-left: 4px solid var(--primary); padding-left: 12px; text-align: center; }
-#content h3 { font-family: Inter, sans-serif; font-size: 18px; font-weight: 600; color: var(--primary); margin: 16px 0 6px; text-align: center; }
-#content p { margin: 10px 0; color: #444; line-height: 1.65; }
-#content .justifyfull { text-align: justify; }
-#content ul { margin: 10px 0 16px; padding-left: 20px; list-style: none; }
-#content ul li { margin: 5px 0; padding-left: 20px; position: relative; }
-#content ul li::before { content: '¹3'; position: absolute; left: 0; color: var(--primary); font-weight: bold; }
-#content table { margin: 15px auto !important; }
-#content .faq-item { text-align: left; max-width: 700px; margin: 0 auto; }
-.float-img { float: right; margin: 0 0 15px 20px; border-radius: 8px; max-width: 40%; }
-.big-banner { margin: 20px 0; text-align: center; }
-.big-banner img { max-width: 100%; border-radius: 8px; }
-.service-hero img { max-width: 100%; height: auto; display: block; margin: 0 auto; border-radius: 8px; }
-img { max-width: 100%; height: auto; border-radius: 7px; }
-#content img { max-width: 100%; height: auto; max-height: 400px; object-fit: contain; }
-.wrap img { max-width: 100%; height: auto; }
-.cta-block { background: linear-gradient(135deg, var(--primary), var(--primary-dark)); color: var(--white); padding: 24px 20px; border-radius: 10px; text-align: center; margin: 20px 0; }
-.cta-block h2 { color: var(--white) !important; font-size: 24px !important; border: none !important; padding: 0 !important; margin-bottom: 10px !important; }
-.cta-block .phone { font-size: 28px; font-weight: 700; margin: 10px 0; }
-.cta-block .phone a { color: var(--white); }
-.cta-block .phone a:hover { text-decoration: none; }
-.cta-block .hours { font-size: 14px; opacity: 0.9; }
-footer { background: var(--dark); color: #aaa; padding: 30px 0 20px; }
-.footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 25px; margin-bottom: 20px; }
-.footer-col h4 { font-family: Inter, sans-serif; font-size: 16px; font-weight: 600; color: var(--white); margin-bottom: 12px; }
-.footer-col p { font-size: 13px; line-height: 1.5; color: #aaa; }
-.footer-links { list-style: none; }
-.footer-links li { margin-bottom: 6px; }
-.footer-links a { font-size: 13px; color: #aaa; }
-.footer-links a:hover { color: var(--primary); }
-.footer-social { display: flex; gap: 6px; margin-top: 10px; }
-.footer-social a { display: inline-block; }
-.footer-social a:hover { opacity: 0.7; }
-.footer-social svg { width: 22px; height: 22px; border-radius: 50%; }
-.footer-bottom { border-top: 1px solid #333; padding-top: 15px; text-align: center; font-size: 13px; color: #888; }
-.footer-bottom a { color: var(--primary); }
-.logo a { text-decoration: none; color: inherit; }
-
-@media only screen and (max-width: 768px) {
-    ul.menu { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; padding: 4px; }
-    ul.menu li { padding: 4px 2px; text-align: center; margin: 0; display: flex; justify-content: center; }
-    ul.menu li:nth-child(9) { grid-column: 1/3; }
-    ul.menu li a { font-size: 11px; }
-    .header-right { flex-direction: column; gap: 5px; }
-    .hero h1 { font-size: 24px; }
-    #content h1 { font-size: 22px; }
-    #content h2 { font-size: 18px; }
-    .float-img { float: none; margin: 0 auto 15px; max-width: 100%; }
-    .footer-grid { grid-template-columns: 1fr; }
-}
-
-
-        @media (max-width: 768px) {
+    <style>        :root {
+            --primary: #e88800;
+            --primary-dark: #c47000;
+            --dark: #1a1414;
+            --dark2: #2b2424;
+            --darker: #1f1919;
+            --bg: #edeef0;
+            --text-light: #8f8b8c;
+            --white: #fff;
+        }
+        html, body { width: 100%; height: 100%; padding: 0; margin: 0; }
+        body { font: 13px/22px Arial, Helvetica, sans-serif; color: #000; min-width: 100%; background: #1a1414; }
+        .main { max-width: 960px; margin: auto; }
+        .wrap { overflow: hidden; position: relative; max-width: 961px; margin: auto; }
+        a { text-decoration: none; cursor: pointer; }
+        a:hover { text-decoration: none; }
+        .lang-switch { display: flex; justify-content: center; gap: 8px; padding: 2px 0; font-size: 12px; position: relative; z-index: 100; background: none; }
+        .lang-switch a { color: #888; text-decoration: none; padding: 5px 12px; }
+        .lang-switch a.active { color: #e88800; border: 2px solid #e88800; border-radius: 4px; font-weight: 700; padding: 5px 12px; }
+        a.button { background: #e88800; border-bottom: #000 1px solid; color: #fff; font-size: 12px; line-height: 15px; padding: 12px 30px; display: inline-block; border-radius: 6px; }
+        a.button:hover { background: #1f1919; }
+        a.link { color: #e88800; }
+        .color-1 { font-size: 18px; line-height: 24px; color: #e37700; }
+        .top-1 { margin-top: 24px; }
+        h1 { font-size: 35px; line-height: 45px; color: #1f1919; font-weight: normal; letter-spacing: -2px; }
+        h2 { font-size: 28px; line-height: 36px; color: #1f1919; font-weight: normal; }
+        h3 { font-size: 22px; line-height: 30px; color: #e88800; font-weight: normal; }
+        ul { margin: 0; padding: 0; }
+        ul li { list-style-position: inside; margin-left: 25px; padding: 3px 0; }
+        header { width: 100%; background: linear-gradient(180deg, #2b2424, #1f1919); margin: 0 auto; z-index: 100; }
+        .linkblock { float: left; margin: 46px 0 22px; font-size: 269%; color: #e98400; font-weight: bold; text-shadow: 1px 1px 2px #555; }
+        .linkblock a { color: #d3d3d3; }
+        .slogan { font-size: 18px; line-height: 22px; color: #d3d3d3; float: left; border-left: #2f2b2b 1px solid; margin: 13px 0 0 28px; padding: 18px 0 15px 29px; }
+        .tooltips { float: right; margin: 54px 50px 0 0; display: flex; gap: 6px; align-items: center; }
+        .tooltips a { display: inline-block; }
+        .tooltips a:hover { opacity: 0.8; }
+        .tooltips a svg { width: 28px; height: 28px; border-radius: 50%; }
+        .nav-shadow { padding-top: 10px; margin: 24px 0 0; position: relative; z-index: 100; }
+        .nav-shadow > div { background: linear-gradient(180deg, #e57c00, #c47000); border-radius: 7px; box-shadow: 0 3px 2px #201a1a; }
+        nav { border-radius: 7px; }
+        ul.menu { overflow: hidden; text-align: center; padding: 8px 2px; display: flex; flex-wrap: nowrap; justify-content: center; list-style: none; }
+        ul.menu li { display: inline-block; line-height: 18px; margin: 2px 1px; padding: 5px 7px; border-radius: 6px; transition: background 0.2s; }
+        ul.menu li:hover { background: rgba(0,0,0,0.1); }
+        ul.menu li a { font-size: 14px; line-height: 18px; color: #1f1919; font-weight: bold; white-space: nowrap; }
+        ul.menu li a:hover { color: #fff; }
+        ul.menu li.active a { color: #e88800; font-weight: 700; }
+        #content { background: #edeef0; width: 100%; padding: 0; }
+        .content-subpages { padding-top: 18px !important; }
+        .header-content { width: 100%; background: #edeef0; margin: 0 auto; position: relative; z-index: 99; padding-bottom: 25px; }
+        .img-radius { border-radius: 7px; }
+        #content > div { width: 76%; margin: 0 auto; }
+        img { max-width: 100%; height: auto; border-radius: 7px; aspect-ratio: auto; }
+        .justifyfull { text-align: justify; }
+        footer > .container { max-width: 960px; margin: 0 auto; }
+        footer { background: var(--darker); color: #e88800; text-align: center; padding: 20px 0; }
+        footer a { color: #e88800; }
+        footer a:hover { text-decoration: underline; }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 20px; text-align: left; margin-bottom: 20px; }
+        .footer-col h4 { color: #e88800; margin-bottom: 10px; font-size: 15px; }
+        .footer-col p, .footer-col li { color: #ccc; font-size: 13px; line-height: 1.8; list-style: none; }
+        .footer-col ul { list-style: none; padding: 0; }
+        .footer-col ul li a { color: #ccc; font-size: 13px; }
+        .footer-col ul li a:hover { color: #e88800; }
+        .footer-social { display: flex; gap: 6px; margin-top: 8px; }
+        .footer-social a svg { width: 22px; height: 22px; border-radius: 50%; display: block; }
+        .footer-bottom { border-top: 1px solid #333; padding-top: 15px; margin-top: 15px; font-size: 12px; color: #888; }
+        /* Center content */
+        #content { text-align: center; }
+        #content p, #content li, #content .justifyfull { text-align: left; max-width: 700px; margin: 10px auto; }
+        #content ul { display: inline-block; text-align: left; max-width: 600px; padding-left: 35px; }
+        #content h2 { text-align: center; }
+        #content h3 { text-align: center; }
+        #content table { margin: 15px auto !important; }
+        #content .faq-item { text-align: left; max-width: 700px; margin: 0 auto; }
+        .logo a { text-decoration: none; color: inherit; }
+        .block-1 { color: #333; width: 32%; margin: 6px 0.5%; background: #fff; border-radius: 8px; box-shadow: 0 1px 4px rgba(0,0,0,0.10); display: inline-block; vertical-align: top; text-align: center; }
+        .block-1 img { width: 100%; height: 150px; object-fit: cover; border-radius: 8px 8px 0 0; }
+        .block-1 .border-1 { padding: 12px 14px 16px; }
+        .block-1 .color-1 { font-size: 17px; font-weight: 700; color: #e88800; margin: 0 0 6px; display: block; text-align: center; }
+        .block-1 p { font-size: 14px; line-height: 1.5; color: #555; margin: 4px 0; text-align: center; }
+        .block-1 .button { display: inline-block; background: #e88800; color: #fff; padding: 6px 16px; border-radius: 4px; text-decoration: none; font-size: 13px; margin-top: 4px; }
+        
+        @media only screen and (max-width: 768px) {
             ul.menu { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; padding: 4px; }
             ul.menu li { padding: 4px 2px; text-align: center; margin: 0; display: flex; justify-content: center; }
             ul.menu li:nth-child(9) { grid-column: 1/3; }
@@ -126,15 +102,7 @@ footer { background: var(--dark); color: #aaa; padding: 30px 0 20px; }
             .block-1 img { width: 100%; height: auto; max-height: 200px; object-fit: cover; }
             h1 { font-size: 170%; }
             .lang-switch { font-size: 11px; }
-        }
-    <link rel="canonical" href="https://broservice.in.th/contacts/">
-    <meta property="og:title" content="Contact Us — BroService.in.th">
-    <meta property="og:description" content="Contact us now. Phone, WhatsApp, Telegram. We speak English, Thai, Russian.">
-    <meta property="og:url" content="https://broservice.in.th/contacts/">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Contact Us — BroService.in.th">
-    </style><script type="application/ld+json">
+        }</style><script type="application/ld+json">
     {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
         {"@type":"Question","name":"What services does BroService offer?","acceptedAnswer":{"@type":"Answer","text":"Plumbing, electrical, AC, cleaning, water delivery, bike repair, handyman, and property services across Koh Phangan."}},
         {"@type":"Question","name":"How do I contact BroService?","acceptedAnswer":{"@type":"Answer","text":"Call +66 80-870-5704, WhatsApp, Telegram or email. Available 8AM-8PM daily."}}
