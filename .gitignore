@@ -1,0 +1,10 @@
+*.py
+*.css
+broservice_raw.html
+index_final.html
+index_new.html
+index_v2.html
+original_clean.html
+pages.txt
+
+# future additions

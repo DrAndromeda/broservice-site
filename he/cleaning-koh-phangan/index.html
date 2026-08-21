@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>שירות ניקיון בקו פנגן — Villa & Condo | BroService.in.th</title>
+    <meta name="description" content="Professional cleaning on Koh Phangan. Villa and condo cleaning, deep cleaning, move-in and move-out. Eco-friendly options. Book by phone or WhatsApp.">
+    <link rel="icon" href="../assets/images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <style>
+        :root {
+            --primary: #e88800;
+            --primary-dark: #c47000;
+            --dark: #1a1414;
+            --dark2: #2b2424;
+            --darker: #1f1919;
+            --bg: #edeef0;
+            --text-light: #8f8b8c;
+            --white: #fff;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Open Sans', Arial, sans-serif;
+            color: #000;
+            background: #1a1410;
+            line-height: 1.65;
+            font-size: 15px;
+        }
+        .container { max-width: 960px; margin: 0 auto; padding: 0 15px; }
+        a { text-decoration: none; color: #e88800; }
+        a:hover { text-decoration: underline; }
+
+        /* Header – compact */
+        header { width: 100%; background: linear-gradient(180deg, #2b2424, #1f1919); }
+            background: linear-gradient(180deg, var(--dark2), #1a1410);
+            padding: 4px 0 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 0 2px;
+        }
+        .logo {
+            font-family: 'Inter', sans-serif;
+            font-size: 22px;
+            font-weight: 700;
+            color: #e88800;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+        .logo span { color: #d3d3d3; font-weight: 300; }
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .header-phone { font-size: 13px; color: #d3d3d3; }
+        .header-phone a { color: #e88800; }
+        .social-icons { display: flex; gap: 3px; }
+        .social-icons a { display: inline-block; }
+        .social-icons a:hover { opacity: 0.8; }
+        .social-icons svg { width: 22px; height: 22px; border-radius: 50%; display: block; }
+
+        /* Nav – compact */
+        nav {
+            background: linear-gradient(180deg, #e57c00, #c47000);
+            border-radius: 6px 6px 0 0;
+            margin-top: 4px;
+        }
+        ul.menu {
+            display: flex;
+            justify-content: center;
+            flex-wrap: nowrap;
+            list-style: none;
+            padding: 4px 4px;
+        }
+ul.menu li { display: inline-block; line-height: 16px; margin: 2px 1px; padding: 4px 6px; border-radius: 5px; transition: background 0.2s; }
+        ul.menu li:hover { background: rgba(0,0,0,0.08); }
+ul.menu li a { font-size: 13px; line-height: 16px; color: #1f1919; font-weight: 600; white-space: nowrap; }
+        ul.menu li a:hover { color: #fff; }
+        ul.menu li.active { background: rgba(0,0,0,0.1); }
+        ul.menu li.active a { color: #e88800; font-weight: 700; }
+
+        /* Breadcrumbs */
+        .breadcrumbs {
+            background: var(--bg);
+            padding: 6px 0;
+            font-size: 13px;
+            color: #888;
+        }
+        .breadcrumbs a { color: #e88800; }
+
+        /* Hero */
+        .hero {
+            background: var(--bg);
+            padding: 20px 0 15px;
+        }
+        .hero h1 {
+            font-family: 'Inter', sans-serif;
+            font-size: 30px;
+            font-weight: 700;
+            color: #1f1919;
+            text-align: center;
+            margin-bottom: 8px;
+        }
+        .hero-subtitle {
+            text-align: center;
+            color: var(--text-light);
+            font-size: 14px;
+            max-width: 650px;
+            margin: 0 auto 20px;
+        }
+        .blocks {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: nowrap;
+        }
+        .block {
+            flex: 1 1 270px;
+            max-width: 290px;
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            transition: transform 0.2s;
+        }
+        .block:hover { transform: translateY(-2px); }
+        .block img { width: 100%; display: block; }
+        .block-content { padding: 14px; }
+        .block h3 { font-size: 18px; color: #e88800; margin-bottom: 6px; }
+        .block p { color: var(--text-light); font-size: 13px; line-height: 1.5; margin-bottom: 12px; }
+        .block .btn {
+            display: inline-block;
+            background: #e88800;
+            color: #fff;
+            padding: 8px 20px;
+            border-radius: 5px;
+            font-weight: 600;
+            font-size: 13px;
+        }
+        .block .btn:hover { background: var(--primary-dark); text-decoration: none; }
+
+        /* Content */
+        #content {
+            background: var(--bg);
+            padding: 20px 0 25px;
+        }
+        #content h1 {
+            font-family: 'Inter', sans-serif;
+            font-size: 28px;
+            font-weight: 700;
+            color: #1f1919;
+            margin-bottom: 14px;
+        }
+        #content h2 {
+            font-family: 'Inter', sans-serif;
+            font-size: 22px;
+            font-weight: 600;
+            color: #1f1919;
+            margin: 18px 0 8px;
+            border-left: 4px solid #e88800;
+            padding-left: 12px;
+        }
+        #content h3 {
+            font-family: 'Inter', sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            color: #e88800;
+            margin: 16px 0 6px;
+        }
+        #content p { margin: 10px 0; color: #444; line-height: 1.65; }
+        #content .justifyfull { text-align: justify; }
+        #content ul { margin: 10px 0 16px; padding-left: 20px; list-style: none; }
+        #content ul li { margin: 5px 0; padding-left: 20px; position: relative; }
+        #content ul li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #e88800;
+            font-weight: bold;
+        }
+        .float-img {
+            float: right;
+            margin: 0 0 15px 20px;
+            border-radius: 8px;
+            max-width: 40%;
+            width: auto;
+            height: auto;
+        }
+        .big-banner { margin: 20px 0; text-align: center; }
+        .big-banner img { max-width: 100%; border-radius: 8px; }
+        .service-hero img { max-width: 100%; height: auto; display: block; margin: 0 auto; border-radius: 8px; }
+        img { max-width: 100%; height: auto; aspect-ratio: auto; }
+
+        /* CTA */
+        .cta-block {
+            background: linear-gradient(135deg, #e88800, var(--primary-dark));
+            color: #fff;
+            padding: 24px 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .cta-block h2 { color: #fff !important; font-size: 24px !important; border: none !important; padding: 0 !important; margin-bottom: 10px !important; }
+        .cta-block .phone { font-size: 28px; font-weight: 700; margin: 10px 0; }
+        .cta-block .phone a { color: #fff; }
+        .cta-block .phone a:hover { text-decoration: none; }
+        .cta-block .hours { font-size: 14px; opacity: 0.9; }
+
+        /* Footer */
+        footer { background: #1a1410; color: #ddd; padding: 40px 20px; width: 100%; }
+        footer .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 25px;
+            margin-bottom: 20px;
+        }
+        .footer-col h4 {
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 12px;
+        }
+        .footer-col p { font-size: 13px; line-height: 1.5; color: #aaa; }
+        .footer-links { list-style: none; }
+        .footer-links li { margin-bottom: 6px; }
+        .footer-links a { font-size: 13px; color: #aaa; transition: color 0.2s; }
+        .footer-links a:hover { color: #e88800; }
+        .footer-social { display: flex; gap: 6px; margin-top: 10px; }
+        .footer-social a { display: inline-block; transition: opacity 0.2s; }
+        .footer-social a:hover { opacity: 0.7; }
+        .footer-social svg { width: 22px; height: 22px; border-radius: 50%; }
+        .footer-bottom { border-top: 1px solid #444; padding-top: 15px; text-align: center; font-size: 13px; color: #aaa; }
+        .footer-bottom a { color: #e88800; }
+
+        
+    
+        .content-section {
+            background: #edeef0;
+            padding: 15px 20px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+        }
+        .content-section h2 {
+            font-size: 22px;
+            color: #1f1919;
+            margin-bottom: 10px;
+        }
+        .content-section ul {
+            padding-left: 20px;
+        }
+        .content-section li {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #333;
+        }
+        .content-section p {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #333;
+        }
+        .faq-section {
+            background: #edeef0;
+            padding: 15px 20px;
+            border-radius: 6px;
+            margin-bottom: 10px;
+        }
+        .faq-section h2 {
+            font-size: 22px;
+            color: #1f1919;
+            margin-bottom: 10px;
+        }
+        .faq-accordion {
+            cursor: pointer;
+            padding: 14px 18px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+            margin-bottom: 10px;
+            position: relative;
+        }
+        .faq-accordion h3 {
+            margin: 0;
+            font-size: 15px;
+            color: #1f1919;
+            font-weight: 600;
+            padding-right: 40px;
+            word-break: break-word;
+        }
+        .faq-accordion .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .faq-accordion.active .faq-answer {
+            max-height: 300px;
+        }
+        .faq-accordion .faq-toggle {
+            position: absolute;
+            right: 18px;
+            top: 14px;
+            color: #e88800;
+            font-size: 18px;
+            font-weight: bold;
+            transition: transform 0.3s;
+        }
+        .faq-accordion.active .faq-toggle {
+            transform: rotate(45deg);
+        }
+        .faq-accordion .faq-answer p {
+            font-size: 13px;
+            color: #555;
+            line-height: 1.6;
+            margin: 8px 0 0;
+        }
+        .cta-block {
+            background: #e88800;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 15px 0;
+            text-align: center;
+        }
+        .cta-block h2 {
+            color: #fff;
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+        .cta-block p, .cta-block div {
+            color: #fff;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .cta-block .phone a, .cta-block a {
+            color: #fff;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .cta-block h2 {
+            color: #fff;
+            margin-bottom: 8px;
+            font-size: 18px;
+        }
+        .cta-block p {
+            color: #ccc;
+            margin-bottom: 12px;
+        }
+        .cta-block a {
+            display: inline-block;
+            background: #e88800;
+            color: #fff;
+            padding: 10px 24px;
+            border-radius: 6px;
+            font-weight: 600;
+            margin: 4px;
+            text-decoration: none;
+        }
+        .cta-block a:hover {
+            background: #d07a00;
+        }
+
+    .lang-switch a:hover { background: #333; color: #fff !important; }
+    </style>
