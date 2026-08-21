@@ -63,7 +63,7 @@
         .footer-social { display: flex; gap: 6px; margin-top: 8px; }
         .footer-social a svg { width: 22px; height: 22px; border-radius: 50%; display: block; }
         .footer-bottom { border-top: 1px solid #444; padding-top: 15px; text-align: center; font-size: 13px; color: #aaa; }
-        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; } }
+        
         @media only screen and (max-width: 768px) {
             h1 { font-size: 170%; letter-spacing: -1px; display: block; }
             .block-1 { width: 100%; padding-top: 16px; }
@@ -87,7 +87,6 @@
                 display: flex;
                 justify-content: center;
             }
-            ul.menu li:nth-child(9) { grid-column: 1 / 3; justify-content: center; width: 100%; }
             ul.menu li a { 
                 font-size: 11px; 
                 display: block;
@@ -101,7 +100,6 @@
         }
         @media only screen and (min-width: 481px) and (max-width: 768px) {
             .block-1 { width: 50%; }
-            .block-1:nth-child(3) { clear: both; }
         }
     
         .content-section {
@@ -229,7 +227,23 @@
         }
 
     .lang-switch a:hover { background: #333; color: #fff !important; }
-    </style><script type="application/ld+json">
+    </style>
+
+        @media (max-width: 768px) {
+            ul.menu { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; padding: 4px; }
+            ul.menu li { padding: 4px 2px; text-align: center; margin: 0; display: flex; justify-content: center; }
+            ul.menu li:nth-child(9) { grid-column: 1/3; }
+            ul.menu li a { font-size: 11px; }
+            .linkblock { float: none; font-size: 180%; text-align: center; margin: 15px 0 5px; }
+            .slogan { float: none; border-left: none; margin: 10px 0; padding: 10px 15px; text-align: center; }
+            .tooltips { float: none; margin: 10px 0; display: flex; justify-content: center; gap: 6px; }
+            .footer-grid { grid-template-columns: 1fr; padding: 0 10px; }
+            #content > div { width: 95%; max-width: 100%; }
+            .block-1 { width: 100%; margin: 10px 0; }
+            .block-1 img { width: 100%; height: auto; max-height: 200px; object-fit: cover; }
+            h1 { font-size: 170%; }
+            .lang-switch { font-size: 11px; }
+        }<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",

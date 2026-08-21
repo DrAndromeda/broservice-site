@@ -245,53 +245,7 @@ ul.menu li a { font-size: 13px; line-height: 16px; color: #1f1919; font-weight: 
         .footer-bottom { border-top: 1px solid #444; padding-top: 15px; text-align: center; font-size: 13px; color: #aaa; }
         .footer-bottom a { color: #e88800; }
 
-        @media (max-width: 768px) {
-            .header-inner { flex-direction: column; gap: 5px; text-align: center; }
-            .header-right { flex-direction: column; gap: 5px; }
-            ul.menu { 
-                display: grid; 
-                grid-template-columns: 1fr 1fr; 
-                gap: 1px; 
-                padding: 3px; 
-            }
-            ul.menu li { 
-                padding: 3px 1px; 
-                text-align: center; 
-                margin: 0;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            ul.menu li:nth-child(9) {
-                grid-column: 1 / 3;
-                justify-content: center;
-                width: 100%;
-            }
-            ul.menu li:nth-child(9) a {
-                width: 100%;
-                text-align: center;
-            }
-            ul.menu li a { 
-                font-size: 11px; 
-                display: inline-block;
-                white-space: nowrap;
-                text-align: center;
-            }
-            .hero h1 { font-size: 24px; }
-            #content h1 { font-size: 22px; }
-            #content h2 { font-size: 18px; }
-            .float-img { float: none; margin: 0 auto 15px; max-width: 100%; height: auto; }
-            .footer-grid { grid-template-columns: 1fr; }
-            #content .section { padding: 12px 10px; }
-            #content h2 { margin-top: 10px; margin-bottom: 6px; }
-            #content p { margin-bottom: 6px; }
-            .pricing-table { margin: 8px 0; }
-            .pricing-table td { padding: 5px; font-size: 12px; }
-            .hero { padding: 12px 0 8px; }
-            .hero-subtitle { margin-bottom: 10px; font-size: 13px; }
-            .blocks { gap: 8px; flex-wrap: wrap; }
-            .block { flex: 1 1 100%; max-width: 100%; margin-bottom: 6px; }
-        }
+        
     
         .content-section {
             background: #edeef0;
@@ -419,6 +373,22 @@ ul.menu li a { font-size: 13px; line-height: 16px; color: #1f1919; font-weight: 
 
     .lang-switch a:hover { background: #333; color: #fff !important; }
     </style>
+
+        @media (max-width: 768px) {
+            ul.menu { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; padding: 4px; }
+            ul.menu li { padding: 4px 2px; text-align: center; margin: 0; display: flex; justify-content: center; }
+            ul.menu li:nth-child(9) { grid-column: 1/3; }
+            ul.menu li a { font-size: 11px; }
+            .linkblock { float: none; font-size: 180%; text-align: center; margin: 15px 0 5px; }
+            .slogan { float: none; border-left: none; margin: 10px 0; padding: 10px 15px; text-align: center; }
+            .tooltips { float: none; margin: 10px 0; display: flex; justify-content: center; gap: 6px; }
+            .footer-grid { grid-template-columns: 1fr; padding: 0 10px; }
+            #content > div { width: 95%; max-width: 100%; }
+            .block-1 { width: 100%; margin: 10px 0; }
+            .block-1 img { width: 100%; height: auto; max-height: 200px; object-fit: cover; }
+            h1 { font-size: 170%; }
+            .lang-switch { font-size: 11px; }
+        }
     <meta name="theme-color" content="#1a1414">
     <link rel="preload" as="image" href="../assets/images/handyman.jpg">
 <script type="application/ld+json">
