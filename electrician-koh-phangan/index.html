@@ -78,6 +78,7 @@ ul.menu li.active a { color: #fff; }
 .service-hero img { max-width: 100%; height: auto; display: block; margin: 0 auto; border-radius: 8px; }
 img { max-width: 100%; height: auto; border-radius: 7px; }
 #content img { max-width: 100%; height: auto; max-height: 400px; object-fit: contain; }
+.wrap { max-width: 960px; margin: 0 auto; overflow: hidden; }
 .wrap img { max-width: 100%; height: auto; }
 .cta-block { background: linear-gradient(135deg, var(--primary), var(--primary-dark)); color: var(--white); padding: 24px 20px; border-radius: 10px; text-align: center; margin: 20px 0; }
 .cta-block h2 { color: var(--white) !important; font-size: 24px !important; border: none !important; padding: 0 !important; margin-bottom: 10px !important; }
@@ -85,8 +86,8 @@ img { max-width: 100%; height: auto; border-radius: 7px; }
 .cta-block .phone a { color: var(--white); }
 .cta-block .phone a:hover { text-decoration: none; }
 .cta-block .hours { font-size: 14px; opacity: 0.9; }
-footer { background: var(--dark); color: #aaa; padding: 30px 0 20px; }
-.footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 25px; margin-bottom: 20px; }
+footer { background: var(--dark); color: #aaa; padding: 25px 0 20px; }
+.footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px; margin-bottom: 20px; }
 .footer-col h4 { font-family: Inter, sans-serif; font-size: 16px; font-weight: 600; color: var(--white); margin-bottom: 12px; }
 .footer-col p { font-size: 13px; line-height: 1.5; color: #aaa; }
 .footer-links { list-style: none; }
@@ -115,15 +116,14 @@ footer { background: var(--dark); color: #aaa; padding: 30px 0 20px; }
 }
 
 
-        edia (max-width: 768px) {
-            ul.menu { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; padding: 4px; }
+        
             ul.menu li { padding: 4px 2px; text-align: center; margin: 0; display: flex; justify-content: center; }
             ul.menu li:nth-child(9) { grid-column: 1/3; }
             ul.menu li a { font-size: 11px; }
             .linkblock { float: none; font-size: 180%; text-align: center; margin: 15px 0 5px; }
             .slogan { float: none; border-left: none; margin: 10px 0; padding: 10px 15px; text-align: center; }
             .tooltips { float: none; margin: 10px 0; display: flex; justify-content: center; gap: 6px; }
-            .footer-grid { grid-template-columns: 1fr; padding: 0 10px; }
+            .footer-grid { grid-template-columns: 1fr; padding: 0 15px; gap: 10px; }
             #content > div { width: 95%; max-width: 100%; }
             .block-1 { width: 100%; margin: 10px 0; }
             .block-1 img { width: 100%; height: auto; max-height: 200px; object-fit: cover; }
@@ -131,8 +131,8 @@ footer { background: var(--dark); color: #aaa; padding: 30px 0 20px; }
             .lang-switch { font-size: 11px; }
         }
     <meta name="theme-color" content="#1a1414">
-    <link rel="preload" as="image" href="/assets/images/electrician.jpg">
-</style><script type="application/ld+json">
+    </style><link rel="preload" as="image" href="/assets/images/electrician.jpg">
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
