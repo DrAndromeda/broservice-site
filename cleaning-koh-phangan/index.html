@@ -302,6 +302,15 @@ ul.menu li a { font-size: 13px; line-height: 16px; color: #1f1919; font-weight: 
     ul.menu li:nth-child(9) { grid-column: 1/3; }
 }
 
+
+        /* FIX: ограничение изображений и контента */
+        img { max-width: 100%; height: auto; border-radius: 7px; }
+        #content img { max-width: 100%; height: auto; max-height: 400px; object-fit: contain; }
+        .wrap img { max-width: 100%; height: auto; }
+        @media (max-width: 768px) {
+            #content img { max-height: 200px; }
+            #content > div { width: 95%; max-width: 100%; }
+        }
 </style>
     <meta name="theme-color" content="#1a1414">
     <link rel="preload" as="image" href="/assets/images/cleaning.jpg">

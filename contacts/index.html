@@ -56,7 +56,16 @@
             .tooltips { float:none; margin:10px 0; display:flex; justify-content:center; }
             .footer-grid { grid-template-columns:1fr; }
         }
-    </style>
+    
+        /* FIX: ограничение изображений и контента */
+        img { max-width: 100%; height: auto; border-radius: 7px; }
+        #content img { max-width: 100%; height: auto; max-height: 400px; object-fit: contain; }
+        .wrap img { max-width: 100%; height: auto; }
+        @media (max-width: 768px) {
+            #content img { max-height: 200px; }
+            #content > div { width: 95%; max-width: 100%; }
+        }
+</style>
     <link rel="canonical" href="https://broservice.in.th/contacts/">
     <meta property="og:title" content="Contact Us — BroService.in.th">
     <meta property="og:description" content="Contact us now. Phone, WhatsApp, Telegram. We speak English, Thai, Russian.">
