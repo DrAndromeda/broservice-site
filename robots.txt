@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://drandromeda.github.io/broservice-site/sitemap.xml
