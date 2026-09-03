@@ -150,7 +150,17 @@ footer { background: var(--dark); color: #aaa; padding: 30px 0 20px; }
     .mobile-drawer .drawer-lang a { color:#aaa; font-weight:600; }
     .mobile-drawer .drawer-lang a.active-lang { color:var(--primary); }
 }
-.map-wrapper { border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin-bottom: 20px; }</style>
+.map-wrapper { border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin-bottom: 20px; }
+
+.contact-cards { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin: 0 auto 30px; max-width: 960px; }
+.contact-card { flex: 1; min-width: 200px; background: #fff; border-radius: 8px; padding: 18px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); text-align: center; }
+.contact-card h3 { font-size: 16px; color: #e88800; margin: 0 0 5px; }
+.contact-card .big { font-size: 15px; color: #555; margin: 0; }
+.contact-card .big a { color: #555; font-weight: bold; text-decoration: none; }
+.contact-card .note { font-size: 12px; color: #888; }
+@media (max-width: 600px) { .contact-card { min-width: 140px; } }
+
+</style>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -219,7 +229,39 @@ footer { background: var(--dark); color: #aaa; padding: 30px 0 20px; }
     </ul>
     <p>Available 8AM–8PM daily. For urgent plumbing or electrical issues outside these hours, call and we'll do our best to help.</p>
 
-        <div class="map-wrapper">
+            <div class="contact-cards">
+        <div class="contact-card">
+            <h3>📞 Telegram / WhatsApp</h3>
+            <p class="big"><a href="https://t.me/BroService_kpg_bot">@BroService_kpg_bot</a></p>
+            <p class="note">Quick response via our bot</p>
+        </div>
+        <div class="contact-card">
+            <h3>✉️ Email</h3>
+            <p class="big"><a href="mailto:info@broservice.in.th">info@broservice.in.th</a></p>
+            <p class="note">Reply within 24 hours</p>
+        </div>
+        <div class="contact-card">
+            <h3>🕐 Hours</h3>
+            <p class="big">8AM — 8PM</p>
+            <p class="note">7 days a week</p>
+        </div>
+        <div class="contact-card">
+            <h3>📍 Location</h3>
+            <p class="big">Koh Phangan, Thailand</p>
+            <p class="note">We come to you island-wide</p>
+        </div>
+        <div class="contact-card">
+            <h3>💬 Social</h3>
+            <p class="big">Telegram: @BroService_kpg_bot</p>
+            <p class="big">Line: @broservice</p>
+        </div>
+        <div class="contact-card">
+            <h3>🌐 Languages</h3>
+            <p class="big">English · Русский · ไทย · עברית</p>
+        </div>
+    </div>
+
+<div class="map-wrapper">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.6887915368766!2d99.9898626!3d9.7090678!2m3!1f600!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30674482f9b7e2a5%3A0x7b8e9d8f0f6c6b2a!2sBroService%20Koh%20Phangan!5e0!3m2!1sen!2sth!4v1690000000000" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 <div class="cta-block">
