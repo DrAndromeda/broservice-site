@@ -20,8 +20,12 @@
     <meta name="twitter:description" content="Plumber, electrician, AC, cleaning and water delivery in Thong Sala, Koh Phangan. Same-day service, central location.">
     <meta property="og:image" content="https://broservice.in.th/assets/images/property-rental.jpg">
     <meta name="twitter:image" content="https://broservice.in.th/assets/images/property-rental.jpg">
-    <link rel="alternate" hreflang="en" href="../thong-sala-koh-phangan/">
-                        <style>
+    <link rel="alternate" hreflang="en" href="https://broservice.in.th/thong-sala-koh-phangan/">
+    <link rel="alternate" hreflang="ru" href="https://broservice.in.th/ru/thong-sala-koh-phangan/">
+    <link rel="alternate" hreflang="th" href="https://broservice.in.th/th/thong-sala-koh-phangan/">
+    <link rel="alternate" hreflang="he" href="https://broservice.in.th/he/thong-sala-koh-phangan/">
+    <link rel="alternate" hreflang="x-default" href="https://broservice.in.th/thong-sala-koh-phangan/">
+        <style>
 :root {
     --primary: #e88800;
     --primary-dark: #c47000;
@@ -60,7 +64,7 @@ ul.menu li.active a { color: #fff; }
 .breadcrumbs { background: var(--bg); padding: 6px 0; font-size: 13px; color: #888; }
 .breadcrumbs a { color: var(--primary); }
 #content { background: var(--bg); padding: 20px 0 25px; text-align: center; }
-#content p, #content li, #content .justifyfull { text-align: left; max-width: 960px; margin: 10px auto; }
+#content p, #content li, #content .justifyfull { text-align: left; max-width: 700px; margin: 10px auto; }
 #content ul { display: inline-block; text-align: left; max-width: 600px; padding-left: 35px; }
 #content h1 { font-family: Inter, sans-serif; font-size: 28px; font-weight: 700; color: #1f1919; margin-bottom: 14px; }
 #content h2 { font-family: Inter, sans-serif; font-size: 22px; font-weight: 600; color: #1f1919; margin: 18px 0 8px; border-left: 4px solid var(--primary); padding-left: 12px; text-align: center; }
@@ -71,7 +75,7 @@ ul.menu li.active a { color: #fff; }
 #content ul li { margin: 5px 0; padding-left: 20px; position: relative; }
 #content ul li::before { content: '•'; position: absolute; left: 0; color: var(--primary); font-weight: bold; }
 #content table { margin: 15px auto !important; }
-#content .faq-item { text-align: left; max-width: 960px; margin: 0 auto; }
+#content .faq-item { text-align: left; max-width: 700px; margin: 0 auto; }
 .float-img { float: right; margin: 0 0 15px 20px; border-radius: 8px; max-width: 40%; }
 img { max-width: 100%; height: auto; border-radius: 7px; }
 #content img { max-width: 100%; height: auto; max-height: 400px; object-fit: contain; }
@@ -144,19 +148,6 @@ footer { background: var(--dark); color: #aaa; padding: 30px 0 20px; }
     .mobile-drawer .drawer-lang a { color:#aaa; font-weight:600; }
     .mobile-drawer .drawer-lang a.active-lang { color:var(--primary); }
 }
-footer > .container { max-width: 960px; margin: 0 auto; }
-footer { background: var(--darker); color: #e88800; text-align: left; padding: 20px 0; }
-footer a { color: #e88800; }
-footer a:hover { text-decoration: underline; }
-.footer-grid { display: grid; grid-template-columns: 2fr 2fr 1.5fr 1.5fr 1.5fr; gap: 15px; text-align: left; margin-bottom: 20px; }
-.footer-col h4 { color: #e88800; margin-bottom: 8px; font-size: 13px; }
-.footer-col p, .footer-col li { color: #ccc; font-size: 12px; line-height: 1.6; list-style: none; }
-.footer-col ul { list-style: none; padding: 0; }
-.footer-col ul li a { color: #ccc; font-size: 13px; }
-.footer-col ul li a:hover { color: #e88800; }
-.footer-social { display: flex; gap: 6px; margin-top: 8px; }
-.footer-social a svg { width: 22px; height: 22px; border-radius: 50%; display: block; }
-.footer-bottom { border-top: 1px solid #333; padding-top: 15px; margin-top: 15px; font-size: 12px; color: #888; text-align: center; }
 </style>
     <script type="application/ld+json">
     {
@@ -253,50 +244,18 @@ footer a:hover { text-decoration: underline; }
         <div style="margin-top:10px;"><a href="https://wa.me/+66808705704" style="color:#fff;background:#25D366;padding:10px 24px;border-radius:6px;display:inline-block;font-weight:600;text-decoration:none;">💬 WhatsApp</a></div>
     </div>
     </div></section>
-    
-    <div class="sticky-cta-bar" id="stickyCta">
-        <a href="https://wa.me/+66808705704" class="cta-whatsapp">💬 WhatsApp</a>
-        <a href="tel:+66808705704" class="cta-call">📞 Call</a>
-    </div>
-    <script>
-    (function(){
-      var bar = document.getElementById('stickyCta');
-      var ftr = document.querySelector('footer');
-      if (!bar || !ftr) return;
-      var obs = new IntersectionObserver(function(entries){
-        entries.forEach(function(e){ bar.style.display = e.isIntersecting ? 'none' : ''; });
-      }, {threshold: 0});
-      obs.observe(ftr);
-    })();
-    </script>
-
-<script>
-(function(){
-  var btn = document.getElementById('menuToggle');
-  var drawer = document.getElementById('mobileDrawer');
-  var overlay = document.getElementById('drawerOverlay');
-  var closeBtn = document.getElementById('drawerClose');
-  if (!btn || !drawer || !overlay) return;
-  function openDrawer(){ drawer.classList.add('open'); overlay.classList.add('open'); }
-  function closeDrawer(){ drawer.classList.remove('open'); overlay.classList.remove('open'); }
-  btn.addEventListener('click', openDrawer);
-  overlay.addEventListener('click', closeDrawer);
-  if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
-  drawer.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', closeDrawer); });
-})();
-</script>
-<footer>
-        <div class="container">
+    <footer>
+        <div class="wrap">
             <div class="footer-grid">
                 <div class="footer-col">
                     <h4>BroService.in.th</h4>
                     <p>Your Local Service Team on Koh Phangan.</p>
                     <div class="footer-social">
                         <a href="https://wa.me/+66808705704" target="_blank"><svg viewBox="0 0 32 32" width="22" height="22"><circle cx="16" cy="16" r="15" fill="#25D366"/><path fill="#FFF" d="M10 16c0 3.3 2.7 6 6 6c1.3 0 2.6-.4 3.7-1.1l2.1 1.1l-.8-2.1c.6-1 .9-2.1.9-3.2c0-3.3-2.7-6-6-6s-6 2.7-6 6zm9.1 3.3l-.5-.3c-1-.5-1.8-.4-2.5.2l-.4.3c-.5.4-.9.8-1.6.8c-.7 0-1.5-.5-2.2-1.2c-1.1-1-1.8-2.4-1.9-3.7c-.1-1.4.6-2.7 1.7-3.5l.4-.3c.7-.5.8-1.3.2-2.2l-.4-.7c-.5-.8-1.3-1.3-2.2-1.3c-1 0-1.8.6-2.3 1.3c-.8 1.1-1.2 2.5-1.2 3.9c0 3 1.6 5.7 4.1 7.2c2 1.2 4.4 1.8 6.8 1.5c1.3-.2 2.5-.7 3.6-1.5c.8-.6 1.5-1.4 2-2.3c.5-.9.6-1.9.3-2.9c-.3-.9-1-1.6-1.9-1.9c-.8-.3-1.6 0-2.3.5z"/></svg></a>
-                        <a href="https://t.me/broservice_kohphangan" target="_blank"><svg viewBox="0 0 32 32" width="22" height="22"><circle cx="16" cy="16" r="15" fill="#26A5E4"/><path fill="#FFF" d="M22.6 10.2l-2.8 13.3c-.2.9-.7 1.1-1.4.7l-3.9-2.9l-1.9 1.8c-.2.2-.4.4-.7.4l.3-4 7.2-6.5c.3-.3-.1-.5-.5-.2L12 18.4l-4-1.3c-.9-.3-.9-.9.2-1.3l15.6-6c.8-.3 1.5.2 1.2 1.3z"/></svg></a>
-                        <a href="https://line.me/ti/p/@broservice" target="_blank"><svg viewBox="0 0 32 32" width="22" height="22"><circle cx="16" cy="16" r="15" fill="#00C300"/><path fill="#FFF" d="M23.4 12.5c-.3-1.7-1.7-3-3.4-3.3c-2.6-.5-5.3-.5-7.9 0c-1.7.3-3.1 1.6-3.4 3.3c-.5 2.6-.5 5.3 0 7.9c.3 1.7 1.7 3 3.4 3.3c2.6.5 5.3.5 7.9 0c1.7-.3 3.1-1.6 3.4-3.3c.5-2.6.5-5.3 0-7.9zm-4.8 5.9l-2.6 2.6c-.2.2-.5.2-.7 0l-2.6-2.6c-.6-.6-1-1.3-1-2.2c0-1.6 1.3-2.9 2.9-2.9c1.6 0 2.9 1.3 2.9 2.9c0 .9-.4 1.7-1 2.2z"/></svg></a>
-                        <a href="https://facebook.com/broservice.kohphangan" target="_blank"><svg viewBox="0 0 32 32" width="22" height="22"><circle cx="16" cy="16" r="15" fill="#1877F2"/><path fill="#FFF" d="M21.8 11.2h-2.5c-1.4 0-1.7.7-1.7 1.6v2.1h3.3l-.4 3.3h-2.9v8.5h-3.4v-8.5h-2.8v-3.3h2.8v-2.5c0-2.8 1.7-4.3 4.2-4.3c1.2 0 2.2.1 2.5.2v2.9z"/></svg></a>
-                        <a href="https://instagram.com/broservice_kohphangan" target="_blank"><svg viewBox="0 0 32 32" width="22" height="22"><circle cx="16" cy="16" r="15" fill="#E4405F"/><path fill="#FFF" d="M20.5 11.5h-9c-2.5 0-4.5 2-4.5 4.5v9c0 2.5 2 4.5 4.5 4.5h9c2.5 0 4.5-2 4.5-4.5v-9c0-2.5-2-4.5-4.5-4.5zm-4.5 12c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6zm6-10.5c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5z"/></svg></a>
+<a href="https://t.me/broservice_kohphangan" target="_blank"><svg viewBox="0 0 32 32" width="22" height="22"><circle cx="16" cy="16" r="15" fill="#26A5E4"/><path fill="#FFF" d="M22.6 10.2l-2.8 13.3c-.2.9-.7 1.1-1.4.7l-3.9-2.9l-1.9 1.8c-.2.2-.4.4-.7.4l.3-4 7.2-6.5c.3-.3-.1-.5-.5-.2L12 18.4l-4-1.3c-.9-.3-.9-.9.2-1.3l15.6-6c.8-.3 1.5.2 1.2 1.3z"/></svg></a>
+<a href="https://line.me/ti/p/@broservice" target="_blank"><svg viewBox="0 0 32 32" width="22" height="22"><circle cx="16" cy="16" r="15" fill="#00C300"/><path fill="#FFF" d="M23.4 12.5c-.3-1.7-1.7-3-3.4-3.3c-2.6-.5-5.3-.5-7.9 0c-1.7.3-3.1 1.6-3.4 3.3c-.5 2.6-.5 5.3 0 7.9c.3 1.7 1.7 3 3.4 3.3c2.6.5 5.3.5 7.9 0c1.7-.3 3.1-1.6 3.4-3.3c.5-2.6.5-5.3 0-7.9zm-4.8 5.9l-2.6 2.6c-.2.2-.5.2-.7 0l-2.6-2.6c-.6-.6-1-1.3-1-2.2c0-1.6 1.3-2.9 2.9-2.9c1.6 0 2.9 1.3 2.9 2.9c0 .9-.4 1.7-1 2.2z"/></svg></a>
+<a href="https://facebook.com/broservice.kohphangan" target="_blank"><svg viewBox="0 0 32 32" width="22" height="22"><circle cx="16" cy="16" r="15" fill="#1877F2"/><path fill="#FFF" d="M21.8 11.2h-2.5c-1.4 0-1.7.7-1.7 1.6v2.1h3.3l-.4 3.3h-2.9v8.5h-3.4v-8.5h-2.8v-3.3h2.8v-2.5c0-2.8 1.7-4.3 4.2-4.3c1.2 0 2.2.1 2.5.2v2.9z"/></svg></a>
+<a href="https://instagram.com/broservice_kohphangan" target="_blank"><svg viewBox="0 0 32 32" width="22" height="22"><circle cx="16" cy="16" r="15" fill="#E4405F"/><path fill="#FFF" d="M20.5 11.5h-9c-2.5 0-4.5 2-4.5 4.5v9c0 2.5 2 4.5 4.5 4.5h9c2.5 0 4.5-2 4.5-4.5v-9c0-2.5-2-4.5-4.5-4.5zm-4.5 12c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6zm6-10.5c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5z"/></svg></a>
                     </div>
                 </div>
                 <div class="footer-col">
@@ -346,5 +305,36 @@ footer a:hover { text-decoration: underline; }
             </div>
         </div>
     </footer>
+    <div class="sticky-cta-bar" id="stickyCta">
+        <a href="https://wa.me/+66808705704" class="cta-whatsapp">💬 WhatsApp</a>
+        <a href="tel:+66808705704" class="cta-call">📞 Call</a>
+    </div>
+    <script>
+    (function(){
+      var bar = document.getElementById('stickyCta');
+      var ftr = document.querySelector('footer');
+      if (!bar || !ftr) return;
+      var obs = new IntersectionObserver(function(entries){
+        entries.forEach(function(e){ bar.style.display = e.isIntersecting ? 'none' : ''; });
+      }, {threshold: 0});
+      obs.observe(ftr);
+    })();
+    </script>
+
+<script>
+(function(){
+  var btn = document.getElementById('menuToggle');
+  var drawer = document.getElementById('mobileDrawer');
+  var overlay = document.getElementById('drawerOverlay');
+  var closeBtn = document.getElementById('drawerClose');
+  if (!btn || !drawer || !overlay) return;
+  function openDrawer(){ drawer.classList.add('open'); overlay.classList.add('open'); }
+  function closeDrawer(){ drawer.classList.remove('open'); overlay.classList.remove('open'); }
+  btn.addEventListener('click', openDrawer);
+  overlay.addEventListener('click', closeDrawer);
+  if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
+  drawer.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', closeDrawer); });
+})();
+</script>
 </body>
 </html>

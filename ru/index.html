@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>BroService.in.th — Все услуги для дома на Ко Пхангане</title>
+    <meta name="description" content="Доставка воды, уборка, сантехник, кондиционеры, электрик, байк-сервис и хендимен на Ко Пхангане. Звоните +66 80-870-5704.">
+    <link rel="icon" href="../assets/images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="canonical" href="https://broservice.in.th/ru/">
+    <meta property="og:title" content="BroService.in.th — Все услуги для дома на Ко Пхангане">
+    <meta property="og:description" content="Доставка воды, уборка, сантехник, кондиционеры, электрик, байк-сервис и хендимен на Ко Пхангане. Звоните +66 80-870-5704.">
+    <meta property="og:url" content="https://broservice.in.th/ru/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="BroService.in.th">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:image" content="https://broservice.in.th/assets/images/water-delivery.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="BroService.in.th — Все услуги для дома на Ко Пхангане">
+    <meta name="twitter:description" content="Доставка воды, уборка, сантехник, кондиционеры, электрик, байк-сервис и хендимен на Ко Пхангане. Звоните +66 80-870-5704.">
+    <meta name="twitter:image" content="https://broservice.in.th/assets/images/water-delivery.jpg">
+    <link rel="alternate" hreflang="en" href="https://broservice.in.th/">
+    <link rel="alternate" hreflang="x-default" href="https://broservice.in.th/">
+    <link rel="alternate" hreflang="ru" href="https://broservice.in.th/ru/">
+    <link rel="alternate" hreflang="th" href="https://broservice.in.th/th/">
+    <link rel="alternate" hreflang="he" href="https://broservice.in.th/he/">
+    <style>
+:root {
+    --primary: #e88800;
+    --primary-dark: #c47000;
+    --dark: #1a1414;
+    --dark2: #2b2424;
+    --darker: #1f1919;
+    --bg: #edeef0;
+    --text-light: #8f8b8c;
+    --white: #fff;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: Open Sans, Arial, sans-serif; color: #000; background: var(--dark); line-height: 1.65; font-size: 15px; }
+.container { max-width: 960px; margin: 0 auto; padding: 0 15px; }
+a { text-decoration: none; color: var(--primary); }
+a:hover { text-decoration: underline; }
+header { background: linear-gradient(180deg, var(--dark2), var(--darker)); padding: 4px 0 0; position: sticky; top: 0; z-index: 100; }
+.header-inner { display: flex; align-items: center; justify-content: space-between; padding: 0 0 2px; }
+.logo { font-family: Inter, sans-serif; font-size: 22px; font-weight: 700; color: var(--primary); text-shadow: 1px 1px 2px rgba(0,0,0,0.3); }
+.logo span { color: #d3d3d3; font-weight: 300; }
+.header-right { display: flex; align-items: center; gap: 8px; }
+.header-phone { font-size: 15px; font-weight: bold; }
+.header-phone a { color: #e88800; font-weight: bold; }
+.social-icons { display: flex; gap: 3px; }
+.social-icons a { display: inline-block; transition: opacity 0.2s; }
+.social-icons a:hover { opacity: 0.7; }
+.social-icons svg { width: 22px; height: 22px; border-radius: 50%; display: block; }
+nav { background: linear-gradient(180deg, #e57c00, #c47000); border-radius: 6px 6px 0 0; margin-top: 4px; }
+ul.menu { display: flex; justify-content: center; flex-wrap: nowrap; list-style: none; padding: 4px 4px; }
+ul.menu li { display: inline-block; line-height: 16px; margin: 2px 1px; padding: 4px 6px; border-radius: 5px; transition: background 0.2s; }
+ul.menu li:hover { background: rgba(0,0,0,0.08); }
+ul.menu li a { font-size: 13px; line-height: 16px; color: #1f1919; font-weight: 600; white-space: nowrap; }
+ul.menu li a:hover { color: #fff; }
+ul.menu li.active { background: rgba(0,0,0,0.1); }
+ul.menu li.active a { color: #fff; }
+.breadcrumbs { background: var(--bg); padding: 6px 0; font-size: 13px; color: #888; }
+.breadcrumbs a { color: var(--primary); }
+#content { background: var(--bg); padding: 20px 0 25px; text-align: center; }
+#content p, #content li, #content .justifyfull { text-align: left; max-width: 700px; margin: 10px auto; }
+#content ul { display: inline-block; text-align: left; max-width: 600px; padding-left: 35px; }
+#content h1 { font-family: Inter, sans-serif; font-size: 28px; font-weight: 700; color: #1f1919; margin-bottom: 14px; }
+#content h2 { font-family: Inter, sans-serif; font-size: 22px; font-weight: 600; color: #1f1919; margin: 18px 0 8px; border-left: 4px solid var(--primary); padding-left: 12px; text-align: center; }
+#content h3 { font-family: Inter, sans-serif; font-size: 18px; font-weight: 600; color: var(--primary); margin: 16px 0 6px; text-align: center; }
+#content p { margin: 10px 0; color: #444; line-height: 1.65; }
+#content .justifyfull { text-align: justify; }
+#content ul { margin: 10px 0 16px; padding-left: 20px; list-style: none; }
+#content ul li { margin: 5px 0; padding-left: 20px; position: relative; }
+#content ul li::before { content: '•'; position: absolute; left: 0; color: var(--primary); font-weight: bold; }
+#content table { margin: 15px auto !important; }
+#content .faq-item { text-align: left; max-width: 700px; margin: 0 auto; }
+.float-img { float: right; margin: 0 0 15px 20px; border-radius: 8px; max-width: 40%; }
+img { max-width: 100%; height: auto; border-radius: 7px; }
+#content img { max-width: 100%; height: auto; max-height: 400px; object-fit: contain; }
+.cta-block { background: linear-gradient(135deg, var(--primary), var(--primary-dark)); color: var(--white); padding: 24px 20px; border-radius: 10px; text-align: center; margin: 20px 0; }
+.cta-block h2 { color: var(--white) !important; font-size: 24px !important; border: none !important; padding: 0 !important; margin-bottom: 10px !important; }
+.cta-block .phone { font-size: 28px; font-weight: 700; margin: 10px 0; }
+.cta-block .phone a { color: var(--white); }
+.cta-block .hours { font-size: 14px; opacity: 0.9; }
+.usp-bar { display:flex; flex-wrap:wrap; justify-content:center; gap:10px 22px; background:#fff; padding:12px 15px; margin:0; border-bottom:3px solid var(--primary); font-size:13px; color:#333; font-weight:600; }
+.usp-bar span { display:flex; align-items:center; gap:6px; white-space:nowrap; }
+.related-services { max-width:960px; margin:0 auto; padding:25px 15px; background:var(--bg); }
+.related-services h2 { font-family: Inter, sans-serif; font-size:20px; font-weight:600; color:#1f1919; text-align:center; margin-bottom:14px; }
+.related-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
+.related-grid a { display:block; background:#fff; border-radius:8px; padding:16px 10px; text-align:center; box-shadow:0 1px 4px rgba(0,0,0,0.08); color:#1f1919; font-weight:600; font-size:14px; transition:transform .15s; }
+.related-grid a:hover { transform:translateY(-3px); text-decoration:none; box-shadow:0 4px 10px rgba(0,0,0,0.12); }
+.related-grid .emoji { display:block; font-size:26px; margin-bottom:6px; }
+footer { background: var(--dark); color: #aaa; padding: 30px 0 20px; }
+.footer-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 18px; margin-bottom: 20px; }
+.footer-col h4 { font-family: Inter, sans-serif; font-size: 16px; font-weight: 600; color: var(--white); margin-bottom: 12px; }
+.footer-col p { font-size: 13px; line-height: 1.5; color: #aaa; }
+.footer-links { list-style: none; }
+.footer-links li { margin-bottom: 6px; }
+.footer-links a { font-size: 13px; color: #aaa; }
+.footer-links a:hover { color: var(--primary); }
+.footer-social { display: flex; gap: 6px; margin-top: 10px; }
+.footer-social a:hover { opacity: 0.7; }
+.footer-social svg { width: 22px; height: 22px; border-radius: 50%; }
+.footer-bottom { border-top: 1px solid #333; padding-top: 15px; text-align: center; font-size: 13px; color: #888; }
+.footer-bottom a { color: var(--primary); }
+.menu-toggle { display:none; }
+.mobile-drawer, .drawer-overlay { display:none; }
+.sticky-cta-bar { display:none; }
+@media only screen and (max-width: 768px) {
+    nav { display:none; }
+    .menu-toggle { display:flex; align-items:center; justify-content:center; background:none; border:none; color:#fff; font-size:26px; cursor:pointer; padding:4px 8px; }
+    .drawer-overlay { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.55); z-index:299; }
+    .drawer-overlay.open { display:block; }
+    .mobile-drawer { display:block; position:fixed; top:0; right:-82%; width:78%; max-width:320px; height:100%; background:var(--darker); z-index:300; transition:right .25s ease; box-shadow:-4px 0 18px rgba(0,0,0,0.35); overflow-y:auto; }
+    .mobile-drawer.open { right:0; }
+    .drawer-close { text-align:right; padding:14px 18px 0; }
+    .drawer-close button { background:none; border:none; color:#fff; font-size:30px; cursor:pointer; line-height:1; }
+    .mobile-drawer ul { list-style:none; padding:6px 22px 24px; margin:0; }
+    .mobile-drawer ul li { padding:14px 0; border-bottom:1px solid rgba(255,255,255,0.09); }
+    .mobile-drawer ul li a { color:#fff; font-size:16px; font-weight:600; display:block; }
+    .mobile-drawer ul li.active a { color:var(--primary); }
+    .mobile-drawer .drawer-lang { padding:16px 22px; display:flex; gap:14px; font-size:14px; }
+    .mobile-drawer .drawer-lang a { color:#aaa; font-weight:600; }
+    .mobile-drawer .drawer-lang a.active-lang { color:var(--primary); }
+    .header-right { flex-direction: column; gap: 5px; }
+    #content h1 { font-size: 22px; }
+    #content h2 { font-size: 18px; }
+    .float-img { float: none; margin: 0 auto 15px; max-width: 100%; }
+    .footer-grid { grid-template-columns: 1fr; padding: 0 15px; gap: 10px; }
+    .header-inner { flex-direction: column; text-align: center; }
+    .usp-bar { font-size:11px; gap:6px 12px; padding:8px 10px; }
+    .related-grid { grid-template-columns:1fr 1fr; }
+    .sticky-cta-bar { display:flex; position:fixed; bottom:0; left:0; right:0; z-index:200; box-shadow:0 -2px 12px rgba(0,0,0,0.18); }
+    .sticky-cta-bar a { flex:1; text-align:center; padding:13px 0; font-size:14px; font-weight:700; text-decoration:none; display:flex; align-items:center; justify-content:center; gap:6px; }
+    .sticky-cta-bar .cta-whatsapp { background:#25D366; color:#fff; }
+    .sticky-cta-bar .cta-call { background:var(--primary); color:#fff; }
+    body { padding-bottom: 52px; }
+}
+</style>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "BroService.in.th",
+  "telephone": "+66808705704",
+  "url": "https://broservice.in.th/ru/",
+  "areaServed": [
+    "Thong Sala",
+    "Srithanu",
+    "Haad Rin",
+    "Chaloklum",
+    "Baan Tai",
+    "Koh Phangan"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Koh Phangan",
+    "addressRegion": "Surat Thani",
+    "addressCountry": "TH"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Какие услуги предоставляет BroService?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Сантехника, электрика, кондиционеры, уборка, доставка воды, байк-сервис, хендимен и аренда жилья по всему Ко Пхангану."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Как связаться с BroService?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Звоните или пишите в WhatsApp +66 80-870-5704, либо в Telegram или LINE. Работаем 8:00–20:00 ежедневно."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Есть ли доставка воды на Ко Пхангане?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Да — бутыли 19Л с доставкой на виллу или в кондо, доступна регулярная доставка по графику."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Даёте ли вы гарантию на работу?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Да, на все работы действует гарантия. Если что-то не так — вернёмся и исправим бесплатно."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Как оплатить?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Наличными, банковским переводом или через PromptPay — после выполнения работы."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo" onclick="window.location='../'" style="cursor:pointer;"><span>Bro</span>Service.in.th</div>
+                <div class="header-right">
+                    <div class="header-phone"><a href="tel:+66808705704">📞 +66 80-870-5704</a></div>
+                    <div class="social-icons">
+                        <a href="https://wa.me/+66808705704" target="_blank"><svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="15" fill="#25D366"/><path fill="#FFF" d="M10 16c0 3.3 2.7 6 6 6c1.3 0 2.6-.4 3.7-1.1l2.1 1.1l-.8-2.1c.6-1 .9-2.1.9-3.2c0-3.3-2.7-6-6-6s-6 2.7-6 6zm9.1 3.3l-.5-.3c-1-.5-1.8-.4-2.5.2l-.4.3c-.5.4-.9.8-1.6.8c-.7 0-1.5-.5-2.2-1.2c-1.1-1-1.8-2.4-1.9-3.7c-.1-1.4.6-2.7 1.7-3.5l.4-.3c.7-.5.8-1.3.2-2.2l-.4-.7c-.5-.8-1.3-1.3-2.2-1.3c-1 0-1.8.6-2.3 1.3c-.8 1.1-1.2 2.5-1.2 3.9c0 3 1.6 5.7 4.1 7.2c2 1.2 4.4 1.8 6.8 1.5c1.3-.2 2.5-.7 3.6-1.5c.8-.6 1.5-1.4 2-2.3c.5-.9.6-1.9.3-2.9c-.3-.9-1-1.6-1.9-1.9c-.8-.3-1.6 0-2.3.5z"/></svg></a>
+<a href="https://t.me/broservice_kohphangan" target="_blank"><svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="15" fill="#26A5E4"/><path fill="#FFF" d="M22.6 10.2l-2.8 13.3c-.2.9-.7 1.1-1.4.7l-3.9-2.9l-1.9 1.8c-.2.2-.4.4-.7.4l.3-4 7.2-6.5c.3-.3-.1-.5-.5-.2L12 18.4l-4-1.3c-.9-.3-.9-.9.2-1.3l15.6-6c.8-.3 1.5.2 1.2 1.3z"/></svg></a>
+<a href="https://line.me/ti/p/@broservice" target="_blank"><svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="15" fill="#00C300"/><path fill="#FFF" d="M23.4 12.5c-.3-1.7-1.7-3-3.4-3.3c-2.6-.5-5.3-.5-7.9 0c-1.7.3-3.1 1.6-3.4 3.3c-.5 2.6-.5 5.3 0 7.9c.3 1.7 1.7 3 3.4 3.3c2.6.5 5.3.5 7.9 0c1.7-.3 3.1-1.6 3.4-3.3c.5-2.6.5-5.3 0-7.9zm-4.8 5.9l-2.6 2.6c-.2.2-.5.2-.7 0l-2.6-2.6c-.6-.6-1-1.3-1-2.2c0-1.6 1.3-2.9 2.9-2.9c1.6 0 2.9 1.3 2.9 2.9c0 .9-.4 1.7-1 2.2z"/></svg></a>
+<a href="https://facebook.com/broservice.kohphangan" target="_blank"><svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="15" fill="#1877F2"/><path fill="#FFF" d="M21.8 11.2h-2.5c-1.4 0-1.7.7-1.7 1.6v2.1h3.3l-.4 3.3h-2.9v8.5h-3.4v-8.5h-2.8v-3.3h2.8v-2.5c0-2.8 1.7-4.3 4.2-4.3c1.2 0 2.2.1 2.5.2v2.9z"/></svg></a>
+<a href="https://instagram.com/broservice_kohphangan" target="_blank"><svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="15" fill="#E4405F"/><path fill="#FFF" d="M20.5 11.5h-9c-2.5 0-4.5 2-4.5 4.5v9c0 2.5 2 4.5 4.5 4.5h9c2.5 0 4.5-2 4.5-4.5v-9c0-2.5-2-4.5-4.5-4.5zm-4.5 12c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6zm6-10.5c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5z"/></svg></a>
+                    </div>
+                </div>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Menu">☰</button>
+            <div class="drawer-overlay" id="drawerOverlay"></div>
+            <div class="mobile-drawer" id="mobileDrawer">
+                <div class="drawer-close"><button id="drawerClose" aria-label="Close">×</button></div>
+                <ul><li class="active"><a href="../">🏠 Услуги</a></li><li><a href="../water-delivery-koh-phangan/">🚰 Вода</a></li><li><a href="../bike-service-koh-phangan/">🛵 Байк</a></li><li><a href="../cleaning-koh-phangan/">🧹 Уборка</a></li><li><a href="../ac-service-koh-phangan/">❄️ Кондиционер</a></li><li><a href="../plumber-koh-phangan/">🔧 Сантехник</a></li><li><a href="../electrician-koh-phangan/">⚡ Электрик</a></li><li><a href="../handyman-koh-phangan/">🔨 Хендимен</a></li><li><a href="../contacts/">✉️ Контакты</a></li></ul>
+                <div class="drawer-lang"><a href="../">EN</a><a href="../ru/" class="active-lang">RU</a><a href="../th/">TH</a><a href="../he/">HE</a></div>
+            </div>
+            <nav><ul class="menu"><li class="active"><a href="../">🏠 Услуги</a></li><li><a href="../water-delivery-koh-phangan/">🚰 Вода</a></li><li><a href="../bike-service-koh-phangan/">🛵 Байк</a></li><li><a href="../cleaning-koh-phangan/">🧹 Уборка</a></li><li><a href="../ac-service-koh-phangan/">❄️ Кондиционер</a></li><li><a href="../plumber-koh-phangan/">🔧 Сантехник</a></li><li><a href="../electrician-koh-phangan/">⚡ Электрик</a></li><li><a href="../handyman-koh-phangan/">🔨 Хендимен</a></li><li><a href="../contacts/">✉️ Контакты</a></li></ul></nav>
+        </div>
+    <div class="lang-switch" style="text-align:center;padding:5px;font-size:12px;"><a href="../">EN</a> <a href="../ru/" class="active">RU</a> <a href="../th/">TH</a> <a href="../he/">HE</a></div>
+    </header>
+    <div class="usp-bar">
+        <span>⚡ Тот же день</span>
+        <span>🛡️ Гарантия на работу</span>
+        <span>🌴 По всему острову</span>
+        <span>🗣️ EN / RU / TH</span>
+    </div>
+    <div class="header-content">
+        <div class="container">
+            <div style="display:flex;flex-wrap:wrap;justify-content:center;margin:0 auto;max-width:1000px;"><div class="block-1">
+<img title="Доставка воды" src="../assets/images/water-delivery.jpg" alt="Доставка воды" class="img-radius"/>
+<div class="border-1">
+<p class="color-1 p2">🚰 Доставка воды</p>
+<a href="water-delivery-koh-phangan/" class="button top-1">Подробнее →</a>
+</div>
+</div><div class="block-1">
+<img title="Уборка" src="../assets/images/cleaning.jpg" alt="Уборка" class="img-radius"/>
+<div class="border-1">
+<p class="color-1 p2">🧹 Уборка</p>
+<a href="cleaning-koh-phangan/" class="button top-1">Подробнее →</a>
+</div>
+</div><div class="block-1">
+<img title="Сантехник" src="../assets/images/plumber.jpg" alt="Сантехник" class="img-radius"/>
+<div class="border-1">
+<p class="color-1 p2">🔧 Сантехник</p>
+<a href="plumber-koh-phangan/" class="button top-1">Подробнее →</a>
+</div>
+</div></div>
+        </div>
+    </div>
+    <section id="content"><div class="container">
+    <div style="background:#f8f6f0;border-left:4px solid #e88800;padding:20px 24px;border-radius:8px;font-size:18px;line-height:1.8;color:#333;margin:0 auto 25px;max-width:800px;text-align:center;">BroService — местная сервисная команда, которая работает по всему острову: от Тонгсалы и Сритану до Хаад Рин, Чалоклума и Баан Тай. Один номер телефона, семь услуг — не нужно искать разных подрядчиков.</div>
+    <h1>Все услуги для дома на Ко Пхангане — быстро, надёжно, на вашем языке</h1>
+    <p style="text-align:center;font-size:15px;color:#666;font-weight:600;margin:0 0 18px;">🚰 Доставка воды &nbsp;•&nbsp; 🧹 Уборка &nbsp;•&nbsp; 🔧 Сантехник &nbsp;•&nbsp; ❄️ Кондиционеры &nbsp;•&nbsp; ⚡ Электрик &nbsp;•&nbsp; 🛵 Байк-сервис</p>
+    <div style="display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:0 0 20px;">
+    <a href="https://wa.me/+66808705704" style="background:#25D366;color:#fff;padding:12px 28px;border-radius:6px;font-weight:700;text-decoration:none;">💬 WhatsApp</a>
+    <a href="tel:+66808705704" style="background:var(--primary);color:#fff;padding:12px 28px;border-radius:6px;font-weight:700;text-decoration:none;">📞 Позвонить</a>
+    </div>
+
+    <h2>🏠 Услуги</h2>
+    <ul>
+    <li>🚰 <strong>Доставка воды</strong></li>
+<li>🧹 <strong>Уборка</strong></li>
+<li>🔧 <strong>Сантехник</strong></li>
+<li>❄️ <strong>Кондиционеры</strong></li>
+<li>⚡ <strong>Электрик</strong></li>
+<li>🛵 <strong>Байк-сервис</strong></li>
+<li>🔨 <strong>Хендимен</strong></li>
+<li>🏠 <strong>Аренда жилья</strong></li>
+    </ul>
+
+    <p class="justifyfull">Каждая работа выполняется с гарантией: если что-то не так — мы вернёмся и исправим бесплатно. Мы работаем по всему острову, поэтому рядом с рынком Тонгсалы, виллой в Сритану, пляжной полосой Хаад Рин, рыбацкой деревней Чалоклум или в Баан Тай — обычно можем приехать в тот же день.</p>
+
+    <div style="max-width:700px;margin:0 auto 15px;color:#555;font-size:14px;">📍 ⚡ Работаем 8:00–20:00 · 🌴 Ко Пханган, Таиланд</div>
+
+    <h2>⭐ Отзывы клиентов</h2>
+    <div style="max-width:700px;margin:0 auto 25px;background:#fff;border:1px solid #ddd;border-radius:8px;padding:20px 24px;text-align:center;color:#555;font-size:15px;line-height:1.7;">
+    Мы наполняем наш профиль Google Business, чтобы вы могли читать проверенные отзывы прошлых клиентов. А пока — просто спросите нас о рекомендациях при звонке, с радостью свяжем вас с недавними клиентами.
+    <div style="margin-top:14px;"><a href="https://wa.me/+66808705704" style="color:#25D366;font-weight:700;text-decoration:none;">💬 Спросить в WhatsApp</a></div>
+    </div>
+
+    <h2>❓ Вопросы и ответы</h2>
+    <div class="faq-item"><button onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'||!this.nextElementSibling.style.display?'block':'none'" style="width:100%;text-align:left;background:#fff;border:1px solid #ddd;padding:12px 16px;border-radius:6px;cursor:pointer;font-size:15px;font-weight:600;color:#333;margin-bottom:4px;">Какие услуги предоставляет BroService?</button>
+<div style="display:none;padding:12px 16px;background:#fff;border:1px solid #ddd;border-top:0;border-radius:0 0 6px 6px;margin-bottom:4px;color:#555;font-size:14px;">Сантехника, электрика, кондиционеры, уборка, доставка воды, байк-сервис, хендимен и аренда жилья по всему Ко Пхангану.</div></div>
+<div class="faq-item"><button onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'||!this.nextElementSibling.style.display?'block':'none'" style="width:100%;text-align:left;background:#fff;border:1px solid #ddd;padding:12px 16px;border-radius:6px;cursor:pointer;font-size:15px;font-weight:600;color:#333;margin-bottom:4px;">Как связаться с BroService?</button>
+<div style="display:none;padding:12px 16px;background:#fff;border:1px solid #ddd;border-top:0;border-radius:0 0 6px 6px;margin-bottom:4px;color:#555;font-size:14px;">Звоните или пишите в WhatsApp +66 80-870-5704, либо в Telegram или LINE. Работаем 8:00–20:00 ежедневно.</div></div>
+<div class="faq-item"><button onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'||!this.nextElementSibling.style.display?'block':'none'" style="width:100%;text-align:left;background:#fff;border:1px solid #ddd;padding:12px 16px;border-radius:6px;cursor:pointer;font-size:15px;font-weight:600;color:#333;margin-bottom:4px;">Есть ли доставка воды на Ко Пхангане?</button>
+<div style="display:none;padding:12px 16px;background:#fff;border:1px solid #ddd;border-top:0;border-radius:0 0 6px 6px;margin-bottom:4px;color:#555;font-size:14px;">Да — бутыли 19Л с доставкой на виллу или в кондо, доступна регулярная доставка по графику.</div></div>
+<div class="faq-item"><button onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'||!this.nextElementSibling.style.display?'block':'none'" style="width:100%;text-align:left;background:#fff;border:1px solid #ddd;padding:12px 16px;border-radius:6px;cursor:pointer;font-size:15px;font-weight:600;color:#333;margin-bottom:4px;">Даёте ли вы гарантию на работу?</button>
+<div style="display:none;padding:12px 16px;background:#fff;border:1px solid #ddd;border-top:0;border-radius:0 0 6px 6px;margin-bottom:4px;color:#555;font-size:14px;">Да, на все работы действует гарантия. Если что-то не так — вернёмся и исправим бесплатно.</div></div>
+<div class="faq-item"><button onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'||!this.nextElementSibling.style.display?'block':'none'" style="width:100%;text-align:left;background:#fff;border:1px solid #ddd;padding:12px 16px;border-radius:6px;cursor:pointer;font-size:15px;font-weight:600;color:#333;margin-bottom:4px;">Как оплатить?</button>
+<div style="display:none;padding:12px 16px;background:#fff;border:1px solid #ddd;border-top:0;border-radius:0 0 6px 6px;margin-bottom:4px;color:#555;font-size:14px;">Наличными, банковским переводом или через PromptPay — после выполнения работы.</div></div>
+    </div></section>
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>BroService.in.th</h4>
+                    <p>Ваша местная служба сервиса на Ко Пхангане.</p>
+                    <div class="footer-social">
+                        <a href="https://wa.me/+66808705704" target="_blank"><svg viewBox="0 0 32 32" width="22" height="22"><circle cx="16" cy="16" r="15" fill="#25D366"/><path fill="#FFF" d="M10 16c0 3.3 2.7 6 6 6c1.3 0 2.6-.4 3.7-1.1l2.1 1.1l-.8-2.1c.6-1 .9-2.1.9-3.2c0-3.3-2.7-6-6-6s-6 2.7-6 6zm9.1 3.3l-.5-.3c-1-.5-1.8-.4-2.5.2l-.4.3c-.5.4-.9.8-1.6.8c-.7 0-1.5-.5-2.2-1.2c-1.1-1-1.8-2.4-1.9-3.7c-.1-1.4.6-2.7 1.7-3.5l.4-.3c.7-.5.8-1.3.2-2.2l-.4-.7c-.5-.8-1.3-1.3-2.2-1.3c-1 0-1.8.6-2.3 1.3c-.8 1.1-1.2 2.5-1.2 3.9c0 3 1.6 5.7 4.1 7.2c2 1.2 4.4 1.8 6.8 1.5c1.3-.2 2.5-.7 3.6-1.5c.8-.6 1.5-1.4 2-2.3c.5-.9.6-1.9.3-2.9c-.3-.9-1-1.6-1.9-1.9c-.8-.3-1.6 0-2.3.5z"/></svg></a>
+<a href="https://t.me/broservice_kohphangan" target="_blank"><svg viewBox="0 0 32 32" width="22" height="22"><circle cx="16" cy="16" r="15" fill="#26A5E4"/><path fill="#FFF" d="M22.6 10.2l-2.8 13.3c-.2.9-.7 1.1-1.4.7l-3.9-2.9l-1.9 1.8c-.2.2-.4.4-.7.4l.3-4 7.2-6.5c.3-.3-.1-.5-.5-.2L12 18.4l-4-1.3c-.9-.3-.9-.9.2-1.3l15.6-6c.8-.3 1.5.2 1.2 1.3z"/></svg></a>
+<a href="https://line.me/ti/p/@broservice" target="_blank"><svg viewBox="0 0 32 32" width="22" height="22"><circle cx="16" cy="16" r="15" fill="#00C300"/><path fill="#FFF" d="M23.4 12.5c-.3-1.7-1.7-3-3.4-3.3c-2.6-.5-5.3-.5-7.9 0c-1.7.3-3.1 1.6-3.4 3.3c-.5 2.6-.5 5.3 0 7.9c.3 1.7 1.7 3 3.4 3.3c2.6.5 5.3.5 7.9 0c1.7-.3 3.1-1.6 3.4-3.3c.5-2.6.5-5.3 0-7.9zm-4.8 5.9l-2.6 2.6c-.2.2-.5.2-.7 0l-2.6-2.6c-.6-.6-1-1.3-1-2.2c0-1.6 1.3-2.9 2.9-2.9c1.6 0 2.9 1.3 2.9 2.9c0 .9-.4 1.7-1 2.2z"/></svg></a>
+<a href="https://facebook.com/broservice.kohphangan" target="_blank"><svg viewBox="0 0 32 32" width="22" height="22"><circle cx="16" cy="16" r="15" fill="#1877F2"/><path fill="#FFF" d="M21.8 11.2h-2.5c-1.4 0-1.7.7-1.7 1.6v2.1h3.3l-.4 3.3h-2.9v8.5h-3.4v-8.5h-2.8v-3.3h2.8v-2.5c0-2.8 1.7-4.3 4.2-4.3c1.2 0 2.2.1 2.5.2v2.9z"/></svg></a>
+<a href="https://instagram.com/broservice_kohphangan" target="_blank"><svg viewBox="0 0 32 32" width="22" height="22"><circle cx="16" cy="16" r="15" fill="#E4405F"/><path fill="#FFF" d="M20.5 11.5h-9c-2.5 0-4.5 2-4.5 4.5v9c0 2.5 2 4.5 4.5 4.5h9c2.5 0 4.5-2 4.5-4.5v-9c0-2.5-2-4.5-4.5-4.5zm-4.5 12c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6zm6-10.5c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5z"/></svg></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Услуги</h4>
+                    <ul class="footer-links">
+                        <li><a href="../water-delivery-koh-phangan/">🚰 Доставка воды</a></li>
+                        <li><a href="../cleaning-koh-phangan/">🧹 Уборка</a></li>
+                        <li><a href="../plumber-koh-phangan/">🔧 Сантехник</a></li>
+                        <li><a href="../ac-service-koh-phangan/">❄️ Кондиционеры</a></li>
+                        <li><a href="../electrician-koh-phangan/">⚡ Электрик</a></li>
+                        <li><a href="../bike-service-koh-phangan/">🛵 Байк-сервис</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Контакты</h4>
+                    <ul class="footer-links">
+                        <li><a href="tel:+66808705704">📞 +66 80-870-5704</a></li>
+                        <li><a href="mailto:info@broservice.in.th">✉️ info@broservice.in.th</a></li>
+                        <li><a href="https://wa.me/+66808705704">💬 WhatsApp</a></li>
+                        <li><a href="../contacts/">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Инфо</h4>
+                    <ul class="footer-links">
+                        <li><a href="../">Услуги</a></li>
+                        <li><a href="../contacts/">Контакты</a></li>
+                        <li><a href="../sitemap.xml" target="_blank">Карта сайта</a></li>
+                        <li><span style="color: #888;">⚡ Работаем 8:00–20:00</span></li>
+                        <li><span style="color: #888;">🌴 Ко Пханган, Таиланд</span></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Areas</h4>
+                    <ul class="footer-links">
+                        <li><a href="../thong-sala-koh-phangan/">📍 Thong Sala</a></li>
+                        <li><a href="../srithanu-koh-phangan/">📍 Srithanu</a></li>
+                        <li><a href="../haad-rin-koh-phangan/">📍 Haad Rin</a></li>
+                        <li><a href="../baan-tai-koh-phangan/">📍 Baan Tai</a></li>
+                        <li><a href="../chaloklum-koh-phangan/">📍 Chaloklum</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 BroService.in.th · Все права защищены</p>
+            </div>
+        </div>
+    </footer>
+    <div class="sticky-cta-bar" id="stickyCta">
+    <a href="https://wa.me/+66808705704" class="cta-whatsapp">💬 WhatsApp</a>
+    <a href="tel:+66808705704" class="cta-call">📞 Позвонить</a>
+</div>
+<script>
+(function(){
+  var bar = document.getElementById('stickyCta');
+  var ftr = document.querySelector('footer');
+  if (!bar || !ftr) return;
+  var obs = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ bar.style.display = e.isIntersecting ? 'none' : ''; });
+  }, {threshold: 0});
+  obs.observe(ftr);
+})();
+</script>
+    <script>
+(function(){
+  var btn = document.getElementById('menuToggle');
+  var drawer = document.getElementById('mobileDrawer');
+  var overlay = document.getElementById('drawerOverlay');
+  var closeBtn = document.getElementById('drawerClose');
+  if (!btn || !drawer || !overlay) return;
+  function openDrawer(){ drawer.classList.add('open'); overlay.classList.add('open'); }
+  function closeDrawer(){ drawer.classList.remove('open'); overlay.classList.remove('open'); }
+  btn.addEventListener('click', openDrawer);
+  overlay.addEventListener('click', closeDrawer);
+  if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
+  drawer.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', closeDrawer); });
+})();
+</script>
+</body>
+</html>
