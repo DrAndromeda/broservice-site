@@ -321,6 +321,37 @@ footer a:hover { text-decoration: underline; }
             <a href="../water-delivery-koh-phangan/"><span class="emoji">🚰</span>Water Delivery</a><a href="../handyman-koh-phangan/"><span class="emoji">🔨</span>Handyman</a><a href="../ac-service-koh-phangan/"><span class="emoji">❄️</span>AC Service</a>
         </div>
     </div>
+<div class="sticky-cta-bar" id="stickyCta">
+    <a href="https://wa.me/+66808705704" class="cta-whatsapp">💬 WhatsApp</a>
+    <a href="tel:+66808705704" class="cta-call">📞 Call</a>
+</div>
+<script>
+(function(){
+  var bar = document.getElementById('stickyCta');
+  var ftr = document.querySelector('footer');
+  if (!bar || !ftr) return;
+  var obs = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ bar.style.display = e.isIntersecting ? 'none' : ''; });
+  }, {threshold: 0});
+  obs.observe(ftr);
+})();
+</script>
+
+<script>
+(function(){
+  var btn = document.getElementById('menuToggle');
+  var drawer = document.getElementById('mobileDrawer');
+  var overlay = document.getElementById('drawerOverlay');
+  var closeBtn = document.getElementById('drawerClose');
+  if (!btn || !drawer || !overlay) return;
+  function openDrawer(){ drawer.classList.add('open'); overlay.classList.add('open'); }
+  function closeDrawer(){ drawer.classList.remove('open'); overlay.classList.remove('open'); }
+  btn.addEventListener('click', openDrawer);
+  overlay.addEventListener('click', closeDrawer);
+  if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
+  drawer.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', closeDrawer); });
+})();
+</script>
     <footer>
         <div class="container">
             <div class="footer-grid">
@@ -329,10 +360,10 @@ footer a:hover { text-decoration: underline; }
                     <p>Your Local Service Team on Koh Phangan.</p>
                     <div class="footer-social">
                         <a href="https://wa.me/+66808705704" target="_blank"><svg viewBox="0 0 32 32" width="22" height="22"><circle cx="16" cy="16" r="15" fill="#25D366"/><path fill="#FFF" d="M10 16c0 3.3 2.7 6 6 6c1.3 0 2.6-.4 3.7-1.1l2.1 1.1l-.8-2.1c.6-1 .9-2.1.9-3.2c0-3.3-2.7-6-6-6s-6 2.7-6 6zm9.1 3.3l-.5-.3c-1-.5-1.8-.4-2.5.2l-.4.3c-.5.4-.9.8-1.6.8c-.7 0-1.5-.5-2.2-1.2c-1.1-1-1.8-2.4-1.9-3.7c-.1-1.4.6-2.7 1.7-3.5l.4-.3c.7-.5.8-1.3.2-2.2l-.4-.7c-.5-.8-1.3-1.3-2.2-1.3c-1 0-1.8.6-2.3 1.3c-.8 1.1-1.2 2.5-1.2 3.9c0 3 1.6 5.7 4.1 7.2c2 1.2 4.4 1.8 6.8 1.5c1.3-.2 2.5-.7 3.6-1.5c.8-.6 1.5-1.4 2-2.3c.5-.9.6-1.9.3-2.9c-.3-.9-1-1.6-1.9-1.9c-.8-.3-1.6 0-2.3.5z"/></svg></a>
-<a href="https://t.me/broservice_kohphangan" target="_blank"><svg viewBox="0 0 32 32" width="22" height="22"><circle cx="16" cy="16" r="15" fill="#26A5E4"/><path fill="#FFF" d="M22.6 10.2l-2.8 13.3c-.2.9-.7 1.1-1.4.7l-3.9-2.9l-1.9 1.8c-.2.2-.4.4-.7.4l.3-4 7.2-6.5c.3-.3-.1-.5-.5-.2L12 18.4l-4-1.3c-.9-.3-.9-.9.2-1.3l15.6-6c.8-.3 1.5.2 1.2 1.3z"/></svg></a>
-<a href="https://line.me/ti/p/@broservice" target="_blank"><svg viewBox="0 0 32 32" width="22" height="22"><circle cx="16" cy="16" r="15" fill="#00C300"/><path fill="#FFF" d="M23.4 12.5c-.3-1.7-1.7-3-3.4-3.3c-2.6-.5-5.3-.5-7.9 0c-1.7.3-3.1 1.6-3.4 3.3c-.5 2.6-.5 5.3 0 7.9c.3 1.7 1.7 3 3.4 3.3c2.6.5 5.3.5 7.9 0c1.7-.3 3.1-1.6 3.4-3.3c.5-2.6.5-5.3 0-7.9zm-4.8 5.9l-2.6 2.6c-.2.2-.5.2-.7 0l-2.6-2.6c-.6-.6-1-1.3-1-2.2c0-1.6 1.3-2.9 2.9-2.9c1.6 0 2.9 1.3 2.9 2.9c0 .9-.4 1.7-1 2.2z"/></svg></a>
-<a href="https://facebook.com/broservice.kohphangan" target="_blank"><svg viewBox="0 0 32 32" width="22" height="22"><circle cx="16" cy="16" r="15" fill="#1877F2"/><path fill="#FFF" d="M21.8 11.2h-2.5c-1.4 0-1.7.7-1.7 1.6v2.1h3.3l-.4 3.3h-2.9v8.5h-3.4v-8.5h-2.8v-3.3h2.8v-2.5c0-2.8 1.7-4.3 4.2-4.3c1.2 0 2.2.1 2.5.2v2.9z"/></svg></a>
-<a href="https://instagram.com/broservice_kohphangan" target="_blank"><svg viewBox="0 0 32 32" width="22" height="22"><circle cx="16" cy="16" r="15" fill="#E4405F"/><path fill="#FFF" d="M20.5 11.5h-9c-2.5 0-4.5 2-4.5 4.5v9c0 2.5 2 4.5 4.5 4.5h9c2.5 0 4.5-2 4.5-4.5v-9c0-2.5-2-4.5-4.5-4.5zm-4.5 12c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6zm6-10.5c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5z"/></svg></a>
+                        <a href="https://t.me/broservice_kohphangan" target="_blank"><svg viewBox="0 0 32 32" width="22" height="22"><circle cx="16" cy="16" r="15" fill="#26A5E4"/><path fill="#FFF" d="M22.6 10.2l-2.8 13.3c-.2.9-.7 1.1-1.4.7l-3.9-2.9l-1.9 1.8c-.2.2-.4.4-.7.4l.3-4 7.2-6.5c.3-.3-.1-.5-.5-.2L12 18.4l-4-1.3c-.9-.3-.9-.9.2-1.3l15.6-6c.8-.3 1.5.2 1.2 1.3z"/></svg></a>
+                        <a href="https://line.me/ti/p/@broservice" target="_blank"><svg viewBox="0 0 32 32" width="22" height="22"><circle cx="16" cy="16" r="15" fill="#00C300"/><path fill="#FFF" d="M23.4 12.5c-.3-1.7-1.7-3-3.4-3.3c-2.6-.5-5.3-.5-7.9 0c-1.7.3-3.1 1.6-3.4 3.3c-.5 2.6-.5 5.3 0 7.9c.3 1.7 1.7 3 3.4 3.3c2.6.5 5.3.5 7.9 0c1.7-.3 3.1-1.6 3.4-3.3c.5-2.6.5-5.3 0-7.9zm-4.8 5.9l-2.6 2.6c-.2.2-.5.2-.7 0l-2.6-2.6c-.6-.6-1-1.3-1-2.2c0-1.6 1.3-2.9 2.9-2.9c1.6 0 2.9 1.3 2.9 2.9c0 .9-.4 1.7-1 2.2z"/></svg></a>
+                        <a href="https://facebook.com/broservice_kohphangan" target="_blank"><svg viewBox="0 0 32 32" width="22" height="22"><circle cx="16" cy="16" r="15" fill="#1877F2"/><path fill="#FFF" d="M21.8 11.2h-2.5c-1.4 0-1.7.7-1.7 1.6v2.1h3.3l-.4 3.3h-2.9v8.5h-3.4v-8.5h-2.8v-3.3h2.8v-2.5c0-2.8 1.7-4.3 4.2-4.3c1.2 0 2.2.1 2.5.2v2.9z"/></svg></a>
+                        <a href="https://instagram.com/broservice_kohphangan" target="_blank"><svg viewBox="0 0 32 32" width="22" height="22"><circle cx="16" cy="16" r="15" fill="#E4405F"/><path fill="#FFF" d="M20.5 11.5h-9c-2.5 0-4.5 2-4.5 4.5v9c0 2.5 2 4.5 4.5 4.5h9c2.5 0 4.5-2 4.5-4.5v-9c0-2.5-2-4.5-4.5-4.5zm-4.5 12c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6zm6-10.5c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5z"/></svg></a>
                     </div>
                 </div>
                 <div class="footer-col">
@@ -382,36 +413,5 @@ footer a:hover { text-decoration: underline; }
             </div>
         </div>
     </footer>
-<div class="sticky-cta-bar" id="stickyCta">
-    <a href="https://wa.me/+66808705704" class="cta-whatsapp">💬 WhatsApp</a>
-    <a href="tel:+66808705704" class="cta-call">📞 Call</a>
-</div>
-<script>
-(function(){
-  var bar = document.getElementById('stickyCta');
-  var ftr = document.querySelector('footer');
-  if (!bar || !ftr) return;
-  var obs = new IntersectionObserver(function(entries){
-    entries.forEach(function(e){ bar.style.display = e.isIntersecting ? 'none' : ''; });
-  }, {threshold: 0});
-  obs.observe(ftr);
-})();
-</script>
-
-<script>
-(function(){
-  var btn = document.getElementById('menuToggle');
-  var drawer = document.getElementById('mobileDrawer');
-  var overlay = document.getElementById('drawerOverlay');
-  var closeBtn = document.getElementById('drawerClose');
-  if (!btn || !drawer || !overlay) return;
-  function openDrawer(){ drawer.classList.add('open'); overlay.classList.add('open'); }
-  function closeDrawer(){ drawer.classList.remove('open'); overlay.classList.remove('open'); }
-  btn.addEventListener('click', openDrawer);
-  overlay.addEventListener('click', closeDrawer);
-  if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
-  drawer.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', closeDrawer); });
-})();
-</script>
 </body>
 </html>
