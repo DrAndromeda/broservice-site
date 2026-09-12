@@ -148,7 +148,114 @@ footer { background: var(--dark); color: #aaa; padding: 30px 0 20px; }
     .mobile-drawer .drawer-lang a { color:#aaa; font-weight:600; }
     .mobile-drawer .drawer-lang a.active-lang { color:var(--primary); }
 }
-</style><script type="application/ld+json">
+
+
+<style>
+.repair-page h1 {
+  font-size: 2rem;
+  line-height: 1.25;
+  margin-bottom: 1.5rem;
+  color: #1f1919;
+}
+.repair-page h2 {
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #e88800;
+  padding-bottom: 0.3rem;
+  color: #1f1919;
+}
+.repair-page h3 {
+  font-size: 1.15rem;
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+  color: #e88800;
+}
+.repair-page ul {
+  padding-left: 1.5rem;
+  line-height: 1.7;
+  text-align: left;
+}
+.repair-page ol {
+  padding-left: 1.5rem;
+  line-height: 1.7;
+  text-align: left;
+}
+.repair-page li {
+  margin-bottom: 0.4rem;
+}
+.repair-page table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.95rem;
+}
+.repair-page th, .repair-page td {
+  border: 1px solid #e0e0e0;
+  padding: 0.65rem 0.9rem;
+  text-align: left;
+}
+.repair-page th {
+  background: #f5f0e8;
+  font-weight: 700;
+  color: #1f1919;
+}
+.repair-page .notice-box {
+  background: #fff8f0;
+  border-left: 4px solid #e88800;
+  padding: 12px 16px;
+  margin: 16px 0;
+  border-radius: 4px;
+  text-align: left;
+}
+.repair-page .notice-box strong {
+  color: #e88800;
+}
+.repair-page .faq-item {
+  background: #f9f9f9;
+  border-radius: 6px;
+  padding: 14px 16px;
+  margin: 10px 0;
+  text-align: left;
+  border: 1px solid #eee;
+}
+.repair-page .faq-q {
+  font-weight: 700;
+  color: #1f1919;
+  margin-bottom: 6px;
+  font-size: 1rem;
+}
+.repair-page .faq-a {
+  color: #555;
+  line-height: 1.6;
+}
+.repair-page .step-list {
+  counter-reset: step;
+  list-style: none;
+  padding-left: 0;
+}
+.repair-page .step-list li {
+  counter-increment: step;
+  margin-bottom: 12px;
+  padding: 10px 14px;
+  background: #fafafa;
+  border-radius: 6px;
+  border-left: 3px solid #e88800;
+}
+.repair-page .step-list li::before {
+  content: "Step " counter(step) " \25BA ";
+  font-weight: 700;
+  color: #e88800;
+}
+@media (max-width: 640px) {
+  .repair-page h1 { font-size: 1.4rem; text-align: center; }
+  .repair-page h2 { font-size: 1.2rem; text-align: center; }
+  .repair-page table { font-size: 0.82rem; }
+  .repair-page th, .repair-page td { padding: 0.4rem; }
+  .repair-page .faq-item { padding: 10px 12px; }
+}
+</style>
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -215,10 +322,13 @@ footer { background: var(--dark); color: #aaa; padding: 30px 0 20px; }
   ]
 }
 </script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Do you come to my villa or hotel on Koh Phangan?","acceptedAnswer":{"@type":"Answer","text":"Yes. BroService provides on-site phone and tech repair across the whole island, including Thong Sala, Srithanu, Haad Rin, Chaloklum and Baan Tai."}},{"@type":"Question","name":"How long does a phone screen replacement take?","acceptedAnswer":{"@type":"Answer","text":"Most smartphone screen replacements take 30-90 minutes on site. iPhone screens with parts in stock are usually done within an hour."}},{"@type":"Question","name":"What are the typical repair prices?","acceptedAnswer":{"@type":"Answer","text":"Screen replacement: 800-2,500 THB. Battery: 500-1,500 THB. MacBook screen: 3,000-8,000 THB. AC servicing: 800-1,500 THB. Free diagnosis."}},{"@type":"Question","name":"Do you provide a warranty?","acceptedAnswer":{"@type":"Answer","text":"Yes. Every repair comes with a warranty. If the same issue returns, we come back and fix it at no extra cost."}}]}
+</script>
 </head>
 <body>
     <header>
-        <div class="container">
+        <div class="container repair-page">
             <div class="header-inner">
                 <div class="logo" onclick="window.location='../'" style="cursor:pointer;"><span>Bro</span>Service.in.th</div>
                 <div class="header-right">
@@ -256,93 +366,89 @@ footer { background: var(--dark); color: #aaa; padding: 30px 0 20px; }
             <img loading="lazy" width="800" height="533" src="../assets/images/handyman.jpg" alt="Handyman fixing furniture on Koh Phangan">
         </div>
     </div>
-    <section id="content"><div class="container">
-<h1>Phone &amp; Tech Repair on Koh Phangan — Fast, Reliable, Island-Wide</h1>
+    <section id="content"><div class="repair-page">
 
-<h2>Your Device Broke? We Come to You.</h2>
-<p>Living on Koh Phangan shouldn't mean living without your phone, laptop, or essential appliances. BroService brings professional phone and tech repair directly to your villa, condo, or office — anywhere on the island. From Thong Sala to Srithanu, Haad Rin to Chaloklum, our technicians arrive with the tools and parts needed to get you back online fast.</p>
+<h1>Phone &amp; Tech Repair on Koh Phangan</h1>
 
-<h2>What We Repair</h2>
+<div class="notice-box"><strong>Free diagnosis</strong> — we check the problem and give you the price before starting. Same-day service across Koh Phangan.</div>
 
-<h3>Phone &amp; Smartphone Repair</h3>
-<ul>
-<li>Cracked screen replacement (iPhone, Samsung, Xiaomi, Oppo, Vivo, Huawei)</li>
-<li>Battery replacement — all major brands</li>
-<li>Charging port repair</li>
-<li>Water damage diagnostics and recovery</li>
-<li>Camera and speaker repair</li>
-<li>Software troubleshooting and system recovery</li>
-</ul>
-
-<h3>Laptop &amp; Computer Repair</h3>
-<ul>
-<li>MacBook screen, keyboard and battery replacement</li>
-<li>Windows laptop repair (Dell, HP, Lenovo, Asus, Acer)</li>
-<li>SSD and RAM upgrades</li>
-<li>Virus removal and OS reinstallation</li>
-<li>Overheating and fan cleaning</li>
-<li>Data recovery and backup</li>
-</ul>
-
-<h3>Home Appliance Repair</h3>
-<ul>
-<li>Washing machine repair</li>
-<li>Refrigerator and freezer diagnostics</li>
-<li>Air conditioner servicing and gas refill</li>
-<li>Microwave and small appliance repair</li>
-<li>Water pump and cooler repair</li>
-</ul>
-
-<h3>Tablet &amp; Smartwatch Repair</h3>
-<ul>
-<li>iPad screen and battery replacement</li>
-<li>Android tablet repair</li>
-<li>Apple Watch and Samsung Galaxy Watch repair</li>
-</ul>
-
-<h2>Why Choose BroService for Tech Repair on Koh Phangan?</h2>
-<ul>
-<li><strong>Same-Day Response</strong> — call before noon and we aim to be at your door the same day.</li>
-<li><strong>Warranty on All Work</strong> — if something isn't right after a repair, we come back and fix it at no extra cost.</li>
-<li><strong>Island-Wide Coverage</strong> — Thong Sala, Srithanu, Haad Rin, Chaloklum, Baan Tai and surrounding areas.</li>
-<li><strong>Multilingual Team</strong> — English, Russian and Thai speaking technicians.</li>
-<li><strong>Honest Upfront Pricing</strong> — we diagnose the problem and tell you the cost before we start.</li>
-<li><strong>Genuine &amp; Quality Parts</strong> — we use reliable components that last.</li>
-</ul>
-
-<h2>How It Works</h2>
-<ol>
-<li><strong>Contact Us</strong> — Call, WhatsApp or message us on Telegram. Describe the problem or send a photo.</li>
-<li><strong>Free Diagnosis</strong> — We assess the issue and provide a clear quote.</li>
-<li><strong>We Come to You</strong> — Our technician arrives at your location with tools and parts.</li>
-<li><strong>Repair &amp; Warranty</strong> — We fix the device and back the work with our warranty.</li>
+<h2>How It Works — 3 Simple Steps</h2>
+<ol class="step-list">
+<li><strong>Contact us</strong> — Call, WhatsApp or Telegram with a description or photo.</li>
+<li><strong>Get a free quote</strong> — We assess the issue and provide a clear price upfront.</li>
+<li><strong>We come to you</strong> — Our technician arrives at your location with tools and parts, repairs on the spot.</li>
 </ol>
 
-<h2>Common Devices We Service</h2>
+<h2>Repair Services &amp; Estimated Prices</h2>
 <table>
-<thead>
-<tr><th>Device Type</th><th>Brands</th></tr>
-</thead>
+<thead><tr><th>Service</th><th>Price</th><th>Time</th></tr></thead>
 <tbody>
-<tr><td>Smartphones</td><td>iPhone, Samsung, Xiaomi, Oppo, Vivo, Huawei, Realme</td></tr>
-<tr><td>Laptops</td><td>MacBook, Dell, HP, Lenovo, Asus, Acer</td></tr>
-<tr><td>Tablets</td><td>iPad, Samsung Galaxy Tab, Lenovo Tab</td></tr>
-<tr><td>Smartwatches</td><td>Apple Watch, Samsung Galaxy Watch</td></tr>
-<tr><td>Appliances</td><td>Samsung, LG, Electrolux, Toshiba, Sharp</td></tr>
+<tr><td>Phone screen replacement</td><td>800-2,500 THB</td><td>30-90 min</td></tr>
+<tr><td>Phone battery replacement</td><td>500-1,500 THB</td><td>20-40 min</td></tr>
+<tr><td>Water damage diagnosis</td><td>Free</td><td>15-30 min</td></tr>
+<tr><td>MacBook screen replacement</td><td>3,000-8,000 THB</td><td>1-3 hrs</td></tr>
+<tr><td>Laptop SSD upgrade + OS</td><td>1,000-2,500 THB</td><td>1-2 hrs</td></tr>
+<tr><td>AC servicing (clean + gas)</td><td>800-1,500 THB</td><td>1-2 hrs</td></tr>
+<tr><td>Appliance repair</td><td>500-2,000 THB</td><td>30-90 min</td></tr>
 </tbody>
 </table>
 
+<h2>What We Repair</h2>
+
+<h3>Phones &amp; Smartphones</h3>
+<ul>
+<li>Cracked screen replacement — iPhone, Samsung, Xiaomi and all brands</li>
+<li>Battery replacement — all popular models</li>
+<li>Charging port, camera and speaker repair</li>
+<li>Water damage diagnostics and recovery</li>
+<li>Software troubleshooting and system recovery</li>
+</ul>
+
+<h3>Laptops &amp; Computers</h3>
+<ul>
+<li>MacBook screen, keyboard and battery replacement</li>
+<li>Dell, HP, Lenovo, Asus, Acer — all Windows laptops</li>
+<li>SSD and RAM upgrades</li>
+<li>Virus removal, OS reinstallation, data recovery</li>
+<li>Overheating prevention — fan cleaning + thermal paste</li>
+</ul>
+
+<h3>Home Appliances</h3>
+<ul>
+<li>Washing machine, refrigerator, AC servicing</li>
+<li>Water pump, microwave, small appliance repair</li>
+</ul>
+
+<h2>Frequently Asked Questions</h2>
+
+<div class="faq-item">
+<div class="faq-q">Do you come to my villa or hotel?</div>
+<div class="faq-a">Yes. We provide on-site repair across the entire island — Thong Sala, Srithanu, Haad Rin, Chaloklum, Baan Tai. Just tell us where you are.</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-q">How long does a screen replacement take?</div>
+<div class="faq-a">Most smartphone screen replacements take 30-90 minutes on site. iPhone screens with parts in stock are usually done within an hour.</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-q">How much does a screen replacement cost?</div>
+<div class="faq-a">800-1,500 THB for common Android models, 1,500-2,500 THB for iPhone and high-end Samsung. Exact price before work starts.</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-q">Do you provide a warranty?</div>
+<div class="faq-a">Yes. Every repair comes with a warranty. If the same issue returns, we fix it at no extra cost.</div>
+</div>
+
 <h2>Serving All Areas of Koh Phangan</h2>
-<p>We cover Thong Sala, Srithanu, Haad Rin, Chaloklum, Baan Tai, and surrounding areas. Whether you're in a villa in the hills or a condo near the beach, we'll find you.</p>
+<p>We cover Thong Sala, Srithanu, Haad Rin, Chaloklum, Baan Tai and surrounding areas. Call before noon — same-day service.</p>
 
-<h2>Get Your Device Fixed Today</h2>
-<p>Don't let a broken phone or laptop slow you down. Contact BroService now for fast, reliable tech repair on Koh Phangan.</p>
-
-<p>
-📞 <strong>Call:</strong> <a href="tel:+66808705704">+66 80-870-5704</a><br>
+<h2>Contact BroService Now</h2>
+<p>📞 <strong>Call:</strong> <a href="tel:+66808705704">+66 80-870-5704</a><br>
 💬 <strong>WhatsApp:</strong> <a href="https://wa.me/66808705704">+66 80-870-5704</a><br>
-✈️ <strong>Telegram:</strong> <a href="https://t.me/BroService_kpg_bot">@BroService_kpg_bot</a>
-</p>
+✈️ <strong>Telegram:</strong> <a href="https://t.me/BroService_kpg_bot">@BroService_kpg_bot</a></p>
+
 </div></section>
     <div class="related-services">
         <h2>Related Services</h2>
