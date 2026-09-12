@@ -38,12 +38,12 @@ ul li { list-style-position: inside; margin-left: 25px; padding: 3px 0; }
 header { width: 100%; background: linear-gradient(180deg, #2b2424, #1f1919); margin: 0 auto; z-index: 100; }
 .linkblock { float: left; margin: 46px 0 22px; font-size: 269%; color: #e98400; font-weight: bold; text-shadow: 1px 1px 2px #555; }
 .linkblock a { color: #d3d3d3; }
-.slogan { font-size: 18px; line-height: 22px; color: #d3d3d3; float: left; border-left: #2f2b2b 1px solid; margin: 10px 0 0 18px; padding: 14px 0 12px 20px; }
-.tooltips { float: right; margin: 48px 40px 0 0; display: flex; gap: 6px; align-items: center; }
+.slogan { font-size: 18px; line-height: 22px; color: #d3d3d3; float: left; border-left: #2f2b2b 1px solid; margin: 4px 0 0 12px; padding: 10px 0 8px 16px; }
+.tooltips { float: right; margin: 38px 30px 0 0; display: flex; gap: 6px; align-items: center; }
 .tooltips a { display: inline-block; }
 .tooltips a:hover { opacity: 0.8; }
 .tooltips a svg { width: 28px; height: 28px; border-radius: 50%; }
-.nav-shadow { padding-top: 10px; margin: 20px 0 0; position: relative; z-index: 100; }
+.nav-shadow { padding-top: 10px; margin: 12px 0 0; position: relative; z-index: 100; }
 .nav-shadow > div { background: linear-gradient(180deg, #e57c00, #c47000); border-radius: 7px; box-shadow: 0 3px 2px #201a1a; }
 nav { border-radius: 7px; }
 ul.menu { overflow: hidden; text-align: center; padding: 8px 2px; display: flex; flex-wrap: nowrap; justify-content: center; list-style: none; }
@@ -302,63 +302,84 @@ h1 { font-size: 170%; }
 </div>
 
 <!-- 2. SERVICES -->
-<h2 style="font-size:20px;margin-top:24px;">Everything You Need for Life on Koh Phangan</h2>
+<h2 style="font-size:20px;margin-top:24px;"><h2 style="font-size:20px;">Everything You Need for Life on Koh Phangan</h2>
 <p style="font-size:14px;color:#666;margin:0 0 14px;">One local team for the essential services you need at your villa, condo or property.</p>
 
-<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;margin:0 0 24px;">
+<div style="display:flex;flex-wrap:wrap;justify-content:center;margin:0 auto;max-width:1000px;">
 
-<div style="background:#fff;border:1px solid #e0d8d0;border-radius:8px;padding:14px;">
-<h3 style="font-size:15px;color:#e88800;margin:0 0 4px;">💧 Water Delivery</h3>
-<p style="font-size:13px;color:#666;margin:0 0 8px;">19L drinking water delivered to your villa, condo or business. Weekly or bi-weekly available.</p>
-<a href="water-delivery-koh-phangan/" style="color:#e88800;font-weight:700;font-size:13px;text-decoration:none;">View Service &rarr;</a>
+<div class="block-1">
+<img src="assets/images/water-delivery.jpg" alt="Water delivery" class="img-radius">
+<div class="border-1">
+<p class="color-1 p2">💧 Water Delivery</p>
+<p>19L drinking water delivered to your villa, condo or business.</p>
+<a href="water-delivery-koh-phangan/" class="button top-1">View Service →</a>
+</div>
 </div>
 
-<div style="background:#fff;border:1px solid #e0d8d0;border-radius:8px;padding:14px;">
-<h3 style="font-size:15px;color:#e88800;margin:0 0 4px;">🧹 Cleaning</h3>
-<p style="font-size:13px;color:#666;margin:0 0 8px;">Regular, deep, move-in/out and post-renovation cleaning for homes and rentals.</p>
-<a href="cleaning-koh-phangan/" style="color:#e88800;font-weight:700;font-size:13px;text-decoration:none;">View Service &rarr;</a>
+<div class="block-1">
+<img src="assets/images/cleaning.jpg" alt="Cleaning" class="img-radius">
+<div class="border-1">
+<p class="color-1 p2">🧹 Cleaning</p>
+<p>Regular, deep, move-in/out cleaning for homes and rentals.</p>
+<a href="cleaning-koh-phangan/" class="button top-1">View Service →</a>
+</div>
 </div>
 
-<div style="background:#fff;border:1px solid #e0d8d0;border-radius:8px;padding:14px;">
-<h3 style="font-size:15px;color:#e88800;margin:0 0 4px;">🔧 Plumber</h3>
-<p style="font-size:13px;color:#666;margin:0 0 8px;">Leaks, blocked drains, faucets, water heaters and general plumbing problems.</p>
-<a href="plumber-koh-phangan/" style="color:#e88800;font-weight:700;font-size:13px;text-decoration:none;">View Service &rarr;</a>
+<div class="block-1">
+<img src="assets/images/plumber.jpg" alt="Plumber" class="img-radius">
+<div class="border-1">
+<p class="color-1 p2">🔧 Plumber</p>
+<p>Leaks, drains, faucets, water heaters and plumbing problems.</p>
+<a href="plumber-koh-phangan/" class="button top-1">View Service →</a>
+</div>
 </div>
 
-<div style="background:#fff;border:1px solid #e0d8d0;border-radius:8px;padding:14px;">
-<h3 style="font-size:15px;color:#e88800;margin:0 0 4px;">❄️ AC Service</h3>
-<p style="font-size:13px;color:#666;margin:0 0 8px;">Cleaning, maintenance, repairs and installation for all common AC problems.</p>
-<a href="ac-service-koh-phangan/" style="color:#e88800;font-weight:700;font-size:13px;text-decoration:none;">View Service &rarr;</a>
+<div class="block-1">
+<img src="assets/images/ac-service.jpg" alt="AC service" class="img-radius">
+<div class="border-1">
+<p class="color-1 p2">❄️ AC Service</p>
+<p>Cleaning, maintenance, repairs and installation for AC problems.</p>
+<a href="ac-service-koh-phangan/" class="button top-1">View Service →</a>
+</div>
 </div>
 
-<div style="background:#fff;border:1px solid #e0d8d0;border-radius:8px;padding:14px;">
-<h3 style="font-size:15px;color:#e88800;margin:0 0 4px;">⚡ Electrician</h3>
-<p style="font-size:13px;color:#666;margin:0 0 8px;">Sockets, switches, lighting, breakers, wiring and electrical troubleshooting.</p>
-<a href="electrician-koh-phangan/" style="color:#e88800;font-weight:700;font-size:13px;text-decoration:none;">View Service &rarr;</a>
+<div class="block-1">
+<img src="assets/images/electrician.jpg" alt="Electrician" class="img-radius">
+<div class="border-1">
+<p class="color-1 p2">⚡ Electrician</p>
+<p>Sockets, switches, lighting, breakers, wiring and troubleshooting.</p>
+<a href="electrician-koh-phangan/" class="button top-1">View Service →</a>
+</div>
 </div>
 
-<div style="background:#fff;border:1px solid #e0d8d0;border-radius:8px;padding:14px;">
-<h3 style="font-size:15px;color:#e88800;margin:0 0 4px;">🛵 Bike Repair</h3>
-<p style="font-size:13px;color:#666;margin:0 0 8px;">Maintenance, brakes, tires, oil changes and common scooter repairs.</p>
-<a href="bike-service-koh-phangan/" style="color:#e88800;font-weight:700;font-size:13px;text-decoration:none;">View Service &rarr;</a>
+<div class="block-1">
+<img src="assets/images/bike-service.jpg" alt="Bike repair" class="img-radius">
+<div class="border-1">
+<p class="color-1 p2">🛵 Bike Repair</p>
+<p>Maintenance, brakes, tires, oil changes and scooter repairs.</p>
+<a href="bike-service-koh-phangan/" class="button top-1">View Service →</a>
+</div>
 </div>
 
-<div style="background:#fff;border:1px solid #e0d8d0;border-radius:8px;padding:14px;">
-<h3 style="font-size:15px;color:#e88800;margin:0 0 4px;">🔨 Handyman</h3>
-<p style="font-size:13px;color:#666;margin:0 0 8px;">Furniture assembly, TV mounting, doors, locks, painting and small repairs.</p>
-<a href="handyman-koh-phangan/" style="color:#e88800;font-weight:700;font-size:13px;text-decoration:none;">View Service &rarr;</a>
+<div class="block-1">
+<img src="assets/images/handyman.jpg" alt="Handyman" class="img-radius">
+<div class="border-1">
+<p class="color-1 p2">🔨 Handyman</p>
+<p>Furniture assembly, mounting, doors, locks and small repairs.</p>
+<a href="handyman-koh-phangan/" class="button top-1">View Service →</a>
+</div>
 </div>
 
-<div style="background:#fff;border:1px solid #e0d8d0;border-radius:8px;padding:14px;">
-<h3 style="font-size:15px;color:#e88800;margin:0 0 4px;">📱 Phone &amp; Tech Repair</h3>
-<p style="font-size:13px;color:#666;margin:0 0 8px;">Phone, laptop, MacBook and appliance repairs. On-site service available.</p>
-<a href="phone-tech-repair-koh-phangan/" style="color:#e88800;font-weight:700;font-size:13px;text-decoration:none;">View Service &rarr;</a>
+<div class="block-1">
+<img src="assets/images/property-rental.jpg" alt="Phone repair" class="img-radius">
+<div class="border-1">
+<p class="color-1 p2">📱 Phone &amp; Tech Repair</p>
+<p>Phone, laptop, MacBook and appliance repairs on-site.</p>
+<a href="phone-tech-repair-koh-phangan/" class="button top-1">View Service →</a>
+</div>
 </div>
 
-</div>
-
-<!-- 3. WHY -->
-<h2 style="font-size:20px;">Why Choose BroService?</h2>
+</div>Why Choose BroService?</h2>
 <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px;margin:0 0 24px;">
 <div style="background:#fff;border-left:4px solid #e88800;padding:12px 14px;border-radius:6px;">
 <h3 style="font-size:15px;color:#e88800;margin:0 0 2px;">⚡ Fast Response</h3>
