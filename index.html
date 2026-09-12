@@ -302,12 +302,12 @@ h1 { font-size: 170%; }
 </div>
 
 <!-- 2. SERVICES -->
-<h2 style="font-size:20px;margin-top:24px;"><h2 style="font-size:20px;">Everything You Need for Life on Koh Phangan</h2>
+<h2 style="font-size:20px;">Everything You Need for Life on Koh Phangan</h2>
 <p style="font-size:14px;color:#666;margin:0 0 14px;">One local team for the essential services you need at your villa, condo or property.</p>
 
 <div style="display:flex;flex-wrap:wrap;justify-content:center;margin:0 auto;max-width:1000px;">
 
-<div class="block-1">
+<div class="block-1 service-card">
 <img src="assets/images/water-delivery.jpg" alt="Water delivery" class="img-radius">
 <div class="border-1">
 <p class="color-1 p2">💧 Water Delivery</p>
@@ -316,7 +316,7 @@ h1 { font-size: 170%; }
 </div>
 </div>
 
-<div class="block-1">
+<div class="block-1 service-card">
 <img src="assets/images/cleaning.jpg" alt="Cleaning" class="img-radius">
 <div class="border-1">
 <p class="color-1 p2">🧹 Cleaning</p>
@@ -325,7 +325,7 @@ h1 { font-size: 170%; }
 </div>
 </div>
 
-<div class="block-1">
+<div class="block-1 service-card">
 <img src="assets/images/plumber.jpg" alt="Plumber" class="img-radius">
 <div class="border-1">
 <p class="color-1 p2">🔧 Plumber</p>
@@ -334,7 +334,7 @@ h1 { font-size: 170%; }
 </div>
 </div>
 
-<div class="block-1">
+<div class="block-1 service-card">
 <img src="assets/images/ac-service.jpg" alt="AC service" class="img-radius">
 <div class="border-1">
 <p class="color-1 p2">❄️ AC Service</p>
@@ -343,7 +343,7 @@ h1 { font-size: 170%; }
 </div>
 </div>
 
-<div class="block-1">
+<div class="block-1 service-card">
 <img src="assets/images/electrician.jpg" alt="Electrician" class="img-radius">
 <div class="border-1">
 <p class="color-1 p2">⚡ Electrician</p>
@@ -352,7 +352,7 @@ h1 { font-size: 170%; }
 </div>
 </div>
 
-<div class="block-1">
+<div class="block-1 service-card">
 <img src="assets/images/bike-service.jpg" alt="Bike repair" class="img-radius">
 <div class="border-1">
 <p class="color-1 p2">🛵 Bike Repair</p>
@@ -361,7 +361,7 @@ h1 { font-size: 170%; }
 </div>
 </div>
 
-<div class="block-1">
+<div class="block-1 service-card">
 <img src="assets/images/handyman.jpg" alt="Handyman" class="img-radius">
 <div class="border-1">
 <p class="color-1 p2">🔨 Handyman</p>
@@ -370,7 +370,7 @@ h1 { font-size: 170%; }
 </div>
 </div>
 
-<div class="block-1">
+<div class="block-1 service-card">
 <img src="assets/images/property-rental.jpg" alt="Phone repair" class="img-radius">
 <div class="border-1">
 <p class="color-1 p2">📱 Phone &amp; Tech Repair</p>
@@ -379,7 +379,29 @@ h1 { font-size: 170%; }
 </div>
 </div>
 
-</div>Why Choose BroService?</h2>
+</div>
+<script>
+(function() {
+  var cards = document.querySelectorAll('.service-card');
+  if (!cards.length) return;
+  var total = cards.length;
+  var shown = 3;
+  
+  function showRandom() {
+    var idx = [];
+    while (idx.length < shown) {
+      var r = Math.floor(Math.random() * total);
+      if (idx.indexOf(r) === -1) idx.push(r);
+    }
+    for (var i = 0; i < total; i++) {
+      cards[i].style.display = (idx.indexOf(i) !== -1) ? '' : 'none';
+    }
+  }
+  
+  showRandom();
+  setInterval(showRandom, 7000);
+})();
+</script>Why Choose BroService?</h2>
 <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px;margin:0 0 24px;">
 <div style="background:#fff;border-left:4px solid #e88800;padding:12px 14px;border-radius:6px;">
 <h3 style="font-size:15px;color:#e88800;margin:0 0 2px;">⚡ Fast Response</h3>
